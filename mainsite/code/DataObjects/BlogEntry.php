@@ -8,7 +8,6 @@ class BlogEntry extends DataObject {
 	);
 	
 	protected static $has_one = array(
-		'HeaderImage'	=>	'Image',
 		'onPage'		=>	'Page'
 	);
 	
@@ -16,13 +15,12 @@ class BlogEntry extends DataObject {
         'Tags'			=>	'Tag'
     );
 	
+	protected static $extensions = array(
+		'HeaderImageExtension'
+	);
+	
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab(
-			'Root.Main',
-			UploadField::create('HeaderImage')->setAllowedFileCategories('image'),
-			'Content'
-		);
 		
 		$fields->removeByName('Slag');
 		

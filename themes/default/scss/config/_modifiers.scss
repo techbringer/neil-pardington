@@ -1,0 +1,37 @@
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+.hide {
+	display: none;
+}
+
+.text-centered {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.as-block {
+	display: block;
+}
+
+.as-inline-block {
+	display: inline-block;
+}
+
+.relative {
+	position: relative;
+}

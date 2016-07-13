@@ -20,7 +20,8 @@
 		'config/mixins',
 		'config/grid',
 		'config/fonts',
-		'config/sprite';
+		'config/sprite',
+		'config/_modifiers';
 
 /**
  * Import Sprite sheet.
@@ -35,6 +36,7 @@
 /**
  * Blocks.
  * */
+@import 'blocks/parallax';
 
 /**
  * Elements.

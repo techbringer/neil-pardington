@@ -18,8 +18,18 @@
 	<body class="page-$URLSegment<% if $isMobile %> mobile<% end_if %> page-type-$BodyClass.LowerCase">
 		<% include Header %>
 		
-		<main class="container">
-			$Layout
+		<main id="main">
+			<% if $HeaderImage && $Content %><div class="section"><% end_if %>
+				<% if $HeaderImage %>
+					<% include Parallax %>
+				<% end_if %>
+			<% if $HeaderImage && $Content %></div><% end_if %>
+			<div class="container">
+				<h1 id="page-title" class="<% if $HideTitle %>hide<% end_if %>">$Title</h1>
+				$Form
+				$Content
+			</div>
+			$Layout			
 		</main>
 		
 		<% include Footer %>

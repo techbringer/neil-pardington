@@ -7,10 +7,12 @@ require 'breakpoint'
 http_path = "/"
 css_dir = "css"
 sass_dir = "scss"
-images_dir = "img"
+images_dir = "images"
 javascripts_dir = "js"
+fonts_dir = "fonts"
 
 environment = :development
+sourcemap = true
 
 # In development, we can turn on the FireSass-compatible debug_info.
 firesass = true
@@ -21,10 +23,10 @@ firesass = true
 output_style = (environment == :development) ? :expanded : :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = true
+relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-line_comments = false
+#line_comments = false
 
 
 # If you prefer the indented syntax, you might want to regenerate this

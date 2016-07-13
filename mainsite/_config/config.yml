@@ -33,3 +33,9 @@ SeoConfig:
     ErrorPage: false
     RedirectorPage: false
     VirtualPage: false
+
+HeaderImage:
+  heights:
+    "normal": "Normal (400px)"
+    "full": "Screen height (100%)"
+    "custom": "Custom..."

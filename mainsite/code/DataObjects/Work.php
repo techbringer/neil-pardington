@@ -10,26 +10,32 @@ class Work extends DataObject {
 	
 	protected static $has_one = array(
 		'OnPage'		=>	'WorksPage',
-		'HeaderImage'	=>	'Image'
-	);
-	
-	protected static $belongs_to = array(
 		'Category'		=>	'Category'
 	);
-	
+		
 	protected static $many_many = array(
         'Tags'			=>	'Tag'
     );
 	
+	protected static $extensions = array(
+		'HeaderImageExtension'
+	);
+	
+	public function forTemplate() {
+		return $this->customise(array(
+					'Title'					=>	$this->Title,
+					'Content'				=>	$this->Content,
+					'Category'				=>	$this->Category()->Title,
+					'ViewportHeight'		=>	$this->ViewportHeight,
+					'ViewportCustomHeight'	=>	$this->ViewportCustomHeight,
+					'HeaderImage'			=>	$this->HeaderImage()
+				))->renderWith('Work');
+	}
+	
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->removeByName('SortOrder');
-		$fields->addFieldToTab(
-			'Root.Main',
-			UploadField::create('HeaderImage')->setAllowedFileCategories('image'),
-			'Content'
-		);
-		
+		$fields->removeByName('Tags');
 		$fields->removeByName('Slag');
 		
 		if ($this->exists()) {

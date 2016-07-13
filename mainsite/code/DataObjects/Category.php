@@ -17,6 +17,10 @@ class Category extends DataObject {
 		'inCategory'	=>	'CategoryPage'
 	);
 	
+	protected static $has_many = array(
+		'Works'			=>	'Work'
+	);
+	
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->removeByName('SortOrder');

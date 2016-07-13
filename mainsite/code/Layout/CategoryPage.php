@@ -1,4 +1,7 @@
-<?php use SaltedHerring\Grid as Grid;
+<?php 
+
+use SaltedHerring\Grid as Grid;
+use SaltedHerring\Debugger as Debugger;
 
 class CategoryPage extends Page {
 	
@@ -32,5 +35,28 @@ class CategoryPage extends Page {
 
 
 class CategoryPage_Controller extends Page_Controller {
+	protected static $url_handlers = array(
+		''		=>	'index',
+		'$slag'	=>  'getworks'
+	);
+	
+	protected static $allowed_actions = array(
+		'index',
+		'getworks'
+	);
+	
+	public function index($request) {
+		
+		return $this->renderWith(array('Page'));
+	}
+	
+	public function getworks($request) {
+		$slag = $request->param('slag');
+		$works = $this->SubCategories()->filter(array('slag' => $slag))->first()->Works();
+		
+		return $this->customise(array(
+					'Works'		=>	$works
+				))->renderWith(array('WorkList', 'Page'));
+	}
 	
 }
