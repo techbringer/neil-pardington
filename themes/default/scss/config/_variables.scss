@@ -1,0 +1,20 @@
+/* ===========================
+ * Typography
+ * =========================== */
+$font_size: 16;
+
+
+/* ===========================
+ * Grid
+ * =========================== */
+$container-width: 1356px;
+$total-columns: 12;
+$column-width: 113px;
+$gutter-width: 20px;
+$grid-padding: 10px;
+
+/**
+ * Responsive breakpoints
+ * */
+$container: max-width 959px;
+$max-width-single-column: 640;
