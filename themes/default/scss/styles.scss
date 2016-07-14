@@ -19,14 +19,15 @@
 		'config/colours',
 		'config/mixins',
 		'config/grid',
+		'config/b2font',
 		'config/fonts',
 		'config/sprite',
-		'config/_modifiers';
+		'config/modifiers';
 
 /**
  * Import Sprite sheet.
  * */
-// @include retina-sprite-add(icons, "sprites/*.png", "retina_sprites/*.png");
+@include retina-sprite-add(icons, "sprites/*.png", "retina_sprites/*.png");
 
 @include h5bp-normalize;
 @include h5bp-base-styles;
@@ -36,7 +37,9 @@
 /**
  * Blocks.
  * */
-@import 'blocks/parallax';
+@import 'blocks/parallax',
+		'blocks/header',
+		'blocks/footer';
 
 /**
  * Elements.
@@ -53,6 +56,6 @@
  * Pages.
  * */
 
-body.page-homepage {
-// 	@import 'pages/homepage';
+body.page-home {
+	@import 'pagetypes/homepage';
 }

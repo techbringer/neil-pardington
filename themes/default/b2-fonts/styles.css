@@ -1,0 +1,85 @@
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('LabGrotesque-Light.eot?#iefix') format('embedded-opentype'),  url('LabGrotesque-Light.otf')  format('opentype'),
+	     url('LabGrotesque-Light.woff') format('woff'), url('LabGrotesque-Light.ttf')  format('truetype'), url('LabGrotesque-Light.svg#LabGrotesque-Light') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family:	'LabGrotesque';
+  src:			url('LabGrotesque-Regular.eot?#iefix') format('embedded-opentype'),  
+  				url('LabGrotesque-Regular.otf')  format('opentype'),
+	     		url('LabGrotesque-Regular.woff') format('woff'), 
+	     		url('LabGrotesque-Regular.ttf')  format('truetype'), 
+	     		url('LabGrotesque-Regular.svg#LabGrotesque-Regular') format('svg');
+  font-weight:	normal;
+  font-style:	normal;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('LabGrotesque-Medium.eot?#iefix') format('embedded-opentype'),  url('LabGrotesque-Medium.otf')  format('opentype'),
+	     url('LabGrotesque-Medium.woff') format('woff'), url('LabGrotesque-Medium.ttf')  format('truetype'), url('LabGrotesque-Medium.svg#LabGrotesque-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('LabGrotesque-Bold.eot?#iefix') format('embedded-opentype'),  url('LabGrotesque-Bold.otf')  format('opentype'),
+	     url('LabGrotesque-Bold.woff') format('woff'), url('LabGrotesque-Bold.ttf')  format('truetype'), url('LabGrotesque-Bold.svg#LabGrotesque-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('LabGrotesque-Black.eot?#iefix') format('embedded-opentype'),  url('LabGrotesque-Black.otf')  format('opentype'),
+	     url('LabGrotesque-Black.woff') format('woff'), url('LabGrotesque-Black.ttf')  format('truetype'), url('LabGrotesque-Black.svg#LabGrotesque-Black') format('svg');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('LabGrotesque-LightItalic.eot?#iefix') format('embedded-opentype'),  url('LabGrotesque-LightItalic.otf')  format('opentype'),
+	     url('LabGrotesque-LightItalic.woff') format('woff'), url('LabGrotesque-LightItalic.ttf')  format('truetype'), url('LabGrotesque-LightItalic.svg#LabGrotesque-LightItalic') format('svg');
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('LabGrotesque-Italic.eot?#iefix') format('embedded-opentype'),  url('LabGrotesque-Italic.otf')  format('opentype'),
+	     url('LabGrotesque-Italic.woff') format('woff'), url('LabGrotesque-Italic.ttf')  format('truetype'), url('LabGrotesque-Italic.svg#LabGrotesque-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('LabGrotesque-MediumItalic.eot?#iefix') format('embedded-opentype'),  url('LabGrotesque-MediumItalic.otf')  format('opentype'),
+	     url('LabGrotesque-MediumItalic.woff') format('woff'), url('LabGrotesque-MediumItalic.ttf')  format('truetype'), url('LabGrotesque-MediumItalic.svg#LabGrotesque-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('LabGrotesque-BoldItalic.eot?#iefix') format('embedded-opentype'),  url('LabGrotesque-BoldItalic.otf')  format('opentype'),
+	     url('LabGrotesque-BoldItalic.woff') format('woff'), url('LabGrotesque-BoldItalic.ttf')  format('truetype'), url('LabGrotesque-BoldItalic.svg#LabGrotesque-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('LabGrotesque-BlackItalic.eot?#iefix') format('embedded-opentype'),  url('LabGrotesque-BlackItalic.otf')  format('opentype'),
+	     url('LabGrotesque-BlackItalic.woff') format('woff'), url('LabGrotesque-BlackItalic.ttf')  format('truetype'), url('LabGrotesque-BlackItalic.svg#LabGrotesque-BlackItalic') format('svg');
+  font-weight: bolder;
+  font-style: italic;
+}
+

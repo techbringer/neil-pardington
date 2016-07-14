@@ -1,6 +1,5 @@
 <header id="header">
-	<div class="container">
-		<a href="/" id="logo" rel="start" class="uppercase grid_1">Base Two</a>
+	<div class="container relative">
 		<% include Navigation %>
 		<% include Social %>
 	</div>

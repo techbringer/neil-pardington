@@ -1,5 +1,6 @@
-<nav id="main_nav" class="grid_9">
+<nav class="nav">
 	<ul>
+		<li><a class="<% if LinkOrCurrent = current || $LinkOrSection = section %>current<% end_if %>" href="/" id="logo" rel="start" class="uppercase">Base Two</a></li>
 		<% loop Menu(1) %>
 			<li>
 				<a href="$Link" class="<% if LinkOrCurrent = current || $LinkOrSection = section %>current<% end_if %>">$MenuTitle.XML</a>

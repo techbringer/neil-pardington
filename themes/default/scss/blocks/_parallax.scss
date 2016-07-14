@@ -1,5 +1,8 @@
 .parallax {
+	position: relative;
+	width: 100%;
 	&.normal {
 		height: 400px;
 	}
+	overflow: hidden;
 }

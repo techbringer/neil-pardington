@@ -32,6 +32,31 @@
 	display: inline-block;
 }
 
+.as-table {
+	display: table;
+	table-layout: fixed;
+	.as-row {
+		display: table-row;
+	}
+	
+	.as-cell {
+		display: table-cell;
+	}
+}
+
+.absolute {
+	position: absolute;
+}
+
 .relative {
 	position: relative;
 }
+
+.icon-centered {
+	@include transform(translate(-50%, -50%));
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: rem(20);
+}
+

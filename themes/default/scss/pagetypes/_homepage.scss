@@ -1,0 +1,28 @@
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	z-index: 9;
+}	
+
+#basetwo {
+	top: rem(220);
+	right: -0.75em;
+	display: block;
+	@include retina-sprite(basetwo, icons, $dimensions: true, $nonRetina: true);
+}
+
+#design {
+	bottom: rem(170);
+	left: -0.75em;
+	display: block;
+	@include retina-sprite(design, icons, $dimensions: true, $nonRetina: true);
+}
+
+#basetwo,
+#design {
+	overflow: hidden;
+	text-indent: -9999px;
+	position: absolute;
+}
