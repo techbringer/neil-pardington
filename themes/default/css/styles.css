@@ -1644,29 +1644,33 @@ textarea {
   font-size: 20px;
   color: #fff;
 }
-/* line 19, ../scss/blocks/_header.scss */
+/* line 17, ../scss/blocks/_header.scss */
+#header .container a:active, #header .container a:link {
+  text-decoration: none;
+}
+/* line 23, ../scss/blocks/_header.scss */
 #header .container .nav {
   font-weight: bold;
   padding-left: 0.9375rem;
   padding-right: 12.625rem;
 }
-/* line 26, ../scss/blocks/_header.scss */
+/* line 30, ../scss/blocks/_header.scss */
 #header .container .nav ul, #header .container .nav li {
   list-style: none;
 }
-/* line 30, ../scss/blocks/_header.scss */
+/* line 34, ../scss/blocks/_header.scss */
 #header .container .nav ul {
   overflow: hidden;
   *zoom: 1;
   padding: 0;
   margin: 0;
 }
-/* line 34, ../scss/blocks/_header.scss */
+/* line 38, ../scss/blocks/_header.scss */
 #header .container .nav ul li {
   float: left;
   margin: 0 0.9375rem;
 }
-/* line 37, ../scss/blocks/_header.scss */
+/* line 41, ../scss/blocks/_header.scss */
 #header .container .nav ul li ul {
   display: none;
   background-color: #ef483d;
@@ -1675,7 +1679,7 @@ textarea {
   left: 0;
   width: 100%;
 }
-/* line 46, ../scss/blocks/_header.scss */
+/* line 50, ../scss/blocks/_header.scss */
 #header .container .nav ul li a {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1687,12 +1691,12 @@ textarea {
   background-color: rgba(255, 255, 255, 0);
   padding: 0 0.625rem;
 }
-/* line 53, ../scss/blocks/_header.scss */
+/* line 57, ../scss/blocks/_header.scss */
 #header .container .nav ul li a:hover, #header .container .nav ul li a.current {
   color: #ef483d;
   background-color: #fff;
 }
-/* line 63, ../scss/blocks/_header.scss */
+/* line 67, ../scss/blocks/_header.scss */
 #header .container .socials {
   overflow: hidden;
   *zoom: 1;
@@ -1700,7 +1704,7 @@ textarea {
   top: 0;
   right: 0;
 }
-/* line 69, ../scss/blocks/_header.scss */
+/* line 73, ../scss/blocks/_header.scss */
 #header .container .socials button,
 #header .container .socials a {
   float: left;
@@ -1710,12 +1714,12 @@ textarea {
   text-indent: -62.4375rem;
   width: 2.75rem;
 }
-/* line 79, ../scss/blocks/_header.scss */
+/* line 83, ../scss/blocks/_header.scss */
 #header .container .socials button {
   width: 70px;
   border: none;
 }
-/* line 84, ../scss/blocks/_header.scss */
+/* line 88, ../scss/blocks/_header.scss */
 #header .container .socials .social {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1724,12 +1728,12 @@ textarea {
   color: #fff;
   background-color: #ef483d;
 }
-/* line 89, ../scss/blocks/_header.scss */
+/* line 93, ../scss/blocks/_header.scss */
 #header .container .socials .social:hover {
   background-color: #fff;
   color: #ef483d;
 }
-/* line 99, ../scss/blocks/_header.scss */
+/* line 103, ../scss/blocks/_header.scss */
 #header .container .socials #btn-search {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1739,7 +1743,7 @@ textarea {
   background-color: #fff;
   color: #ef483d;
 }
-/* line 105, ../scss/blocks/_header.scss */
+/* line 109, ../scss/blocks/_header.scss */
 #header .container .socials #btn-search:hover {
   background-color: #ef483d;
   color: #fff;

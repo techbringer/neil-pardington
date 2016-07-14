@@ -14,6 +14,10 @@
 			@extend .uppercase;
 			font-size: 20px;
 			color: #fff;
+			&:active,
+			&:link {
+				text-decoration: none;
+			}
 		}
 		
 		.nav {
