@@ -1163,7 +1163,7 @@
 }
 
 /* line 51, ../scss/config/_modifiers.scss */
-.relative, #header .container .socials .social, #header .container .socials #btn-search {
+.relative, #header .container .socials .social, #header .container .socials #btn-search, .blog-entry .blog-thumb {
   position: relative;
 }
 
@@ -1630,7 +1630,7 @@ textarea {
   left: 0;
   top: 0;
   z-index: 10;
-  height: 70px;
+  height: 71px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 /* line 9, ../scss/blocks/_header.scss */
@@ -1672,14 +1672,44 @@ textarea {
 }
 /* line 41, ../scss/blocks/_header.scss */
 #header .container .nav ul li ul {
+  padding: 1.625rem 0;
+  font-weight: normal;
   display: none;
   background-color: #ef483d;
   position: absolute;
-  top: 70px;
+  top: 71px;
   left: 0;
   width: 100%;
 }
-/* line 50, ../scss/blocks/_header.scss */
+/* line 42, ../scss/blocks/_header.scss */
+#header .container .nav ul li ul a {
+  text-transform: none;
+}
+/* line 55, ../scss/blocks/_header.scss */
+#header .container .nav ul li ul li {
+  width: 33.33333%;
+  margin: 0;
+  padding: 0 1.875rem;
+}
+/* line 60, ../scss/blocks/_header.scss */
+#header .container .nav ul li ul li ul {
+  font-weight: lighter;
+  position: static;
+  display: block;
+  padding-bottom: 0;
+}
+/* line 65, ../scss/blocks/_header.scss */
+#header .container .nav ul li ul li ul li {
+  width: 100%;
+  float: none;
+  padding: 0;
+  margin-bottom: 1.875rem;
+}
+/* line 70, ../scss/blocks/_header.scss */
+#header .container .nav ul li ul li ul li:last-child {
+  margin-bottom: 0.625rem;
+}
+/* line 79, ../scss/blocks/_header.scss */
 #header .container .nav ul li a {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1691,12 +1721,12 @@ textarea {
   background-color: rgba(255, 255, 255, 0);
   padding: 0 0.625rem;
 }
-/* line 57, ../scss/blocks/_header.scss */
+/* line 87, ../scss/blocks/_header.scss */
 #header .container .nav ul li a:hover, #header .container .nav ul li a.current {
   color: #ef483d;
   background-color: #fff;
 }
-/* line 67, ../scss/blocks/_header.scss */
+/* line 97, ../scss/blocks/_header.scss */
 #header .container .socials {
   overflow: hidden;
   *zoom: 1;
@@ -1704,7 +1734,7 @@ textarea {
   top: 0;
   right: 0;
 }
-/* line 73, ../scss/blocks/_header.scss */
+/* line 103, ../scss/blocks/_header.scss */
 #header .container .socials button,
 #header .container .socials a {
   float: left;
@@ -1714,12 +1744,12 @@ textarea {
   text-indent: -62.4375rem;
   width: 2.75rem;
 }
-/* line 83, ../scss/blocks/_header.scss */
+/* line 113, ../scss/blocks/_header.scss */
 #header .container .socials button {
   width: 70px;
   border: none;
 }
-/* line 88, ../scss/blocks/_header.scss */
+/* line 118, ../scss/blocks/_header.scss */
 #header .container .socials .social {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1728,12 +1758,12 @@ textarea {
   color: #fff;
   background-color: #ef483d;
 }
-/* line 93, ../scss/blocks/_header.scss */
+/* line 123, ../scss/blocks/_header.scss */
 #header .container .socials .social:hover {
   background-color: #fff;
   color: #ef483d;
 }
-/* line 103, ../scss/blocks/_header.scss */
+/* line 133, ../scss/blocks/_header.scss */
 #header .container .socials #btn-search {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1743,7 +1773,7 @@ textarea {
   background-color: #fff;
   color: #ef483d;
 }
-/* line 109, ../scss/blocks/_header.scss */
+/* line 139, ../scss/blocks/_header.scss */
 #header .container .socials #btn-search:hover {
   background-color: #ef483d;
   color: #fff;
@@ -1751,7 +1781,7 @@ textarea {
 
 /* line 1, ../scss/blocks/_footer.scss */
 #footer {
-  height: 3.25rem;
+  height: 52px;
   padding: 0.9375rem 0;
   background-color: #ef483d;
   color: #fff;
@@ -1760,6 +1790,68 @@ textarea {
 /* line 7, ../scss/blocks/_footer.scss */
 #footer a {
   color: #fff;
+}
+
+/* line 1, ../scss/blocks/_blogentry.scss */
+.blog-entry {
+  width: calc(50% - 30px);
+  margin: 0 0.9375rem 1.25rem;
+  float: left;
+}
+/* line 5, ../scss/blocks/_blogentry.scss */
+.blog-entry .blog-thumb {
+  margin-bottom: 0.3125rem;
+}
+/* line 9, ../scss/blocks/_blogentry.scss */
+.blog-entry .blog-thumb img {
+  display: block;
+  line-height: 0;
+  font-size: 0;
+}
+/* line 15, ../scss/blocks/_blogentry.scss */
+.blog-entry .blog-thumb:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+/* line 32, ../scss/blocks/_blogentry.scss */
+.blog-entry .blog-thumb .blog-entry-title {
+  font-weight: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 1.875rem;
+  margin: 0;
+  padding: 1.875rem;
+}
+/* line 46, ../scss/blocks/_blogentry.scss */
+.blog-entry .blog-entry-misc div {
+  color: #1a1a1a;
+  width: 100%;
+  font-size: 1.25rem;
+}
+/* line 52, ../scss/blocks/_blogentry.scss */
+.blog-entry .blog-entry-misc .blog-entry-tags {
+  font-weight: bold;
+  max-width: 20rem;
+}
+/* line 57, ../scss/blocks/_blogentry.scss */
+.blog-entry .blog-entry-misc .blog-entry-date {
+  text-align: right;
+  max-width: 10.3125rem;
 }
 
 /**
@@ -1796,9 +1888,10 @@ body {
   -moz-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern=1";
   text-rendering: optimizeLegibility;
+  color: #1a1a1a;
 }
 
-/* line 23, ../scss/_typography.scss */
+/* line 24, ../scss/_typography.scss */
 body,
 p,
 span,
@@ -1807,7 +1900,7 @@ li {
   font-family: 'BaseTwo', Helvetica, Arial, sans-serif;
 }
 
-/* line 31, ../scss/_typography.scss */
+/* line 32, ../scss/_typography.scss */
 body,
 p,
 td,
@@ -1815,29 +1908,29 @@ li {
   font-size: 16px;
 }
 
-/* line 38, ../scss/_typography.scss */
+/* line 39, ../scss/_typography.scss */
 h1 {
   font-size: 4.5rem;
   line-height: 1em;
   margin: 0;
 }
 
-/* line 44, ../scss/_typography.scss */
+/* line 45, ../scss/_typography.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 50, ../scss/_typography.scss */
+/* line 51, ../scss/_typography.scss */
 a:link, a:visited {
   border-bottom: none;
   text-decoration: none;
 }
-/* line 56, ../scss/_typography.scss */
+/* line 57, ../scss/_typography.scss */
 a:hover {
   text-decoration: none;
 }
-/* line 60, ../scss/_typography.scss */
+/* line 61, ../scss/_typography.scss */
 a:active {
   border-bottom: none;
   text-decoration: underline;
@@ -1846,7 +1939,7 @@ a:active {
 /**
  * Style classes
  * */
-/* line 69, ../scss/_typography.scss */
+/* line 70, ../scss/_typography.scss */
 .hide_text {
   text-indent: -119988px;
   overflow: hidden;
@@ -1854,23 +1947,23 @@ a:active {
   text-transform: capitalize;
 }
 
-/* line 73, ../scss/_typography.scss */
+/* line 74, ../scss/_typography.scss */
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 77, ../scss/_typography.scss */
+/* line 78, ../scss/_typography.scss */
 .uppercase, #header .container a {
   text-transform: uppercase;
 }
 
-/* line 81, ../scss/_typography.scss */
+/* line 82, ../scss/_typography.scss */
 .text-centered {
   text-align: center;
 }
 
-/* line 92, ../scss/_typography.scss */
+/* line 93, ../scss/_typography.scss */
 .ellipsis {
   white-space: nowrap;
   overflow: hidden;
@@ -1892,6 +1985,10 @@ body.page-home #footer {
   z-index: 9;
 }
 /* line 9, ../scss/pagetypes/_homepage.scss */
+body.page-home #main {
+  padding-top: 0;
+}
+/* line 13, ../scss/pagetypes/_homepage.scss */
 body.page-home #basetwo {
   top: 13.75rem;
   right: -0.75em;
@@ -1906,7 +2003,7 @@ body.page-home #basetwo {
   height: 118px;
   width: 617px;
 }
-/* line 16, ../scss/pagetypes/_homepage.scss */
+/* line 20, ../scss/pagetypes/_homepage.scss */
 body.page-home #design {
   bottom: 10.625rem;
   left: -0.75em;
@@ -1921,12 +2018,69 @@ body.page-home #design {
   height: 151px;
   width: 460px;
 }
-/* line 23, ../scss/pagetypes/_homepage.scss */
+/* line 27, ../scss/pagetypes/_homepage.scss */
 body.page-home #basetwo,
 body.page-home #design {
   overflow: hidden;
   text-indent: -9999px;
   position: absolute;
+}
+/* line 34, ../scss/pagetypes/_homepage.scss */
+body.page-home #btn-read-on {
+  bottom: 4.5rem;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: fixed;
+  z-index: 10;
+  text-indent: 0;
+  color: rgba(255, 255, 255, 0.6);
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+/* line 43, ../scss/pagetypes/_homepage.scss */
+body.page-home #btn-read-on:hover {
+  color: white;
+}
+/* line 49, ../scss/pagetypes/_homepage.scss */
+body.page-home #btn-read-on:before {
+  font-size: 3.125rem;
+  font-weight: lighter;
+}
+
+/* line 1, ../scss/pagetypes/_blogpage.scss */
+body.page-type-blogs-page #header {
+  border-color: #ef483d;
+}
+/* line 3, ../scss/pagetypes/_blogpage.scss */
+body.page-type-blogs-page #header #btn-search {
+  border-right: 1px solid #ef483d;
+}
+/* line 8, ../scss/pagetypes/_blogpage.scss */
+body.page-type-blogs-page .container .row {
+  padding: 0 0.9375rem;
+}
+
+/* line 71, ../scss/styles.scss */
+#content-area {
+  padding: 2.5rem 1.875rem;
+}
+
+/* line 75, ../scss/styles.scss */
+#page-title {
+  color: #ef483d;
+  font-size: 1.875rem;
+}
+
+/* line 80, ../scss/styles.scss */
+#main {
+  padding-top: 71px;
+  padding-bottom: calc(52px * 2);
 }
 
 /*# sourceMappingURL=styles.css.map */

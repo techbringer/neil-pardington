@@ -49,6 +49,7 @@ class Page_Controller extends ContentController {
 				'themes/default/js/components/salted-js/dist/salted-js.min.js',
 				'themes/default/js/components/isotope/dist/isotope.pkgd.min.js',
 				'themes/default/js/components/gsap/src/minified/TweenMax.min.js',
+				'themes/default/js/components/salted-js/dist/minified/salted-js.min.js',
 	
 				'themes/default/js/custom.scripts.js'
 			));

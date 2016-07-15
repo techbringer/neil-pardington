@@ -39,7 +39,8 @@
  * */
 @import 'blocks/parallax',
 		'blocks/header',
-		'blocks/footer';
+		'blocks/footer',
+		'blocks/blogentry';
 
 /**
  * Elements.
@@ -52,6 +53,7 @@
 @import 'typography';
 
 
+
 /**
  * Pages.
  * */
@@ -59,3 +61,43 @@
 body.page-home {
 	@import 'pagetypes/homepage';
 }
+
+body.page-type-blogs-page {
+	@import 'pagetypes/blogpage';
+}
+
+
+
+#content-area {
+	padding: rem(40) rem(30); 
+}
+
+#page-title {
+	color: $b2-red;
+	font-size: rem(30);
+}
+
+#main {
+	padding-top: $header-outter-height;
+	padding-bottom: calc(#{$footer-height} * 2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

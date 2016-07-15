@@ -1,4 +1,5 @@
 <?php use SaltedHerring\Utilities as Utilities;
+use SaltedHerring\Debugger as Debugger;
 
 class BlogEntry extends DataObject {
 	protected static $db = array(
@@ -48,6 +49,12 @@ class BlogEntry extends DataObject {
 		parent::onBeforeWrite();
 		$slag = Utilities::sanitiseClassName($this->Title);
 		$this->Slag = Utilities::SlagGen('BlogEntry', $slag, $this->ID);
+	}
+	
+	public function getDateCreated() {
+		$date = $this->Created;
+		$date = new DateTime($date);
+		return $date->format('M d, Y');
 	}
 	
 }

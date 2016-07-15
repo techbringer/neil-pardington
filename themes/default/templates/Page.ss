@@ -24,11 +24,13 @@
 					<% include Parallax %>
 				<% end_if %>
 			<% if $HeaderImage && $Content %></div><% end_if %>
-			<div class="container">
+			<% if $Form || $Content || not $HideTitle %>
+			<div id="content-area" class="container">
 				<h1 id="page-title" class="<% if $HideTitle %>hide<% end_if %>">$Title</h1>
 				$Form
 				$Content
 			</div>
+			<% end_if %>
 			$Layout			
 		</main>
 		

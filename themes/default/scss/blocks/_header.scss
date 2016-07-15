@@ -39,13 +39,42 @@
 					float: left;
 					margin: 0 rem(15);
 					ul {
+						a {
+							text-transform: none;
+						}
+						
+						padding: rem(26) 0;
+						font-weight: normal;
 						display: none;
 						background-color: $b2-red;
 						position: absolute;
 						top: $header-outter-height;
 						left: 0;
 						width: 100%;
+						
+						li {
+							width: 33.33333%;
+							margin: 0;
+							padding: 0 rem(30);
+							
+							ul {
+								font-weight: lighter;
+								position: static;
+								display: block;
+								padding-bottom: 0;
+								li {
+									width: 100%;
+									float: none;
+									padding: 0;
+									margin-bottom: rem(30);
+									&:last-child {
+										margin-bottom: rem(10);
+									}
+								}
+							}
+						}
 					}
+					
 					
 					a {
 						@include transition(all ease-in-out 0.3s);
@@ -54,6 +83,7 @@
 						display: block;
 						background-color: rgba(255,255,255,0);
 						padding: 0 rem(10);
+						
 						&:hover,
 						&.current {
 							color: $b2-red;

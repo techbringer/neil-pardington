@@ -6,6 +6,10 @@
 	z-index: 9;
 }	
 
+#main {
+	padding-top: 0;
+}
+
 #basetwo {
 	top: rem(220);
 	right: -0.75em;
@@ -25,4 +29,25 @@
 	overflow: hidden;
 	text-indent: -9999px;
 	position: absolute;
+}
+
+#btn-read-on {
+	bottom: rem(72);
+	left: 50%;
+	@include transform(translateX(-50%));
+	position: fixed;
+	z-index: 10;
+	text-indent: 0;
+	color: rgba(255,255,255,0.6);
+	@include transition(all ease-in-out 0.3s);
+	&:hover {
+		color: rgba(255,255,255,1);
+	}
+	
+	text-decoration: none;
+	
+	&:before {
+		font-size: rem(50);
+		font-weight: lighter;
+	}
 }
