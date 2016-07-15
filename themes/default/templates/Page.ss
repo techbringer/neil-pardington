@@ -26,10 +26,16 @@
 			<% if $HeaderImage && $Content %></div><% end_if %>
 			<% if $Form || $Content || not $HideTitle %>
 			<div id="content-area" class="container">
-				<h1 id="page-title" class="<% if $HideTitle %>hide<% end_if %>">$Title</h1>
+				<h1 id="page-title" class="title<% if $HideTitle %> hide<% end_if %>">$Title<% if $SubTitle %> <span class="sub-title as-block">$SubTitle</span><% end_if %></h1>
+				<div class="content">
+					$Content
+				</div>
 				$Form
-				$Content
 			</div>
+			<% else %>
+				<% if $BodyClass.LowerCase == 'category-page' || $BodyClass.LowerCase == 'works-page' %>
+					<h1 id="page-title" class="title<% if $HideTitle %> hide<% end_if %>">$Title<% if $SubTitle %> <span class="sub-title as-block">$SubTitle</span><% end_if %></h1>
+				<% end_if %>
 			<% end_if %>
 			$Layout			
 		</main>

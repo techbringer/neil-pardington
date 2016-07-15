@@ -1,3 +1,12 @@
+#main {
+	padding-top: $header-outter-height;
+}
+
+#page-title {
+	padding-left: rem(15);
+	padding-right: rem(15);
+}
+
 #header {
 	border-color: $b2-red;
 	#btn-search {

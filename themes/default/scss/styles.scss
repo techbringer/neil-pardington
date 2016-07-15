@@ -40,6 +40,7 @@
 @import 'blocks/parallax',
 		'blocks/header',
 		'blocks/footer',
+		'blocks/work',
 		'blocks/blogentry';
 
 /**
@@ -69,16 +70,18 @@ body.page-type-blogs-page {
 
 
 #content-area {
-	padding: rem(40) rem(30); 
+	padding: rem(40) rem(15); 
 }
 
 #page-title {
 	color: $b2-red;
-	font-size: rem(30);
+	font-size: rem(32);
+	.sub-title {
+		color: #000;
+	}
 }
 
 #main {
-	padding-top: $header-outter-height;
 	padding-bottom: calc(#{$footer-height} * 2);
 }
 

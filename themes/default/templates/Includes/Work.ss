@@ -1,11 +1,10 @@
 <section class="work">
 	<% include Parallax %>
 	<div class="container">
-		<div class="grid_5">
-			<p><strong>$Category</strong></p>
-			<header class="work-title"><h2>$Title</h2></header>
+		<div class="work-title">
+			<header class="work-title"><p><strong>$Category</strong></p><h2>$Title</h2></header>
 		</div>
-		<div class="grid_7">
+		<div class="work-content">
 			$Content
 		</div>
 	</div>

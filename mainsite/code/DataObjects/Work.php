@@ -59,6 +59,7 @@ class Work extends DataObject {
 	
 	public function onBeforeWrite() {
 		parent::onBeforeWrite();
+		$this->OnPageID = WorksPage::get()->first()->ID;
 		$slag = Utilities::sanitiseClassName($this->Title);
 		$this->Slag = Utilities::SlagGen('Work', $slag, $this->ID);
 	}

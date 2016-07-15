@@ -31,9 +31,12 @@ class WorksPage extends Page {
 		
 		return $fields;
 	}
+	
 }
 
 
 class WorksPage_Controller extends Page_Controller {
-	
+	public function allWorks() {
+		return $this->Works()->sort(array('SortOrder' => 'ASC', 'ID' => 'DESC'));
+	}
 }

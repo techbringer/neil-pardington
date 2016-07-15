@@ -46,17 +46,54 @@ class CategoryPage_Controller extends Page_Controller {
 	);
 	
 	public function index($request) {
+		$categories = $this->SubCategories();//->filter(array('slag' => $slag))->first()->Works();
+		$works = new ArrayList();
 		
-		return $this->renderWith(array('Page'));
+		foreach ($categories as $category) {
+			$works->merge($category->Works());
+		}
+		
+		if ($works->count() == 0) {
+			$err = HomePage::get()->first();
+			return $this->customise(array(
+					'HeaderImage'		=>	$err->HeaderImage(),
+					'ViewportHeight'	=>	'normal',
+					'HideTitle'			=>	false,
+					'Content'			=>	'<h2>Found no work</h2><p>Load some?</p>'
+				))->renderWith(array('Page'));
+		}
+		
+		return $this->customise(array(
+					'Title'		=>	$this->Title,
+					'Works'		=>	$works->sort(array('SortOrder' => 'ASC', 'ID' => 'DESC'))
+				))->renderWith(array('WorkList', 'Page'));
 	}
 	
 	public function getworks($request) {
 		$slag = $request->param('slag');
-		$works = $this->SubCategories()->filter(array('slag' => $slag))->first()->Works();
-		
+		$obj = $this->SubCategories()->filter(array('slag' => $slag))->first();
+		$subtitle = $obj->Title;
+		$works = $obj->Works();
+		if ($works->count() == 0) {
+			$err = HomePage::get()->first();
+			return $this->customise(array(
+					'HeaderImage'		=>	$err->HeaderImage(),
+					'SubTitle'			=>	$subtitle,
+					'ViewportHeight'	=>	'normal',
+					'HideTitle'			=>	false,
+					'Content'			=>	'<h2>Found no work</h2><p>Load some?</p>'
+				))->renderWith(array('Page'));
+		}
 		return $this->customise(array(
-					'Works'		=>	$works
+					'Title'		=>	$this->Title,
+					'Works'		=>	$works->sort(array('SortOrder' => 'ASC', 'ID' => 'DESC'))
 				))->renderWith(array('WorkList', 'Page'));
+	}
+	
+	public function isActive() {
+		$request = Controller::curr()->request;
+		$slag = $request->param('slag');
+		return $slag;
 	}
 	
 }

@@ -12,7 +12,7 @@
 							<% if $ClassName.LowerCase == 'categorypage' %>
 							<ul class="children level-3">
 							<% loop $SubCategories %>
-								<li><a href="{$Up.Link}{$Slag}" class="">$Title</a></li>
+								<li><a href="{$Up.Link}{$Slag}" class="<% if $Top.isActive == $Slag %>active<% end_if %>">$Title</a></li>
 							<% end_loop %>
 							</ul>
 							<% end_if %>

@@ -1,0 +1,28 @@
+.work {
+	.container {
+		padding-top: rem(40);
+		padding-bottom: rem(40);
+		.work-title {
+			@extend .title;
+			h2, p {
+				line-height: 1.2;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			
+			h2 {
+				font-size: rem(32);
+			}
+			
+			p {
+				color: #000;
+				font-size: rem(32);
+			}
+		}
+		
+		.work-content {
+			@extend .content;
+			
+		}
+	}
+}
