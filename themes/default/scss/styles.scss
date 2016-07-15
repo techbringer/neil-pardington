@@ -67,7 +67,9 @@ body.page-type-blogs-page {
 	@import 'pagetypes/blogpage';
 }
 
-
+body.single-blog-entry-page {
+	@import 'pagetypes/single_blog_entry';
+}
 
 #content-area {
 	padding: rem(40) rem(15); 

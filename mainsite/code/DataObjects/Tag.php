@@ -1,8 +1,9 @@
-<?php
+<?php use SaltedHerring\Utilities as Utilities;
 
 class Tag extends DataObject {
 	protected static $db = array(
 		'Title'			=>	'Varchar(1024)',
+		'Slag'			=>	'Varchar(1024)',
 		'Content'		=>	'HTMLText'
 	);
 	
@@ -16,6 +17,12 @@ class Tag extends DataObject {
 		
 		
 		return $fields;
+	}
+	
+	public function onBeforeWrite() {
+		parent::onBeforeWrite();
+		$slag = Utilities::sanitiseClassName($this->Title);
+		$this->Slag = Utilities::SlagGen('Tag', $slag, $this->ID);
 	}
 	
 }

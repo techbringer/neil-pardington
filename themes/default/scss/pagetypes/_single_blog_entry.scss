@@ -1,0 +1,40 @@
+#header .container .socials #btn-search,
+#header {
+	border-right-color: rgba(255,255,255,0.6);
+	border-bottom-color: rgba(255,255,255,0.6);
+}
+
+#main {
+	padding-top: 0;
+}
+
+#content-area {
+	.title {
+		.sub-title {
+			color: #000;
+		}
+		
+		h1 {
+			margin: rem(5) 0;
+		}
+		
+		.blog-created,
+		.blog-tags {
+			font-size: rem(20);
+			color: #1A1A1A;
+			font-weight: normal;
+			a {
+				color: #1A1A1A;
+				@include transition(all ease-in-out 0.3s);
+				&:hover {
+					color: rgba(26,26,26,0.8);
+				}
+			}
+		}
+				
+		.blog-created {
+			font-weight: 100;
+			color: rgb(126,126,126);
+		}
+	}
+}

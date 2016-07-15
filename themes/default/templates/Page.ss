@@ -15,7 +15,7 @@
 		
 		<% include GA %>
 	</head>
-	<body class="page-$URLSegment<% if $isMobile %> mobile<% end_if %> page-type-$BodyClass.LowerCase">
+	<body class="page-$URLSegment<% if $isMobile %> mobile<% end_if %> page-type-$BodyClass.LowerCase<% if $isBlogEntry %> single-blog-entry-page<% end_if %>">
 		<% include Header %>
 		
 		<main id="main">
@@ -26,7 +26,20 @@
 			<% if $HeaderImage && $Content %></div><% end_if %>
 			<% if $Form || $Content || not $HideTitle %>
 			<div id="content-area" class="container">
-				<h1 id="page-title" class="title<% if $HideTitle %> hide<% end_if %>">$Title<% if $SubTitle %> <span class="sub-title as-block">$SubTitle</span><% end_if %></h1>
+				<% if $isBlogEntry %>
+					<div class="title">
+						<span class="row as-block sub-title">Blog</span>
+						<h1 id="page-title">$Title</h1>
+						<div class="row blog-tags">
+							<% loop $Tags %>
+								<a href="/tags/{$Slag}">$Title</a> <% if not Last %>| <% end_if %>
+							<% end_loop %>
+						</div>
+						<div class="row blog-created">$DateCreated</div>
+					</div>
+				<% else %>
+					<h1 id="page-title" class="title<% if $HideTitle %> hide<% end_if %>">$Title<% if $SubTitle %> <span class="sub-title as-block">$SubTitle</span><% end_if %></h1>
+				<% end_if %>
 				<div class="content">
 					$Content
 				</div>

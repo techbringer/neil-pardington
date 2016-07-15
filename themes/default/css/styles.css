@@ -1880,16 +1880,31 @@ textarea {
 }
 /* line 5, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-thumb {
+  overflow: hidden;
   margin-bottom: 0.3125rem;
 }
-/* line 9, ../scss/blocks/_blogentry.scss */
+/* line 10, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-thumb img {
+  position: relative;
+  z-index: -1;
   display: block;
   line-height: 0;
   font-size: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-/* line 15, ../scss/blocks/_blogentry.scss */
+/* line 20, ../scss/blocks/_blogentry.scss */
+.blog-entry .blog-thumb:hover img {
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 25, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-thumb:before {
+  z-index: 1;
   content: '';
   width: 100%;
   height: 100%;
@@ -1905,8 +1920,9 @@ textarea {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
 }
-/* line 32, ../scss/blocks/_blogentry.scss */
+/* line 43, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-thumb .blog-entry-title {
+  z-index: 2;
   font-weight: normal;
   position: absolute;
   top: 0;
@@ -1917,18 +1933,18 @@ textarea {
   margin: 0;
   padding: 1.875rem;
 }
-/* line 46, ../scss/blocks/_blogentry.scss */
+/* line 58, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-entry-misc div {
   color: #1a1a1a;
   width: 100%;
   font-size: 1.25rem;
 }
-/* line 52, ../scss/blocks/_blogentry.scss */
+/* line 64, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-entry-misc .blog-entry-tags {
   font-weight: bold;
   max-width: 20rem;
 }
-/* line 57, ../scss/blocks/_blogentry.scss */
+/* line 69, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-entry-misc .blog-entry-date {
   text-align: right;
   max-width: 10.3125rem;
@@ -2135,38 +2151,91 @@ body.page-type-blogs-page #main {
 }
 /* line 5, ../scss/pagetypes/_blogpage.scss */
 body.page-type-blogs-page #page-title {
+  margin-left: 0;
+  margin-right: 0;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }
-/* line 10, ../scss/pagetypes/_blogpage.scss */
+/* line 12, ../scss/pagetypes/_blogpage.scss */
 body.page-type-blogs-page #header {
   border-color: #ef483d;
 }
-/* line 12, ../scss/pagetypes/_blogpage.scss */
+/* line 14, ../scss/pagetypes/_blogpage.scss */
 body.page-type-blogs-page #header #btn-search {
   border-right: 1px solid #ef483d;
 }
-/* line 17, ../scss/pagetypes/_blogpage.scss */
+/* line 19, ../scss/pagetypes/_blogpage.scss */
 body.page-type-blogs-page .container .row {
   padding: 0 0.9375rem;
 }
 
-/* line 72, ../scss/styles.scss */
+/* line 1, ../scss/pagetypes/_single_blog_entry.scss */
+body.single-blog-entry-page #header .container .socials #btn-search,
+body.single-blog-entry-page #header {
+  border-right-color: rgba(255, 255, 255, 0.6);
+  border-bottom-color: rgba(255, 255, 255, 0.6);
+}
+/* line 7, ../scss/pagetypes/_single_blog_entry.scss */
+body.single-blog-entry-page #main {
+  padding-top: 0;
+}
+/* line 13, ../scss/pagetypes/_single_blog_entry.scss */
+body.single-blog-entry-page #content-area .title .sub-title, body.single-blog-entry-page #content-area .work .container .work-title .sub-title, .work .container body.single-blog-entry-page #content-area .work-title .sub-title {
+  color: #000;
+}
+/* line 17, ../scss/pagetypes/_single_blog_entry.scss */
+body.single-blog-entry-page #content-area .title h1, body.single-blog-entry-page #content-area .work .container .work-title h1, .work .container body.single-blog-entry-page #content-area .work-title h1 {
+  margin: 0.3125rem 0;
+}
+/* line 21, ../scss/pagetypes/_single_blog_entry.scss */
+body.single-blog-entry-page #content-area .title .blog-created, body.single-blog-entry-page #content-area .work .container .work-title .blog-created, .work .container body.single-blog-entry-page #content-area .work-title .blog-created,
+body.single-blog-entry-page #content-area .title .blog-tags,
+body.single-blog-entry-page #content-area .work .container .work-title .blog-tags,
+.work .container body.single-blog-entry-page #content-area .work-title .blog-tags {
+  font-size: 1.25rem;
+  color: #1A1A1A;
+  font-weight: normal;
+}
+/* line 26, ../scss/pagetypes/_single_blog_entry.scss */
+body.single-blog-entry-page #content-area .title .blog-created a, body.single-blog-entry-page #content-area .work .container .work-title .blog-created a, .work .container body.single-blog-entry-page #content-area .work-title .blog-created a,
+body.single-blog-entry-page #content-area .title .blog-tags a,
+body.single-blog-entry-page #content-area .work .container .work-title .blog-tags a,
+.work .container body.single-blog-entry-page #content-area .work-title .blog-tags a {
+  color: #1A1A1A;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 29, ../scss/pagetypes/_single_blog_entry.scss */
+body.single-blog-entry-page #content-area .title .blog-created a:hover, body.single-blog-entry-page #content-area .work .container .work-title .blog-created a:hover, .work .container body.single-blog-entry-page #content-area .work-title .blog-created a:hover,
+body.single-blog-entry-page #content-area .title .blog-tags a:hover,
+body.single-blog-entry-page #content-area .work .container .work-title .blog-tags a:hover,
+.work .container body.single-blog-entry-page #content-area .work-title .blog-tags a:hover {
+  color: rgba(26, 26, 26, 0.8);
+}
+/* line 35, ../scss/pagetypes/_single_blog_entry.scss */
+body.single-blog-entry-page #content-area .title .blog-created, body.single-blog-entry-page #content-area .work .container .work-title .blog-created, .work .container body.single-blog-entry-page #content-area .work-title .blog-created {
+  font-weight: 100;
+  color: #7e7e7e;
+}
+
+/* line 74, ../scss/styles.scss */
 #content-area {
   padding: 2.5rem 0.9375rem;
 }
 
-/* line 76, ../scss/styles.scss */
+/* line 78, ../scss/styles.scss */
 #page-title {
   color: #ef483d;
   font-size: 2rem;
 }
-/* line 79, ../scss/styles.scss */
+/* line 81, ../scss/styles.scss */
 #page-title .sub-title {
   color: #000;
 }
 
-/* line 84, ../scss/styles.scss */
+/* line 86, ../scss/styles.scss */
 #main {
   padding-bottom: calc(52px * 2);
 }

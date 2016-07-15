@@ -3,16 +3,27 @@
 	margin: 0 rem(15) rem(20);
 	float: left;
 	.blog-thumb {
+		overflow: hidden;
 		@extend .relative;
 		margin-bottom: rem(5);
 		
 		img {
+			position: relative;
+			z-index: -1;
 			display: block;
 			line-height: 0;
 			font-size: 0;
+			@include transition(all ease-in-out 0.3s);
+		}
+		
+		&:hover {
+			img {
+				@include transform(scale(1.1));
+			}
 		}
 		
 		&:before {
+			z-index: 1;
 			content: '';
 			width: 100%;
 			height: 100%;
@@ -30,6 +41,7 @@
 		}
 		
 		.blog-entry-title {
+			z-index: 2;
 			font-weight: normal;
 			position: absolute;
 			top: 0;
