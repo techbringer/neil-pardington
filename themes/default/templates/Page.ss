@@ -38,12 +38,22 @@
 						<div class="row blog-created">$DateCreated</div>
 					</div>
 				<% else %>
-					<h1 id="page-title" class="title<% if $HideTitle %> hide<% end_if %>">$Title<% if $SubTitle %> <span class="sub-title as-block">$SubTitle</span><% end_if %></h1>
+					<% if $BodyClass.LowerCase == 'contact-page' %>
+						<div class="title">
+							<h1 id="page-title">$Title<% if $SubTitle %> <span class="sub-title as-block">$SubTitle</span><% end_if %></h1>
+							<div class="address">$Address</div>
+						</div>
+					<% else %>
+						<h1 id="page-title" class="title<% if $HideTitle %> hide<% end_if %>">$Title<% if $SubTitle %> <span class="sub-title as-block">$SubTitle</span><% end_if %></h1>						
+					<% end_if %>
 				<% end_if %>
 				<div class="content">
 					$Content
+					$Form
+					<% if $Form %>
+						<script src='https://www.google.com/recaptcha/api.js'></script>
+					<% end_if %>
 				</div>
-				$Form
 			</div>
 			<% else %>
 				<% if $BodyClass.LowerCase == 'category-page' || $BodyClass.LowerCase == 'works-page' %>

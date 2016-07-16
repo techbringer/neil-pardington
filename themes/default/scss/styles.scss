@@ -71,6 +71,10 @@ body.single-blog-entry-page {
 	@import 'pagetypes/single_blog_entry';
 }
 
+body.page-type-contact-page {
+	@import 'pagetypes/contactpage';
+}
+
 #content-area {
 	padding: rem(40) rem(15); 
 }

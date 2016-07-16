@@ -50,6 +50,7 @@ img {
 a {
     &:link,
     &:visited {
+		color: $b2-red;
         border-bottom: none;
         text-decoration: none;
     }
