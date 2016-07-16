@@ -1230,12 +1230,17 @@
 }
 
 /* line 110, ../scss/config/_modifiers.scss */
+.padding-left-15 {
+  padding-left: 0.9375rem;
+}
+
+/* line 114, ../scss/config/_modifiers.scss */
 .padding-15 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }
 
-/* line 115, ../scss/config/_modifiers.scss */
+/* line 119, ../scss/config/_modifiers.scss */
 .padding-30 {
   padding-left: 1.875rem;
   padding-right: 1.875rem;
@@ -2341,14 +2346,20 @@ body.page-type-contact-page .guide-gmap header h2 {
 }
 /* line 119, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .guide-gmap .title, body.page-type-contact-page .guide-gmap .work .container .work-title, .work .container body.page-type-contact-page .guide-gmap .work-title {
+  margin-left: 1.875rem;
   font-weight: normal;
   color: #000;
 }
-/* line 122, ../scss/pagetypes/_contactpage.scss */
+/* line 123, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .guide-gmap .title p, body.page-type-contact-page .guide-gmap .work .container .work-title p, .work .container body.page-type-contact-page .guide-gmap .work-title p {
   margin-top: 0;
 }
 /* line 128, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .work .container .work-content, .work .container body.page-type-contact-page .guide-gmap .work-content {
+  margin-left: 0.9375rem;
+  margin-right: 0;
+}
+/* line 131, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .guide-gmap .content iframe, body.page-type-contact-page .guide-gmap .work .container .work-content iframe, .work .container body.page-type-contact-page .guide-gmap .work-content iframe {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: block;

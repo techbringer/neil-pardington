@@ -116,7 +116,8 @@
 		}
 	}
 	
-	.title {		
+	.title {
+		margin-left: rem(30);
 		font-weight: normal;
 		color: #000;
 		p {
@@ -125,6 +126,8 @@
 	}
 	
 	.content {
+		margin-left: rem(15);
+		margin-right: 0;
 		iframe {
 			box-shadow: 0 0 10px rgba(0,0,0,0.2);
 			display: block;
