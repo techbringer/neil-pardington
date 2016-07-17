@@ -84,4 +84,58 @@ jQuery(document).ready(function($) {
 		}
     });
 	
+	/**
+     * Search input effect
+     * ----------------
+     * ...
+     * */
+	var label				=	$('#GeneralSearchForm_GeneralSearchForm label'),
+		input				=	$('#GeneralSearchForm_GeneralSearchForm_Search').css('opacity', 0),
+		scrollTop			=	0;
+		
+    input.focus(function(e) {
+		TweenMax.to(input, 0, {opacity: 0, onComplete: function() {
+			TweenMax.to(input, 0.2, {opacity: 1, delay: 0.15});
+		}});
+		TweenMax.to(label, 0.2, {scale: 10, opacity: 0, onComplete:function(){ label.hide(); }});
+	}).blur(function(e) {
+		TweenMax.to(input, 0.1, {opacity: 0, onComplete: function(){
+			//input.val('');
+		}});
+        TweenMax.to(label.css('display', 'block'), 0.2, {scale: 1, opacity: 1});
+    });
+	
+	$('#btn-search').click(function(e) {
+        e.preventDefault();
+		scrollTop = $(window).scrollTop();
+		$('html').addClass('locked');
+		$(window).resize();
+		TweenMax.to($('#search-wrapper').show(), 0, {opacity: 0, onComplete: function() {
+			TweenMax.to($('#search-wrapper'), 0.3, {opacity: 1});
+			$(window).keydown(function(e) {
+                if (e.keyCode == 27) {
+					$('#btn-close').click();
+				} else {
+					if (e.keyCode != 17 && e.keyCode != 18 && e.keyCode != 13) {
+						if (!input.is(':focus')) {
+							input.val('');
+							input.focus();
+						}
+					}
+				}
+            });
+		}});
+    });
+	
+	$('#btn-close').click(function(e) {
+        e.preventDefault();
+		$('html').removeClass('locked');
+		$(window).resize().scrollTop(scrollTop).unbind('keydown');
+		TweenMax.to($('#search-wrapper'), 0.3, {opacity: 0, onComplete: function() {
+			$('#search-wrapper').hide();
+			//input.val('');
+		}});
+    });
+	
+	
 });

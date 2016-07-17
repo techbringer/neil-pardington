@@ -41,7 +41,8 @@
 		'blocks/header',
 		'blocks/footer',
 		'blocks/work',
-		'blocks/blogentry';
+		'blocks/blogentry',
+		'blocks/searchform';
 
 /**
  * Elements.
@@ -53,6 +54,11 @@
 
 @import 'typography';
 
+html.locked,
+html.locked body {
+	height: 100%;
+	overflow: hidden;
+}
 
 
 /**
@@ -63,8 +69,14 @@ body.page-home {
 	@import 'pagetypes/homepage';
 }
 
+body.page-Security,
+body.page-SearchResultController,
 body.page-type-blogs-page {
 	@import 'pagetypes/blogpage';
+}
+
+body.page-SearchResultController {
+	@import 'pagetypes/search_result';
 }
 
 body.single-blog-entry-page {

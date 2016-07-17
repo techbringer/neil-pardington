@@ -1,4 +1,4 @@
-<section class="work">
+<section id="work-{$Slag}" class="work">
 	<% include Parallax %>
 	<div class="container">
 		<div class="work-title">

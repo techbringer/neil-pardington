@@ -32,7 +32,7 @@
 						<h1 id="page-title">$Title</h1>
 						<div class="row blog-tags">
 							<% loop $Tags %>
-								<a href="/tags/{$Slag}">$Title</a> <% if not Last %>| <% end_if %>
+								<a href="/search/GeneralSearchForm?tag={$Slag}&SecurityID={$SecurityID}">$Title</a> <% if not Last %>| <% end_if %>
 							<% end_loop %>
 						</div>
 						<div class="row blog-created">$DateCreated</div>

@@ -8,6 +8,15 @@ class BlogEntry extends DataObject {
 		'Content'		=>	'HTMLText'
 	);
 	
+	private static $create_table_options = array(
+		'MySQLDatabase'		=> 'ENGINE=MyISAM'
+    );
+	
+	private static $searchable_fields = array(
+		'Title',
+		'Content'
+	);
+	
 	protected static $has_one = array(
 		'onPage'		=>	'Page'
 	);
@@ -17,7 +26,8 @@ class BlogEntry extends DataObject {
     );
 	
 	protected static $extensions = array(
-		'HeaderImageExtension'
+		'HeaderImageExtension',
+		'SearchableExtension'
 	);
 	
 	public function getCMSFields() {
@@ -50,11 +60,4 @@ class BlogEntry extends DataObject {
 		$slag = Utilities::sanitiseClassName($this->Title);
 		$this->Slag = Utilities::SlagGen('BlogEntry', $slag, $this->ID);
 	}
-	
-	public function getDateCreated() {
-		$date = $this->Created;
-		$date = new DateTime($date);
-		return $date->format('M d, Y');
-	}
-	
 }

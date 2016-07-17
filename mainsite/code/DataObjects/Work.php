@@ -8,6 +8,15 @@ class Work extends DataObject {
 		'Content'		=>	'HTMLText'
 	);
 	
+	private static $create_table_options = array(
+		'MySQLDatabase'		=> 'ENGINE=MyISAM'
+    );
+	
+	private static $searchable_fields = array(
+		'Title',
+		'Content'
+	);
+	
 	protected static $has_one = array(
 		'OnPage'		=>	'WorksPage',
 		'Category'		=>	'Category'
@@ -18,7 +27,8 @@ class Work extends DataObject {
     );
 	
 	protected static $extensions = array(
-		'HeaderImageExtension'
+		'HeaderImageExtension',
+		'SearchableExtension'
 	);
 	
 	public function forTemplate() {

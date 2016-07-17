@@ -5,9 +5,14 @@ class Page extends SiteTree {
 	private static $db = array(
 		'HideTitle'		=>	'Boolean'
 	);
+	
+	private static $create_table_options = array(
+		'MySQLDatabase'		=> 'ENGINE=MyISAM'
+    );
 
 	protected static $extensions = array(
-		'HeaderImageExtension'
+		'HeaderImageExtension',
+		'SearchableExtension'
 	);
 	
 	public function getCMSFields() {
@@ -57,6 +62,12 @@ class Page_Controller extends ContentController {
 	
 	protected function getSessionID() {
 		return session_id();
+	}
+	
+	public function getSearch() {
+		return new GeneralSearchForm($this, new FieldList(
+			new FormAction('doSearch', 'GO')
+		));
 	}
 	
 	protected function getHTTPProtocol() {
