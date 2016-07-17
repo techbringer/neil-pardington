@@ -16,6 +16,7 @@ class GeneralSearchForm extends SearchForm {
 			
 			if ($keywords) {
 				// Add the query to the value of the search field.
+				$keywords->setAttribute('autocomplete', 'off');
 				if ($this->getSearchQuery()) {
 					$keywords->setValue($this->getSearchQuery());
 				}
@@ -27,7 +28,6 @@ class GeneralSearchForm extends SearchForm {
 		 * */
 		if (!is_null($this->Actions())) {
 			$action = $this->Actions()->fieldByName('action_doSearch');
-			$this->Actions()->push(LiteralField::create('BtnClose', '<button id="btn-close" class="icon-close">Close</button>'));
 			if ($action) {
 				$action->addExtraClass('hide');
 			}

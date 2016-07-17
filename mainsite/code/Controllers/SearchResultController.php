@@ -20,14 +20,6 @@ class SearchResultController extends Page_Controller {
 	);
 	
 	public function index($request) {
-		/*$keywords = $request->getVars('Search');
-		$honeyPot = $request->getVars('Email');
-		
-		if ($honeyPot) { return $this->httpError(400); }
-		if (!SecurityToken::inst()->checkRequest($request)) {
-			return $this->httpError(403);
-		}*/
-		//return $this->renderWith(array('Page_results', 'Page'));
 		return $this->redirectBack();
 	}
 	

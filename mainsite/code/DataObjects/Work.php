@@ -28,7 +28,7 @@ class Work extends DataObject {
 	
 	protected static $extensions = array(
 		'HeaderImageExtension',
-		'WordTrimmerExtension'
+		'SearchableExtension'
 	);
 	
 	public function forTemplate() {

@@ -928,8 +928,8 @@
 */
 @font-face {
   font-family: 'fontello';
-  src: url("../font/fontello.eot?43946484");
-  src: url("../font/fontello.eot?43946484#iefix") format("embedded-opentype"), url("../font/fontello.woff2?43946484") format("woff2"), url("../font/fontello.woff?43946484") format("woff"), url("../font/fontello.ttf?43946484") format("truetype"), url("../font/fontello.svg?43946484#fontello") format("svg");
+  src: url("../font/fontello.eot?94036915");
+  src: url("../font/fontello.eot?94036915#iefix") format("embedded-opentype"), url("../font/fontello.woff2?94036915") format("woff2"), url("../font/fontello.woff?94036915") format("woff"), url("../font/fontello.ttf?94036915") format("truetype"), url("../font/fontello.svg?94036915#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -944,13 +944,13 @@
  * Fontello config:
  * - Update with the values output by fontello.
  * */
-/* line 84, ../scss/config/_fonts.scss */
+/* line 85, ../scss/config/_fonts.scss */
 .icon-twitter {
   font-size: 0;
   line-height: 0;
   text-indent: -1000000px;
 }
-/* line 59, ../scss/config/_fonts.scss */
+/* line 60, ../scss/config/_fonts.scss */
 .icon-twitter:before {
   font-family: "fontello";
   font-style: normal;
@@ -969,13 +969,13 @@
   content: "";
 }
 
-/* line 84, ../scss/config/_fonts.scss */
+/* line 85, ../scss/config/_fonts.scss */
 .icon-facebook {
   font-size: 0;
   line-height: 0;
   text-indent: -1000000px;
 }
-/* line 59, ../scss/config/_fonts.scss */
+/* line 60, ../scss/config/_fonts.scss */
 .icon-facebook:before {
   font-family: "fontello";
   font-style: normal;
@@ -994,13 +994,13 @@
   content: "";
 }
 
-/* line 84, ../scss/config/_fonts.scss */
+/* line 85, ../scss/config/_fonts.scss */
 .icon-instagram {
   font-size: 0;
   line-height: 0;
   text-indent: -1000000px;
 }
-/* line 59, ../scss/config/_fonts.scss */
+/* line 60, ../scss/config/_fonts.scss */
 .icon-instagram:before {
   font-family: "fontello";
   font-style: normal;
@@ -1019,13 +1019,13 @@
   content: "";
 }
 
-/* line 84, ../scss/config/_fonts.scss */
+/* line 85, ../scss/config/_fonts.scss */
 .icon-search {
   font-size: 0;
   line-height: 0;
   text-indent: -1000000px;
 }
-/* line 59, ../scss/config/_fonts.scss */
+/* line 60, ../scss/config/_fonts.scss */
 .icon-search:before {
   font-family: "fontello";
   font-style: normal;
@@ -1044,13 +1044,13 @@
   content: "";
 }
 
-/* line 84, ../scss/config/_fonts.scss */
+/* line 85, ../scss/config/_fonts.scss */
 .icon-arrow {
   font-size: 0;
   line-height: 0;
   text-indent: -1000000px;
 }
-/* line 59, ../scss/config/_fonts.scss */
+/* line 60, ../scss/config/_fonts.scss */
 .icon-arrow:before {
   font-family: "fontello";
   font-style: normal;
@@ -1067,6 +1067,31 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "";
+}
+
+/* line 85, ../scss/config/_fonts.scss */
+.icon-close {
+  font-size: 0;
+  line-height: 0;
+  text-indent: -1000000px;
+}
+/* line 60, ../scss/config/_fonts.scss */
+.icon-close:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  text-indent: 0;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
 }
 
 /**
@@ -1129,7 +1154,7 @@
 }
 
 /* line 23, ../scss/config/_modifiers.scss */
-.float-right {
+.float-right, #search-wrapper .container #btn-close {
   float: right;
 }
 
@@ -1241,9 +1266,14 @@
 }
 
 /* line 119, ../scss/config/_modifiers.scss */
-.padding-30 {
+.padding-30, body.page-SearchResultController .search-result.container .row {
   padding-left: 1.875rem;
   padding-right: 1.875rem;
+}
+
+/* line 124, ../scss/config/_modifiers.scss */
+.margin-bottom-half-em {
+  margin-bottom: 0.5em;
 }
 
 /**
@@ -1847,9 +1877,10 @@ textarea {
   transition: all 0.3s ease-in-out;
   border-left: 1px solid #ef483d;
   background-color: #fff;
+  outline: none;
   color: #ef483d;
 }
-/* line 148, ../scss/blocks/_header.scss */
+/* line 149, ../scss/blocks/_header.scss */
 #header .container .socials #btn-search:hover {
   background-color: #ef483d;
   color: #fff;
@@ -1965,6 +1996,92 @@ textarea {
 .blog-entry .blog-entry-misc .blog-entry-date {
   text-align: right;
   max-width: 10.3125rem;
+}
+
+/* line 1, ../scss/blocks/_searchform.scss */
+#search-wrapper {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  z-index: 11;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.96);
+}
+/* line 12, ../scss/blocks/_searchform.scss */
+#search-wrapper .container {
+  padding: 0;
+  background: none;
+}
+/* line 15, ../scss/blocks/_searchform.scss */
+#search-wrapper .container #btn-close {
+  background-color: #ef483d;
+  color: #fff;
+  height: 4.375rem;
+  width: 4.375rem;
+}
+/* line 21, ../scss/blocks/_searchform.scss */
+#search-wrapper .container #btn-close:before {
+  display: block;
+}
+
+/* line 28, ../scss/blocks/_searchform.scss */
+#GeneralSearchForm_GeneralSearchForm {
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+/* line 30, ../scss/blocks/_searchform.scss */
+#GeneralSearchForm_GeneralSearchForm label {
+  position: absolute;
+  letter-spacing: 1px;
+  display: block;
+  text-align: center;
+  font-size: 5.375rem;
+  font-weight: bold;
+  text-transform: lowercase;
+  width: 100%;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* line 40, ../scss/blocks/_searchform.scss */
+#GeneralSearchForm_GeneralSearchForm label:before {
+  content: '';
+  width: 2px;
+  margin-left: 0.3125rem;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -moz-transform: translate(-50%, -60%);
+  -ms-transform: translate(-50%, -60%);
+  -webkit-transform: translate(-50%, -60%);
+  transform: translate(-50%, -60%);
+  background-color: #ef483d;
+  height: 120px;
+  font-weight: 100;
+}
+/* line 52, ../scss/blocks/_searchform.scss */
+#GeneralSearchForm_GeneralSearchForm .text {
+  letter-spacing: 1px;
+  font-size: 5.375rem;
+  border: none;
+  color: #ef483d;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  background: none;
 }
 
 /**
@@ -2087,6 +2204,13 @@ a:active {
   -moz-binding: url('xml/ellipsis.xml#ellipsis');
 }
 
+/* line 57, ../scss/styles.scss */
+html.locked,
+html.locked body {
+  height: 100%;
+  overflow: hidden;
+}
+
 /**
  * Pages.
  * */
@@ -2164,10 +2288,14 @@ body.page-home #btn-read-on:before {
 }
 
 /* line 1, ../scss/pagetypes/_blogpage.scss */
+body.page-Security #main,
+body.page-SearchResultController #main,
 body.page-type-blogs-page #main {
   padding-top: 71px;
 }
 /* line 5, ../scss/pagetypes/_blogpage.scss */
+body.page-Security #page-title,
+body.page-SearchResultController #page-title,
 body.page-type-blogs-page #page-title {
   margin-left: 0;
   margin-right: 0;
@@ -2175,16 +2303,85 @@ body.page-type-blogs-page #page-title {
   padding-right: 0.9375rem;
 }
 /* line 12, ../scss/pagetypes/_blogpage.scss */
+body.page-Security #header,
+body.page-SearchResultController #header,
 body.page-type-blogs-page #header {
   border-color: #ef483d;
 }
 /* line 14, ../scss/pagetypes/_blogpage.scss */
+body.page-Security #header #btn-search,
+body.page-SearchResultController #header #btn-search,
 body.page-type-blogs-page #header #btn-search {
   border-right: 1px solid #ef483d;
 }
 /* line 19, ../scss/pagetypes/_blogpage.scss */
+body.page-Security .container .row,
+body.page-SearchResultController .container .row,
 body.page-type-blogs-page .container .row {
   padding: 0 0.9375rem;
+}
+
+/* line 4, ../scss/pagetypes/_search_result.scss */
+body.page-SearchResultController .search-result.container .row .search-result-item {
+  display: block;
+  border-top: 1px solid #ef483d;
+  padding-bottom: 1em;
+  background-color: rgba(238, 238, 238, 0);
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 5, ../scss/pagetypes/_search_result.scss */
+body.page-SearchResultController .search-result.container .row .search-result-item:link, body.page-SearchResultController .search-result.container .row .search-result-item:active {
+  text-decoration: none;
+}
+/* line 14, ../scss/pagetypes/_search_result.scss */
+body.page-SearchResultController .search-result.container .row .search-result-item .item-title {
+  color: #000;
+  font-size: 2rem;
+  margin: 0.5em 0 0.25em;
+  font-weight: bold;
+}
+/* line 21, ../scss/pagetypes/_search_result.scss */
+body.page-SearchResultController .search-result.container .row .search-result-item .item-content {
+  font-size: 1.25rem;
+  color: gray;
+  font-weight: 100;
+}
+/* line 25, ../scss/pagetypes/_search_result.scss */
+body.page-SearchResultController .search-result.container .row .search-result-item .item-content .highlight {
+  display: inline-block;
+  color: #ef483d;
+  background-color: rgba(239, 72, 61, 0.2);
+  padding: 0 0.25em;
+  border-radius: 0.125rem;
+}
+/* line 35, ../scss/pagetypes/_search_result.scss */
+body.page-SearchResultController .search-result.container .row .search-result-item:hover {
+  padding-left: 0.9375rem;
+  background-color: #eeeeee;
+}
+/* line 41, ../scss/pagetypes/_search_result.scss */
+body.page-SearchResultController .search-result.container .row .pagination {
+  margin-top: 1.875rem;
+  color: #ef483d;
+}
+/* line 47, ../scss/pagetypes/_search_result.scss */
+body.page-SearchResultController .search-result.container .pagination {
+  margin-top: 1.875rem;
+  color: #ef483d;
+}
+/* line 50, ../scss/pagetypes/_search_result.scss */
+body.page-SearchResultController .search-result.container .pagination a {
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+/* line 52, ../scss/pagetypes/_search_result.scss */
+body.page-SearchResultController .search-result.container .pagination a:hover {
+  color: #000;
 }
 
 /* line 1, ../scss/pagetypes/_single_blog_entry.scss */
@@ -2367,22 +2564,22 @@ body.page-type-contact-page .guide-gmap .content iframe, body.page-type-contact-
   height: 30rem;
 }
 
-/* line 78, ../scss/styles.scss */
+/* line 90, ../scss/styles.scss */
 #content-area {
   padding: 2.5rem 0.9375rem;
 }
 
-/* line 82, ../scss/styles.scss */
+/* line 94, ../scss/styles.scss */
 #page-title {
   color: #ef483d;
   font-size: 2rem;
 }
-/* line 85, ../scss/styles.scss */
+/* line 97, ../scss/styles.scss */
 #page-title .sub-title {
   color: #000;
 }
 
-/* line 90, ../scss/styles.scss */
+/* line 102, ../scss/styles.scss */
 #main {
   padding-bottom: calc(52px * 2);
 }

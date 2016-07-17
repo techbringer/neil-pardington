@@ -27,7 +27,7 @@ class BlogEntry extends DataObject {
 	
 	protected static $extensions = array(
 		'HeaderImageExtension',
-		'WordTrimmerExtension'
+		'SearchableExtension'
 	);
 	
 	public function getCMSFields() {
@@ -60,11 +60,4 @@ class BlogEntry extends DataObject {
 		$slag = Utilities::sanitiseClassName($this->Title);
 		$this->Slag = Utilities::SlagGen('BlogEntry', $slag, $this->ID);
 	}
-	
-	public function getDateCreated() {
-		$date = $this->Created;
-		$date = new DateTime($date);
-		return $date->format('M d, Y');
-	}
-	
 }

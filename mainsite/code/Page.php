@@ -12,7 +12,7 @@ class Page extends SiteTree {
 
 	protected static $extensions = array(
 		'HeaderImageExtension',
-		'WordTrimmerExtension'
+		'SearchableExtension'
 	);
 	
 	public function getCMSFields() {
