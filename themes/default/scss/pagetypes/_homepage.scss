@@ -36,7 +36,7 @@
 	z-index: 10;
 	text-indent: 0;
 	color: rgba(255,255,255,0.6);
-	@include transition(all ease-in-out 0.3s);
+	@include transition(color ease-in-out 0.3s);
 	&:hover {
 		color: rgba(255,255,255,1);
 	}

@@ -13,7 +13,10 @@ jQuery(document).ready(function($) {
 		}
 
         if ($('body').is('.mobile')) {
-            $(this).css({'background-image': 'url(' + url + ')'});
+            $(this).css({
+				'background-image': 'url(' + url + ')',
+				'background-size': 'cover'
+			});
         } else {
             $(this).parallax({imageSrc: url});
         }
@@ -136,6 +139,131 @@ jQuery(document).ready(function($) {
 			//input.val('');
 		}});
     });
+	
+	
+	/**
+     * hide down arrow
+     * ----------------
+     * ...
+     * */
+	var arrow = $('#btn-read-on').length == 1 ? $('#btn-read-on') : null;
+	if (arrow) {
+		var t = null;
+		$(window).scroll(function(e) {
+			if ($(window).scrollTop() > $('#footer').outerHeight()) {
+				
+				if (t) { t.kill(); t = null; }
+				t = TweenMax.to(arrow, 1, {bottom: 100, opacity: 0, onComplete:function() {
+					arrow.hide();
+					t = null;
+				}});
+			} else {
+				if (t) { t.kill(); t = null; }
+				arrow.show();
+				t = TweenMax.to(arrow, 1, {bottom: 72, opacity: 1, onComplete:function() {
+					arrow.removeAttr('style');
+					t = null;
+				}});
+			}
+		});
+		arrow.click(function(e) {
+			e.preventDefault();
+			$.scrollTo($('#content-area'), 500);
+		});
+	}
+	
+	/**
+     * remove marked elements
+     * ----------------
+     * ...
+     * */
+	$('.js-to-hide').remove();
+	
+	/**
+     * mobile menu
+     * ----------------
+     * ...
+     * */
+	var timeline_1			=	new TimelineMax(),
+		timeline_2			=	new TimelineMax(),
+		timeline_3			=	new TimelineMax(),
+		burger				=	$('#btn-mobile'),
+		bar_1				=	burger.find('.first'),
+		bar_2				=	burger.find('.second'),
+		bar_3				=	burger.find('.third');
+	
+	
+	timeline_1.pause();
+	timeline_1.to(bar_1, 0.3, {'margin-top': 0});
+	timeline_1.to(bar_1, 0.3, {rotation: -45, width: '60%', left: '20%', height: 2});
+	
+	timeline_2.pause();
+	timeline_2.to(bar_2, 0.3, {opacity: 0});
+	timeline_2.to(bar_2, 0.3, {});
+	
+	timeline_3.pause();
+	timeline_3.to(bar_3, 0.3, {'margin-top': 0});
+	timeline_3.to(bar_3, 0.3, {rotation: 45, width: '60%', left: '20%', height: 2});
+	
+	
+	$(burger).click(function(e) {
+        e.preventDefault();
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			timeline_1.reverse();
+			timeline_2.reverse();
+			timeline_3.reverse();
+		} else {
+			$(this).addClass('active');
+			timeline_1.play();
+			timeline_2.play();
+			timeline_3.play();
+		}
+    });
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 });

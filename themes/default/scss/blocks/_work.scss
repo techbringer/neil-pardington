@@ -1,7 +1,9 @@
+.showcase,
 .work {
 	.container {
 		padding-top: rem(40);
 		padding-bottom: rem(40);
+		.showcase-title,
 		.work-title {
 			@extend .title;
 			h2, p {
@@ -20,6 +22,7 @@
 			}
 		}
 		
+		.showcase-content,
 		.work-content {
 			@extend .content;
 			

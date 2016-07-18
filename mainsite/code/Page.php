@@ -52,8 +52,10 @@ class Page_Controller extends ContentController {
 				'themes/default/js/components/jquery/dist/jquery.min.js',
 				'themes/default/js/components/parallax.js/parallax.min.js',
 				'themes/default/js/components/salted-js/dist/salted-js.min.js',
+				'themes/default/js/components/jquery.scrollTo/jquery.scrollTo.min.js',
 				'themes/default/js/components/isotope/dist/isotope.pkgd.min.js',
 				'themes/default/js/components/gsap/src/minified/TweenMax.min.js',
+				'themes/default/js/components/gsap/src/minified/TimelineMax.min.js',
 				'themes/default/js/components/salted-js/dist/minified/salted-js.min.js',
 	
 				'themes/default/js/custom.scripts.js'

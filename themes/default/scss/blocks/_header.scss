@@ -109,6 +109,12 @@
 			top: 0;
 			right: 0;
 			
+			.social-icons {
+				height: 100%;
+				float: left;
+				@extend .clearfix;
+			}
+			
 			button,
 			a {
 				float: left;
@@ -122,6 +128,7 @@
 			button {
 				width: $header-height;
 				border: none;
+				outline: none;
 			}
 			
 			.social {
@@ -153,6 +160,64 @@
 				
 				&:before {
 					@extend .icon-centered;
+				}
+			}
+			
+			#btn-mobile {
+				display: none;
+				position: relative;
+				background-color: $b2-red;
+				@include transition(all ease-in-out 0.3s);
+				
+				
+				i {
+					display: block;
+					width: 33.333%;
+					height: 3px;
+					border-radius: 5px;
+					background-color: #fff;
+					position: absolute;
+					top: 33.5px;
+					left: 25.3359375px;
+					//@include transition(background-color, opacity ease-in-out 0.3s);
+					&.first {
+						margin-top: -8px;
+					}
+					
+					&.third {
+						margin-top: 8px;
+					}				
+				}
+						
+			}
+		}
+	}
+}
+
+
+
+
+@include breakpoint($container) {
+	#header {
+		height: rem(70);
+		border: none;
+		.container {
+			background: none;
+			.nav {
+				display: none;
+			}
+			.socials {
+				right: auto;
+				left: 0;
+				a.social {
+					display: none;
+				}
+				#btn-search {
+					border: none;
+				}
+				
+				#btn-mobile {
+					display: block;
 				}
 			}
 		}

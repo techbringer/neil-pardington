@@ -49,6 +49,9 @@
 				<% end_if %>
 				<div class="content">
 					$Content
+					<% if $HiddenContent %>
+						<div class="js-to-hide">$HiddenContent</div>
+					<% end_if %>
 					$Form
 					<% if $Form %>
 						<script src='https://www.google.com/recaptcha/api.js'></script>
