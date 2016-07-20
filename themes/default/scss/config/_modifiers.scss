@@ -69,6 +69,9 @@
 	max-width: 320px;
 	margin-left: rem(15);
 	margin-right: rem(15);
+	@include breakpoint($container_portrait) {
+		margin-bottom: 1em;
+	}
 }
 
 .content {
@@ -104,6 +107,23 @@
 	
 	p {
 		font-size: rem(20);
+		@include breakpoint($container_portrait) {
+			font-size: rem(18);
+			line-height: 1.4;
+		}
+	}
+	
+	a {
+		word-wrap: break-word;
+	}
+}
+
+.title,
+.content {
+	@include breakpoint($container_portrait) {
+		margin-left: 0;
+		margin-right: 0;
+		float: none;
 	}
 }
 

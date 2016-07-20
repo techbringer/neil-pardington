@@ -3,7 +3,7 @@
 	bottom: 0;
 	width: 100%;
 	left: 0;
-	z-index: 9;
+	z-index: 8;
 }	
 
 
@@ -12,6 +12,10 @@
 	right: -0.75em;
 	display: block;
 	@include retina-sprite(basetwo, icons, $dimensions: true, $nonRetina: true);
+	@include breakpoint($container_portrait) {
+		@include transform-origin(100%, 50%);
+		top: 20%;
+	}
 }
 
 #design {
@@ -19,6 +23,10 @@
 	left: -0.75em;
 	display: block;
 	@include retina-sprite(design, icons, $dimensions: true, $nonRetina: true);
+	@include breakpoint($container_portrait) {
+		@include transform-origin(0, 50%);
+		bottom: 20%;
+	}
 }
 
 #basetwo,
@@ -26,6 +34,9 @@
 	overflow: hidden;
 	text-indent: -9999px;
 	position: absolute;
+	@include breakpoint($container_portrait) {
+		@include transform(scale(0.5));
+	}
 }
 
 #btn-read-on {
@@ -33,7 +44,7 @@
 	left: 50%;
 	@include transform(translateX(-50%));
 	position: fixed;
-	z-index: 10;
+	z-index: 8;
 	text-indent: 0;
 	color: rgba(255,255,255,0.6);
 	@include transition(color ease-in-out 0.3s);

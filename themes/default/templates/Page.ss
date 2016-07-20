@@ -16,6 +16,7 @@
 		<% include GA %>
 	</head>
 	<body class="page-$URLSegment<% if $isMobile %> mobile<% end_if %> page-type-$BodyClass.LowerCase<% if $isBlogEntry %> single-blog-entry-page<% end_if %>">
+		<div id="mobile-menu-tray-wrapper"><div id="mobile-menu-tray"></div></div>
 		<% include Header %>
 		
 		<main id="main">

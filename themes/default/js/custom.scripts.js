@@ -1,26 +1,31 @@
 jQuery(document).ready(function($) {
+	document.addEventListener('touchstart',function() {}, true);
     /**
      * Parallax blocks:
      * ----------------
      * For each parallax block, get the backgound image & apply as
      * a parallax layer.
      * */
-    $('.parallax').each(function() {
-        var url			=	$(this).data('image-src');
-		
-		if ($(this).hasClass('full')) {
-			$(this).height($(window).height());
-		}
-
-        if ($('body').is('.mobile')) {
-            $(this).css({
-				'background-image': 'url(' + url + ')',
-				'background-size': 'cover'
-			});
-        } else {
-            $(this).parallax({imageSrc: url});
-        }
-    });
+    
+	
+	$(window).resize(function(e) {
+		$('.parallax').each(function() {
+			var url			=	$(this).data('image-src');
+			
+			if ($(this).hasClass('full')) {
+				$(this).height($(window).height());
+			}
+	
+			if ($('body').is('.mobile')) {
+				$(this).css({
+					'background-image': 'url(' + url + ')',
+					'background-size': 'cover'
+				});
+			} else {
+				$(this).parallax({imageSrc: url});
+			}
+		});
+	}).resize();
 	
 	/**
      * Menu works:
@@ -55,6 +60,7 @@ jQuery(document).ready(function($) {
 	});
 	
     $('.nav li:not(".nav li li")').mouseenter(function(e) {
+		
 		var ul 				=	$(this).find('ul').length > 0 ? $(this).find('ul:eq(0)') : null;
 			ul_height		=	0;
 		
@@ -82,10 +88,38 @@ jQuery(document).ready(function($) {
 			});
 		}
     }).mouseleave(function(e) {
+		if ($('#btn-mobile').is(':visible')) {
+			return false;
+		}
         if (!current_active) {
 			former_current.addClass('current');
 		}
     });
+	
+	$('.nav li').each(function(index, element) {
+		var li = $(this);
+		if (li.find('ul').length > 1) {
+			li.find('ul li').addClass('multi');
+		}
+		
+        li.find('a:eq(0)').click(function(e) {
+			if ($('#btn-mobile').is(':visible')) {
+				if (li.find('ul').length > 1) {
+					e.preventDefault();
+				} else {
+					if (li.find('ul').length == 1) {
+						e.preventDefault();
+						if (!$('ul.level-2 .hover').is($(this).parent())) {
+							$('ul.level-2 .hover').removeClass('hover');
+						}
+						$(this).parent().toggleClass('hover');
+					}
+				}
+			}
+		});
+    })
+	
+	$('.nav ul.level-2 a.current').parent().addClass('hover');
 	
 	/**
      * Search input effect
@@ -190,12 +224,17 @@ jQuery(document).ready(function($) {
 		burger				=	$('#btn-mobile'),
 		bar_1				=	burger.find('.first'),
 		bar_2				=	burger.find('.second'),
-		bar_3				=	burger.find('.third');
+		bar_3				=	burger.find('.third'),
+		tray				=	$('#mobile-menu-tray'),
+		clicked				=	false;
 	
 	
 	timeline_1.pause();
 	timeline_1.to(bar_1, 0.3, {'margin-top': 0});
 	timeline_1.to(bar_1, 0.3, {rotation: -45, width: '60%', left: '20%', height: 2});
+	timeline_1.eventCallback("onReverseComplete", function() {
+		bar_1.removeAttr('style');
+	});
 	
 	timeline_2.pause();
 	timeline_2.to(bar_2, 0.3, {opacity: 0});
@@ -204,20 +243,50 @@ jQuery(document).ready(function($) {
 	timeline_3.pause();
 	timeline_3.to(bar_3, 0.3, {'margin-top': 0});
 	timeline_3.to(bar_3, 0.3, {rotation: 45, width: '60%', left: '20%', height: 2});
+	timeline_3.eventCallback("onReverseComplete", function() {
+		bar_3.removeAttr('style');
+	});
 	
 	
 	$(burger).click(function(e) {
         e.preventDefault();
+		$('#header').toggleClass('toggled');
 		if ($(this).hasClass('active')) {
 			$(this).removeClass('active');
 			timeline_1.reverse();
 			timeline_2.reverse();
 			timeline_3.reverse();
+			
+			TweenMax.to(tray, 0.3, {scale: 1, onComplete:function(){
+				tray.parent().hide();
+				clicked = false;
+			}});
 		} else {
 			$(this).addClass('active');
 			timeline_1.play();
 			timeline_2.play();
 			timeline_3.play();
+			tray.parent().show();
+			var m = $(window).width() < $(window).height() ? $(window).height() : $(window).width(),
+				r = m / 35;
+			TweenMax.to(tray, 0.15, {scale: r*1.5, onComplete:function(){
+				clicked = false;
+			}});
+		}
+    });
+	
+	$(window).resize(function(e) {
+		if (tray.is(':visible')) {
+			if (burger.is(':visible')) {
+		        var m = $(window).width() < $(window).height() ? $(window).height() : $(window).width(),
+					r = m / 35;
+				TweenMax.to(tray, 0.15, {scale: r*1.5});
+			} else {
+				if (!clicked) {
+					clicked = true;
+					$(burger).click();
+				}
+			}
 		}
     });
 	

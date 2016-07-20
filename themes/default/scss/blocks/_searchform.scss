@@ -21,6 +21,13 @@
 			&:before {
 				display: block;
 			}
+			
+			@include breakpoint($container_portrait) {
+				float: left;
+				margin-left: rem(40);
+				width: rem(40);
+				height: rem(40);
+			}
 		}
 	}
 }
@@ -33,6 +40,9 @@
 		display: block;
 		text-align: center;
 		font-size: rem(86);
+		@include breakpoint($container_portrait) {
+			font-size: rem(32);
+		}
 		font-weight: bold;
 		text-transform: lowercase;
 		width: 100%;
@@ -46,12 +56,19 @@
 			background-color: $b2-red;
 			height: 120px;
 			font-weight: 100;
+			@include breakpoint($container_portrait) {
+				height: 50px;
+				margin-left: rem(2);
+			}
 		}
 	}
 	
 	.text {
 		letter-spacing: 1px;
 		font-size: rem(86);
+		@include breakpoint($container_portrait) {
+			font-size: rem(32);
+		}
 		border: none;
 		color: $b2-red;
 		font-weight: bold;
