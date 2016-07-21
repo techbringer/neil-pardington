@@ -4,6 +4,12 @@
 	width: 100%;
 	left: 0;
 	z-index: 8;
+	height: $footer-height;
+	
+	@include breakpoint($container_landscape) {
+		position: static;
+		height: auto;
+	}
 }	
 
 

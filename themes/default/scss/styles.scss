@@ -89,6 +89,17 @@ body.page-type-contact-page {
 
 #content-area {
 	padding: rem(40) rem(15); 
+	
+	@include breakpoint($container_ipadToDesktop) {
+		.content {
+			padding-left: rem(15);
+			padding-right: rem(15);
+		}
+	}
+	
+	@include breakpoint($container_small) {
+		padding: rem(20) rem(15); 
+	}
 }
 
 #page-title {
@@ -101,6 +112,13 @@ body.page-type-contact-page {
 
 #main {
 	padding-bottom: calc(#{$footer-height} * 2);
+	@include breakpoint($container_ipadToDesktop) {
+		padding-bottom: 0;
+	}
+	
+	@include breakpoint($container_portrait) {
+		padding-bottom: 0;
+	}
 }
 
 

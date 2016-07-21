@@ -1,5 +1,8 @@
 #main {
 	padding-top: $header-outter-height;
+	@include breakpoint($container_portrait) {
+		padding-top: rem(41);
+	}
 }
 
 #page-title {
@@ -7,6 +10,10 @@
 	margin-right: 0;
 	padding-left: rem(15);
 	padding-right: rem(15);
+	@include breakpoint($container_portrait) {
+		margin: 0;
+		padding: 0;
+	}
 }
 
 #header {
@@ -18,4 +25,11 @@
 
 .container .row {
 	padding: 0 rem(15);
+	@include breakpoint($container_small) {
+		margin: 0;
+		padding: 0 rem(5);
+		&.sub-title {
+			padding: 0;
+		}
+	}
 }

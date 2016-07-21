@@ -1,6 +1,16 @@
+#main {
+	@include breakpoint($container_small) {
+		padding-bottom: rem(30);
+	}
+}
+
 .search-result.container {
 	.row {
 		@extend .padding-30;
+		@include breakpoint($container_small) {
+			padding-left: 0;
+			padding-right: 0;
+		}
 		.search-result-item {
 			&:link,
 			&:active {

@@ -9,6 +9,12 @@
 			}
 		}
 	}
+	
+	.content {
+		@include breakpoint($container_landscape) {
+			max-width: rem(614);
+		}
+	}
 }
 
 #Form_contactForm {
@@ -30,7 +36,22 @@
 		.field {
 			float: left;
 			width: 100%;
-			max-width: rem(312);
+			max-width: rem(305);
+			@include breakpoint($container_ipadToDesktop) {
+				max-width: rem(338);
+			}
+			@include breakpoint($container_portrait) {
+				max-width: rem(338);
+			}
+			
+			@include breakpoint($container_small) {
+				max-width: none;
+			}
+			
+			@include breakpoint($container_landscape) {
+				max-width: rem(292);
+			}
+			
 			margin-bottom: rem(20);
 			&:nth-child(odd) {
 				margin-right: rem(30);
@@ -84,20 +105,58 @@
 		.g-recaptcha {
 			float: left;
 			width: 100%;
-			max-width: rem(312);
+			max-width: rem(305);
 			margin-bottom: rem(20);
+			
 		}
 		
 		.g-recaptcha {
 			margin-right: rem(30);
+			@include breakpoint($container_landscape) {
+				max-width: rem(292);
+			}
+			@include breakpoint($container_portrait) {
+				margin-left: 0;
+				margin-right: 0;
+				float: none;
+			}
+			
+			@include breakpoint($container_small) {
+				margin-left: 0;
+				margin-right: 0;
+				float: none;
+				div {
+					width: 100% !important;
+					iframe {
+						display: block;
+						width: 100%;
+					}
+				}
+			}
 		}
 		
 		.action {
 			display: block;
 			width: 100%;
 			height: rem(76);
+			float: right;
 			@extend .uppercase;
 			font-size: rem(20);
+			@include breakpoint($container_portrait) {
+				margin-left: 0;
+				margin-right: 0;
+				float: none;
+			}
+			
+			@include breakpoint($container_small) {
+				margin-left: 0;
+				margin-right: 0;
+				float: none;
+			}
+			
+			@include breakpoint($container_landscape) {
+				max-width: rem(292);
+			}
 		}
 	}
 }
@@ -105,6 +164,15 @@
 .guide-gmap {
 	padding-top: rem(20);
 	border-top: rem(4) solid $b2-red;
+	@include breakpoint($container_portrait) {
+		padding-top: 0;
+		border-top: none;
+	}
+	
+	@include breakpoint($container_small) {
+		padding-top: 0;
+		border-top: none;
+	}
 	
 	header {
 		h2 {
@@ -113,6 +181,10 @@
 			color: $b2-red;
 			line-height: 1.2;
 			margin-bottom: rem(20);
+		}
+		
+		@include breakpoint($container_small) {
+			padding: 0;
 		}
 	}
 	
@@ -123,17 +195,153 @@
 		p {
 			margin-top: 0;
 		}
+		
+		@include breakpoint($container_portrait) {
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 1em;
+		}
+		
+		@include breakpoint($container_small) {
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 1em;
+		}
 	}
 	
 	.content {
 		margin-left: rem(15);
 		margin-right: 0;
+		
+		@include breakpoint($container_ipadToDesktop) {
+			margin-left: 0 !important;
+			margin-right: 0;
+			margin-bottom: 1em;
+			
+		}
+		@include breakpoint($container_portrait) {
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 1em;
+		}
+		
+		@include breakpoint($container_small) {
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 1em;
+		}
+		
+		@include breakpoint($container_landscape) {
+			max-width: rem(614);
+		}
+		
 		iframe {
 			box-shadow: 0 0 10px rgba(0,0,0,0.2);
 			display: block;
 			width: 100%;
 			height: rem(480);
 		}
+		
+	}
+}
+
+@include breakpoint(max-width 767px) {
+	#content-area {
+		.title,
+		.content {
+			max-width: none !important;
+			width: 100% !important;
+		}
 	}
 	
+	#Form_contactForm .g-recaptcha,
+	#Form_contactForm .action,
+	#Form_contactForm fieldset .field {
+		width: 100% !important;
+		margin-right: 0 !important;
+		max-width: none !important;
+	}
+	
+	.guide-gmap {
+		padding-left: rem(15) !important;
+		padding-right: rem(15) !important;
+	}
 }
+
+@include breakpoint(768px 1023px) {
+	.guide-gmap,
+	#content-area {
+		.title {
+			max-width: 320px !important;
+		}
+		
+		.content {
+			max-width: calc(100% - 350px) !important;
+			padding: 0 !important;
+		}
+	}
+	
+	.guide-gmap {
+		.content {
+			max-width: calc(100% - 365px) !important;
+		}
+	}
+	
+	#Form_contactForm .g-recaptcha,
+	#Form_contactForm .action,
+	#Form_contactForm fieldset .field {
+		width: 100% !important;
+		margin-right: 0 !important;
+		max-width: none !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

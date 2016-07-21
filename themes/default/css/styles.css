@@ -84,7 +84,7 @@
  * */
 /* line 19, ../scss/config/_grid.scss */
 .container {
-  width: 1065px;
+  width: 1068px;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
@@ -113,19 +113,19 @@
 }
 /* line 32, ../scss/config/_grid.scss */
 .row.padding {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 9.9705px;
+  padding-right: 9.9705px;
 }
 
 /* line 47, ../scss/config/_grid.scss */
 .grid_1 {
-  width: 60px;
+  width: 69px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 60px;
-  max-width: 60px;
-  _width: 60px;
+  margin-left: 9.9705px;
+  margin-right: 9.9705px;
+  width: 69px;
+  max-width: 69px;
+  _width: 69px;
   		/*@if $i != $total-columns {
   			&:last-child {
   				margin-right: 0;
@@ -141,15 +141,15 @@
 
 /* line 70, ../scss/config/_grid.scss */
 .grid_1_wide {
-  width: 60px;
+  width: 69px;
 }
 
 /* line 47, ../scss/config/_grid.scss */
 .grid_2 {
-  width: 140px;
+  width: 157.941px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 9.9705px;
+  margin-right: 9.9705px;
   		/*@if $i != $total-columns {
   			&:last-child {
   				margin-right: 0;
@@ -165,15 +165,15 @@
 
 /* line 70, ../scss/config/_grid.scss */
 .grid_2_wide {
-  width: 140px;
+  width: 157.941px;
 }
 
 /* line 47, ../scss/config/_grid.scss */
 .grid_3 {
-  width: 220px;
+  width: 246.882px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 9.9705px;
+  margin-right: 9.9705px;
   		/*@if $i != $total-columns {
   			&:last-child {
   				margin-right: 0;
@@ -189,15 +189,15 @@
 
 /* line 70, ../scss/config/_grid.scss */
 .grid_3_wide {
-  width: 220px;
+  width: 246.882px;
 }
 
 /* line 47, ../scss/config/_grid.scss */
 .grid_4 {
-  width: 300px;
+  width: 335.823px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 9.9705px;
+  margin-right: 9.9705px;
   		/*@if $i != $total-columns {
   			&:last-child {
   				margin-right: 0;
@@ -213,15 +213,15 @@
 
 /* line 70, ../scss/config/_grid.scss */
 .grid_4_wide {
-  width: 300px;
+  width: 335.823px;
 }
 
 /* line 47, ../scss/config/_grid.scss */
 .grid_5 {
-  width: 380px;
+  width: 424.764px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 9.9705px;
+  margin-right: 9.9705px;
   		/*@if $i != $total-columns {
   			&:last-child {
   				margin-right: 0;
@@ -237,15 +237,15 @@
 
 /* line 70, ../scss/config/_grid.scss */
 .grid_5_wide {
-  width: 380px;
+  width: 424.764px;
 }
 
 /* line 47, ../scss/config/_grid.scss */
 .grid_6 {
-  width: 460.0px;
+  width: 513.705px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 9.9705px;
+  margin-right: 9.9705px;
   		/*@if $i != $total-columns {
   			&:last-child {
   				margin-right: 0;
@@ -261,15 +261,15 @@
 
 /* line 70, ../scss/config/_grid.scss */
 .grid_6_wide {
-  width: 460.0px;
+  width: 513.705px;
 }
 
 /* line 47, ../scss/config/_grid.scss */
 .grid_7 {
-  width: 540px;
+  width: 602.646px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 9.9705px;
+  margin-right: 9.9705px;
   		/*@if $i != $total-columns {
   			&:last-child {
   				margin-right: 0;
@@ -285,15 +285,15 @@
 
 /* line 70, ../scss/config/_grid.scss */
 .grid_7_wide {
-  width: 540px;
+  width: 602.646px;
 }
 
 /* line 47, ../scss/config/_grid.scss */
 .grid_8 {
-  width: 620.0px;
+  width: 691.587px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 9.9705px;
+  margin-right: 9.9705px;
   		/*@if $i != $total-columns {
   			&:last-child {
   				margin-right: 0;
@@ -309,15 +309,15 @@
 
 /* line 70, ../scss/config/_grid.scss */
 .grid_8_wide {
-  width: 620.0px;
+  width: 691.587px;
 }
 
 /* line 47, ../scss/config/_grid.scss */
 .grid_9 {
-  width: 700px;
+  width: 780.528px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 9.9705px;
+  margin-right: 9.9705px;
   		/*@if $i != $total-columns {
   			&:last-child {
   				margin-right: 0;
@@ -333,15 +333,15 @@
 
 /* line 70, ../scss/config/_grid.scss */
 .grid_9_wide {
-  width: 700px;
+  width: 780.528px;
 }
 
 /* line 47, ../scss/config/_grid.scss */
 .grid_10 {
-  width: 780px;
+  width: 869.469px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 9.9705px;
+  margin-right: 9.9705px;
   		/*@if $i != $total-columns {
   			&:last-child {
   				margin-right: 0;
@@ -357,15 +357,15 @@
 
 /* line 70, ../scss/config/_grid.scss */
 .grid_10_wide {
-  width: 780px;
+  width: 869.469px;
 }
 
 /* line 47, ../scss/config/_grid.scss */
 .grid_11 {
-  width: 860.0px;
+  width: 958.41px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 9.9705px;
+  margin-right: 9.9705px;
   		/*@if $i != $total-columns {
   			&:last-child {
   				margin-right: 0;
@@ -381,15 +381,15 @@
 
 /* line 70, ../scss/config/_grid.scss */
 .grid_11_wide {
-  width: 860.0px;
+  width: 958.41px;
 }
 
 /* line 47, ../scss/config/_grid.scss */
 .grid_12 {
-  width: 940px;
+  width: 1047.351px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 9.9705px;
+  margin-right: 9.9705px;
   		/*@if $i != $total-columns {
   			&:last-child {
   				margin-right: 0;
@@ -405,7 +405,7 @@
 
 /* line 70, ../scss/config/_grid.scss */
 .grid_12_wide {
-  width: 940px;
+  width: 1047.351px;
 }
 
 /* line 80, ../scss/config/_grid.scss */
@@ -425,239 +425,127 @@
 
 /* line 92, ../scss/config/_grid.scss */
 .spacer_1 {
-  margin-left: 90px;
+  margin-left: 98.9115px;
 }
 
 /* line 96, ../scss/config/_grid.scss */
 .after_1 {
-  margin-right: 90px;
+  margin-right: 98.9115px;
 }
 
 /* line 92, ../scss/config/_grid.scss */
 .spacer_2 {
-  margin-left: 170px;
+  margin-left: 187.8525px;
 }
 
 /* line 96, ../scss/config/_grid.scss */
 .after_2 {
-  margin-right: 170px;
+  margin-right: 187.8525px;
 }
 
 /* line 92, ../scss/config/_grid.scss */
 .spacer_3 {
-  margin-left: 250px;
+  margin-left: 276.7935px;
 }
 
 /* line 96, ../scss/config/_grid.scss */
 .after_3 {
-  margin-right: 250px;
+  margin-right: 276.7935px;
 }
 
 /* line 92, ../scss/config/_grid.scss */
 .spacer_4 {
-  margin-left: 330px;
+  margin-left: 365.7345px;
 }
 
 /* line 96, ../scss/config/_grid.scss */
 .after_4 {
-  margin-right: 330px;
+  margin-right: 365.7345px;
 }
 
 /* line 92, ../scss/config/_grid.scss */
 .spacer_5 {
-  margin-left: 410.0px;
+  margin-left: 454.6755px;
 }
 
 /* line 96, ../scss/config/_grid.scss */
 .after_5 {
-  margin-right: 410.0px;
+  margin-right: 454.6755px;
 }
 
 /* line 92, ../scss/config/_grid.scss */
 .spacer_6 {
-  margin-left: 490px;
+  margin-left: 543.6165px;
 }
 
 /* line 96, ../scss/config/_grid.scss */
 .after_6 {
-  margin-right: 490px;
+  margin-right: 543.6165px;
 }
 
 /* line 92, ../scss/config/_grid.scss */
 .spacer_7 {
-  margin-left: 570.0px;
+  margin-left: 632.5575px;
 }
 
 /* line 96, ../scss/config/_grid.scss */
 .after_7 {
-  margin-right: 570.0px;
+  margin-right: 632.5575px;
 }
 
 /* line 92, ../scss/config/_grid.scss */
 .spacer_8 {
-  margin-left: 650px;
+  margin-left: 721.4985px;
 }
 
 /* line 96, ../scss/config/_grid.scss */
 .after_8 {
-  margin-right: 650px;
+  margin-right: 721.4985px;
 }
 
 /* line 92, ../scss/config/_grid.scss */
 .spacer_9 {
-  margin-left: 730px;
+  margin-left: 810.4395px;
 }
 
 /* line 96, ../scss/config/_grid.scss */
 .after_9 {
-  margin-right: 730px;
+  margin-right: 810.4395px;
 }
 
 /* line 92, ../scss/config/_grid.scss */
 .spacer_10 {
-  margin-left: 810.0px;
+  margin-left: 899.3805px;
 }
 
 /* line 96, ../scss/config/_grid.scss */
 .after_10 {
-  margin-right: 810.0px;
+  margin-right: 899.3805px;
 }
 
 /* line 92, ../scss/config/_grid.scss */
 .spacer_11 {
-  margin-left: 890px;
+  margin-left: 988.3215px;
 }
 
 /* line 96, ../scss/config/_grid.scss */
 .after_11 {
-  margin-right: 890px;
+  margin-right: 988.3215px;
 }
 
 /* line 92, ../scss/config/_grid.scss */
 .spacer_12 {
-  margin-left: 970px;
+  margin-left: 1077.2625px;
 }
 
 /* line 96, ../scss/config/_grid.scss */
 .after_12 {
-  margin-right: 970px;
+  margin-right: 1077.2625px;
 }
 
 /* ===========================
  * Responsive Grid
  * =========================== */
-@media (max-width: 959px) {
-  /* line 109, ../scss/config/_grid.scss */
-  .alpha {
-    margin-left: 0;
-    padding-left: 0;
-  }
-
-  /* line 116, ../scss/config/_grid.scss */
-  .grid_6,
-  .grid_6_wide {
-    width: 100%;
-    max-width: 40rem;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* line 126, ../scss/config/_grid.scss */
-  .grid_6:last-child {
-    margin-right: auto;
-  }
-
-  /* line 116, ../scss/config/_grid.scss */
-  .grid_7,
-  .grid_7_wide {
-    width: 100%;
-    max-width: 40rem;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* line 126, ../scss/config/_grid.scss */
-  .grid_7:last-child {
-    margin-right: auto;
-  }
-
-  /* line 116, ../scss/config/_grid.scss */
-  .grid_8,
-  .grid_8_wide {
-    width: 100%;
-    max-width: 40rem;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* line 126, ../scss/config/_grid.scss */
-  .grid_8:last-child {
-    margin-right: auto;
-  }
-
-  /* line 116, ../scss/config/_grid.scss */
-  .grid_9,
-  .grid_9_wide {
-    width: 100%;
-    max-width: 40rem;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* line 126, ../scss/config/_grid.scss */
-  .grid_9:last-child {
-    margin-right: auto;
-  }
-
-  /* line 116, ../scss/config/_grid.scss */
-  .grid_10,
-  .grid_10_wide {
-    width: 100%;
-    max-width: 40rem;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* line 126, ../scss/config/_grid.scss */
-  .grid_10:last-child {
-    margin-right: auto;
-  }
-
-  /* line 116, ../scss/config/_grid.scss */
-  .grid_11,
-  .grid_11_wide {
-    width: 100%;
-    max-width: 40rem;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* line 126, ../scss/config/_grid.scss */
-  .grid_11:last-child {
-    margin-right: auto;
-  }
-
-  /* line 116, ../scss/config/_grid.scss */
-  .grid_12,
-  .grid_12_wide {
-    width: 100%;
-    max-width: 40rem;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* line 126, ../scss/config/_grid.scss */
-  .grid_12:last-child {
-    margin-right: auto;
-  }
-}
 /* ===========================
  * iPad to Desktop
  * =========================== */
@@ -668,13 +556,13 @@
  * iPhone
  * =========================== */
 @media (min-width: 0) and (max-width: 735px) {
-  /* line 154, ../scss/config/_grid.scss */
+  /* line 133, ../scss/config/_grid.scss */
   .container {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  /* line 162, ../scss/config/_grid.scss */
+  /* line 141, ../scss/config/_grid.scss */
   .grid_1,
   .grid_1_wide {
     width: 100%;
@@ -684,12 +572,12 @@
     margin-right: auto;
   }
 
-  /* line 172, ../scss/config/_grid.scss */
+  /* line 151, ../scss/config/_grid.scss */
   .grid_1:last-child {
     margin-right: auto;
   }
 
-  /* line 162, ../scss/config/_grid.scss */
+  /* line 141, ../scss/config/_grid.scss */
   .grid_2,
   .grid_2_wide {
     width: 100%;
@@ -699,12 +587,12 @@
     margin-right: auto;
   }
 
-  /* line 172, ../scss/config/_grid.scss */
+  /* line 151, ../scss/config/_grid.scss */
   .grid_2:last-child {
     margin-right: auto;
   }
 
-  /* line 162, ../scss/config/_grid.scss */
+  /* line 141, ../scss/config/_grid.scss */
   .grid_3,
   .grid_3_wide {
     width: 100%;
@@ -714,12 +602,12 @@
     margin-right: auto;
   }
 
-  /* line 172, ../scss/config/_grid.scss */
+  /* line 151, ../scss/config/_grid.scss */
   .grid_3:last-child {
     margin-right: auto;
   }
 
-  /* line 162, ../scss/config/_grid.scss */
+  /* line 141, ../scss/config/_grid.scss */
   .grid_4,
   .grid_4_wide {
     width: 100%;
@@ -729,12 +617,12 @@
     margin-right: auto;
   }
 
-  /* line 172, ../scss/config/_grid.scss */
+  /* line 151, ../scss/config/_grid.scss */
   .grid_4:last-child {
     margin-right: auto;
   }
 
-  /* line 162, ../scss/config/_grid.scss */
+  /* line 141, ../scss/config/_grid.scss */
   .grid_5,
   .grid_5_wide {
     width: 100%;
@@ -744,12 +632,12 @@
     margin-right: auto;
   }
 
-  /* line 172, ../scss/config/_grid.scss */
+  /* line 151, ../scss/config/_grid.scss */
   .grid_5:last-child {
     margin-right: auto;
   }
 
-  /* line 162, ../scss/config/_grid.scss */
+  /* line 141, ../scss/config/_grid.scss */
   .grid_6,
   .grid_6_wide {
     width: 100%;
@@ -759,12 +647,12 @@
     margin-right: auto;
   }
 
-  /* line 172, ../scss/config/_grid.scss */
+  /* line 151, ../scss/config/_grid.scss */
   .grid_6:last-child {
     margin-right: auto;
   }
 
-  /* line 162, ../scss/config/_grid.scss */
+  /* line 141, ../scss/config/_grid.scss */
   .grid_7,
   .grid_7_wide {
     width: 100%;
@@ -774,12 +662,12 @@
     margin-right: auto;
   }
 
-  /* line 172, ../scss/config/_grid.scss */
+  /* line 151, ../scss/config/_grid.scss */
   .grid_7:last-child {
     margin-right: auto;
   }
 
-  /* line 162, ../scss/config/_grid.scss */
+  /* line 141, ../scss/config/_grid.scss */
   .grid_8,
   .grid_8_wide {
     width: 100%;
@@ -789,12 +677,12 @@
     margin-right: auto;
   }
 
-  /* line 172, ../scss/config/_grid.scss */
+  /* line 151, ../scss/config/_grid.scss */
   .grid_8:last-child {
     margin-right: auto;
   }
 
-  /* line 162, ../scss/config/_grid.scss */
+  /* line 141, ../scss/config/_grid.scss */
   .grid_9,
   .grid_9_wide {
     width: 100%;
@@ -804,12 +692,12 @@
     margin-right: auto;
   }
 
-  /* line 172, ../scss/config/_grid.scss */
+  /* line 151, ../scss/config/_grid.scss */
   .grid_9:last-child {
     margin-right: auto;
   }
 
-  /* line 162, ../scss/config/_grid.scss */
+  /* line 141, ../scss/config/_grid.scss */
   .grid_10,
   .grid_10_wide {
     width: 100%;
@@ -819,12 +707,12 @@
     margin-right: auto;
   }
 
-  /* line 172, ../scss/config/_grid.scss */
+  /* line 151, ../scss/config/_grid.scss */
   .grid_10:last-child {
     margin-right: auto;
   }
 
-  /* line 162, ../scss/config/_grid.scss */
+  /* line 141, ../scss/config/_grid.scss */
   .grid_11,
   .grid_11_wide {
     width: 100%;
@@ -834,12 +722,12 @@
     margin-right: auto;
   }
 
-  /* line 172, ../scss/config/_grid.scss */
+  /* line 151, ../scss/config/_grid.scss */
   .grid_11:last-child {
     margin-right: auto;
   }
 
-  /* line 162, ../scss/config/_grid.scss */
+  /* line 141, ../scss/config/_grid.scss */
   .grid_12,
   .grid_12_wide {
     width: 100%;
@@ -849,7 +737,7 @@
     margin-right: auto;
   }
 
-  /* line 172, ../scss/config/_grid.scss */
+  /* line 151, ../scss/config/_grid.scss */
   .grid_12:last-child {
     margin-right: auto;
   }
@@ -1127,7 +1015,7 @@
  * @param {String} $path2x
  */
 /* line 1, ../scss/config/_modifiers.scss */
-.clearfix:after, #header .container .socials .social-icons:after, body.page-type-contact-page #Form_contactForm fieldset:after, body.page-type-contact-page #Form_contactForm .Actions:after {
+.clearfix:after, #header .container .socials .social-icons:after, .blog-entry .blog-entry-misc:after, body.page-type-contact-page #Form_contactForm fieldset:after, body.page-type-contact-page #Form_contactForm .Actions:after {
   content: '';
   clear: both;
   display: table;
@@ -1218,7 +1106,7 @@
   margin-left: 0.9375rem;
   margin-right: 0.9375rem;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   /* line 63, ../scss/config/_modifiers.scss */
   .title, .showcase .container .showcase-title,
   .showcase .container .work-title,
@@ -1227,19 +1115,50 @@
     margin-bottom: 1em;
   }
 }
+@media (max-width: 767px) {
+  /* line 63, ../scss/config/_modifiers.scss */
+  .title, .showcase .container .showcase-title,
+  .showcase .container .work-title,
+  .work .container .showcase-title,
+  .work .container .work-title {
+    margin-bottom: 0.5em;
+  }
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 63, ../scss/config/_modifiers.scss */
+  .title, .showcase .container .showcase-title,
+  .showcase .container .work-title,
+  .work .container .showcase-title,
+  .work .container .work-title {
+    margin-bottom: 0.5em;
+  }
+}
 
-/* line 77, ../scss/config/_modifiers.scss */
+/* line 84, ../scss/config/_modifiers.scss */
 .content, .showcase .container .showcase-content,
 .showcase .container .work-content,
 .work .container .showcase-content,
 .work .container .work-content {
   float: left;
   width: 100%;
-  max-width: 655px;
+  max-width: 640px;
   margin-left: 0.9375rem;
   margin-right: 0.9375rem;
 }
-/* line 83, ../scss/config/_modifiers.scss */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 84, ../scss/config/_modifiers.scss */
+  .content, .showcase .container .showcase-content,
+  .showcase .container .work-content,
+  .work .container .showcase-content,
+  .work .container .work-content {
+    max-width: none;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+  }
+}
+/* line 97, ../scss/config/_modifiers.scss */
 .content h2, .showcase .container .showcase-content h2,
 .showcase .container .work-content h2,
 .work .container .showcase-content h2,
@@ -1268,51 +1187,61 @@
   margin-top: 0;
   line-height: 1.2;
 }
-/* line 88, ../scss/config/_modifiers.scss */
+/* line 102, ../scss/config/_modifiers.scss */
 .content h2, .showcase .container .showcase-content h2,
 .showcase .container .work-content h2,
 .work .container .showcase-content h2,
 .work .container .work-content h2 {
   font-size: 2rem;
 }
-/* line 92, ../scss/config/_modifiers.scss */
+/* line 106, ../scss/config/_modifiers.scss */
 .content h3, .showcase .container .showcase-content h3,
 .showcase .container .work-content h3,
 .work .container .showcase-content h3,
 .work .container .work-content h3 {
   font-size: 1.625rem;
 }
-/* line 96, ../scss/config/_modifiers.scss */
+/* line 110, ../scss/config/_modifiers.scss */
 .content h4, .showcase .container .showcase-content h4,
 .showcase .container .work-content h4,
 .work .container .showcase-content h4,
 .work .container .work-content h4 {
   font-size: 1.25rem;
 }
-/* line 100, ../scss/config/_modifiers.scss */
+/* line 114, ../scss/config/_modifiers.scss */
 .content h5, .showcase .container .showcase-content h5,
 .showcase .container .work-content h5,
 .work .container .showcase-content h5,
 .work .container .work-content h5 {
   font-size: 1.125rem;
 }
-/* line 104, ../scss/config/_modifiers.scss */
+/* line 118, ../scss/config/_modifiers.scss */
 .content h6, .showcase .container .showcase-content h6,
 .showcase .container .work-content h6,
 .work .container .showcase-content h6,
 .work .container .work-content h6 {
   font-size: 1rem;
 }
-/* line 108, ../scss/config/_modifiers.scss */
-.content p, .showcase .container .showcase-content p,
+/* line 122, ../scss/config/_modifiers.scss */
+.content li, .showcase .container .showcase-content li,
+.showcase .container .work-content li,
+.work .container .showcase-content li,
+.work .container .work-content li,
+.content p,
+.showcase .container .showcase-content p,
 .showcase .container .work-content p,
 .work .container .showcase-content p,
 .work .container .work-content p {
   font-size: 1.25rem;
 }
 @media (max-width: 767px) {
-  /* line 108, ../scss/config/_modifiers.scss */
-  .content p, .showcase .container .showcase-content p,
+  /* line 122, ../scss/config/_modifiers.scss */
+  .content li, .showcase .container .showcase-content li,
+  .showcase .container .work-content li,
+  .work .container .showcase-content li,
+  .work .container .work-content li,
+  .content p,
+  .showcase .container .showcase-content p,
   .showcase .container .work-content p,
   .work .container .showcase-content p,
   .work .container .work-content p {
@@ -1320,7 +1249,7 @@
     line-height: 1.4;
   }
 }
-/* line 116, ../scss/config/_modifiers.scss */
+/* line 131, ../scss/config/_modifiers.scss */
 .content a, .showcase .container .showcase-content a,
 .showcase .container .work-content a,
 .work .container .showcase-content a,
@@ -1329,7 +1258,7 @@
 }
 
 @media (max-width: 767px) {
-  /* line 121, ../scss/config/_modifiers.scss */
+  /* line 136, ../scss/config/_modifiers.scss */
   .title, .showcase .container .showcase-title,
   .showcase .container .work-title,
   .work .container .showcase-title,
@@ -1345,24 +1274,24 @@
   }
 }
 
-/* line 130, ../scss/config/_modifiers.scss */
+/* line 145, ../scss/config/_modifiers.scss */
 .padding-left-15 {
   padding-left: 0.9375rem;
 }
 
-/* line 134, ../scss/config/_modifiers.scss */
+/* line 149, ../scss/config/_modifiers.scss */
 .padding-15 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }
 
-/* line 139, ../scss/config/_modifiers.scss */
+/* line 154, ../scss/config/_modifiers.scss */
 .padding-30, body.page-SearchResultController .search-result.container .row {
   padding-left: 1.875rem;
   padding-right: 1.875rem;
 }
 
-/* line 144, ../scss/config/_modifiers.scss */
+/* line 159, ../scss/config/_modifiers.scss */
 .margin-bottom-half-em {
   margin-bottom: 0.5em;
 }
@@ -1718,12 +1647,12 @@ textarea {
 }
 
 /* line 61, ../../../../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/compass-h5bp-1.0.0/stylesheets/h5bp/_helpers.scss */
-.clearfix:before, #header .container .socials .social-icons:before, body.page-type-contact-page #Form_contactForm fieldset:before, body.page-type-contact-page #Form_contactForm .Actions:before, .clearfix:after, #header .container .socials .social-icons:after, body.page-type-contact-page #Form_contactForm fieldset:after, body.page-type-contact-page #Form_contactForm .Actions:after {
+.clearfix:before, #header .container .socials .social-icons:before, .blog-entry .blog-entry-misc:before, body.page-type-contact-page #Form_contactForm fieldset:before, body.page-type-contact-page #Form_contactForm .Actions:before, .clearfix:after, #header .container .socials .social-icons:after, .blog-entry .blog-entry-misc:after, body.page-type-contact-page #Form_contactForm fieldset:after, body.page-type-contact-page #Form_contactForm .Actions:after {
   content: " ";
   display: table;
 }
 /* line 67, ../../../../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/compass-h5bp-1.0.0/stylesheets/h5bp/_helpers.scss */
-.clearfix:after, #header .container .socials .social-icons:after, body.page-type-contact-page #Form_contactForm fieldset:after, body.page-type-contact-page #Form_contactForm .Actions:after {
+.clearfix:after, #header .container .socials .social-icons:after, .blog-entry .blog-entry-misc:after, body.page-type-contact-page #Form_contactForm fieldset:after, body.page-type-contact-page #Form_contactForm .Actions:after {
   clear: both;
 }
 
@@ -2289,15 +2218,37 @@ textarea {
 }
 /* line 1, ../scss/blocks/_footer.scss */
 #footer {
-  height: 52px;
-  padding: 0.9375rem 0;
+  padding: 0.9375rem 0 0;
   background-color: #ef483d;
   color: #fff;
   font-size: 0.875rem;
 }
-/* line 7, ../scss/blocks/_footer.scss */
+@media (max-width: 767px) {
+  /* line 1, ../scss/blocks/_footer.scss */
+  #footer {
+    padding-bottom: 0.625rem;
+  }
+}
+/* line 10, ../scss/blocks/_footer.scss */
 #footer a {
   color: #fff;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 15, ../scss/blocks/_footer.scss */
+  #footer .container .row {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+/* line 21, ../scss/blocks/_footer.scss */
+#footer .container .row .grid {
+  margin-bottom: 0.9375rem;
+}
+@media (max-width: 767px) {
+  /* line 21, ../scss/blocks/_footer.scss */
+  #footer .container .row .grid {
+    margin-bottom: 0.3125rem;
+  }
 }
 
 /* line 3, ../scss/blocks/_work.scss */
@@ -2306,7 +2257,7 @@ textarea {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-/* line 9, ../scss/blocks/_work.scss */
+/* line 10, ../scss/blocks/_work.scss */
 .showcase .container .showcase-title h2, .showcase .container .showcase-title p,
 .showcase .container .work-title h2,
 .showcase .container .work-title p,
@@ -2318,14 +2269,14 @@ textarea {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 15, ../scss/blocks/_work.scss */
+/* line 16, ../scss/blocks/_work.scss */
 .showcase .container .showcase-title h2,
 .showcase .container .work-title h2,
 .work .container .showcase-title h2,
 .work .container .work-title h2 {
   font-size: 2rem;
 }
-/* line 19, ../scss/blocks/_work.scss */
+/* line 20, ../scss/blocks/_work.scss */
 .showcase .container .showcase-title p,
 .showcase .container .work-title p,
 .work .container .showcase-title p,
@@ -2333,19 +2284,58 @@ textarea {
   color: #000;
   font-size: 2rem;
 }
+/* line 25, ../scss/blocks/_work.scss */
+.showcase .container .showcase-title .showcase-title-holder,
+.showcase .container .work-title .showcase-title-holder,
+.work .container .showcase-title .showcase-title-holder,
+.work .container .work-title .showcase-title-holder {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+@media (max-width: 767px) {
+  /* line 25, ../scss/blocks/_work.scss */
+  .showcase .container .showcase-title .showcase-title-holder,
+  .showcase .container .work-title .showcase-title-holder,
+  .work .container .showcase-title .showcase-title-holder,
+  .work .container .work-title .showcase-title-holder {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 35, ../scss/blocks/_work.scss */
+  .showcase .container .showcase-title,
+  .work .container .showcase-title {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 /* line 1, ../scss/blocks/_blogentry.scss */
 .blog-entry {
   width: calc(50% - 30px);
   margin: 0 0.9375rem 1.25rem;
   float: left;
+  display: block;
 }
-/* line 5, ../scss/blocks/_blogentry.scss */
+/* line 6, ../scss/blocks/_blogentry.scss */
+.blog-entry:active {
+  text-decoration: none;
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 1, ../scss/blocks/_blogentry.scss */
+  .blog-entry {
+    margin: 0 0 1.25rem;
+    width: 100%;
+    float: none;
+  }
+}
+/* line 14, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-thumb {
   overflow: hidden;
   margin-bottom: 0.3125rem;
 }
-/* line 10, ../scss/blocks/_blogentry.scss */
+/* line 19, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-thumb img {
   position: relative;
   z-index: -1;
@@ -2357,14 +2347,14 @@ textarea {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 20, ../scss/blocks/_blogentry.scss */
+/* line 29, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-thumb:hover img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 25, ../scss/blocks/_blogentry.scss */
+/* line 34, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-thumb:before {
   z-index: 1;
   content: '';
@@ -2382,7 +2372,7 @@ textarea {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
 }
-/* line 43, ../scss/blocks/_blogentry.scss */
+/* line 52, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-thumb .blog-entry-title {
   z-index: 2;
   font-weight: normal;
@@ -2395,21 +2385,38 @@ textarea {
   margin: 0;
   padding: 1.875rem;
 }
-/* line 58, ../scss/blocks/_blogentry.scss */
+/* line 68, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-entry-misc div {
   color: #1a1a1a;
   width: 100%;
   font-size: 1.25rem;
 }
-/* line 64, ../scss/blocks/_blogentry.scss */
+/* line 74, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-entry-misc .blog-entry-tags {
   font-weight: bold;
   max-width: 20rem;
 }
-/* line 69, ../scss/blocks/_blogentry.scss */
+/* line 79, ../scss/blocks/_blogentry.scss */
 .blog-entry .blog-entry-misc .blog-entry-date {
   text-align: right;
   max-width: 10.3125rem;
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 79, ../scss/blocks/_blogentry.scss */
+  .blog-entry .blog-entry-misc .blog-entry-date {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 88, ../scss/blocks/_blogentry.scss */
+  .blog-entry .blog-entry-misc .blog-entry-tags,
+  .blog-entry .blog-entry-misc .blog-entry-date {
+    margin: 0;
+    width: 100%;
+    float: none;
+    text-align: left;
+    max-width: none;
+  }
 }
 
 /* line 1, ../scss/blocks/_searchform.scss */
@@ -2663,8 +2670,16 @@ body.page-home #footer {
   width: 100%;
   left: 0;
   z-index: 8;
+  height: 52px;
 }
-/* line 10, ../scss/pagetypes/_homepage.scss */
+@media (max-width: 1024px) {
+  /* line 1, ../scss/pagetypes/_homepage.scss */
+  body.page-home #footer {
+    position: static;
+    height: auto;
+  }
+}
+/* line 16, ../scss/pagetypes/_homepage.scss */
 body.page-home #basetwo {
   top: 13.75rem;
   right: -0.75em;
@@ -2680,7 +2695,7 @@ body.page-home #basetwo {
   width: 617px;
 }
 @media (max-width: 767px) {
-  /* line 10, ../scss/pagetypes/_homepage.scss */
+  /* line 16, ../scss/pagetypes/_homepage.scss */
   body.page-home #basetwo {
     -moz-transform-origin: 100% 50%;
     -ms-transform-origin: 100% 50%;
@@ -2689,7 +2704,7 @@ body.page-home #basetwo {
     top: 20%;
   }
 }
-/* line 21, ../scss/pagetypes/_homepage.scss */
+/* line 27, ../scss/pagetypes/_homepage.scss */
 body.page-home #design {
   bottom: 10.625rem;
   left: -0.75em;
@@ -2705,7 +2720,7 @@ body.page-home #design {
   width: 460px;
 }
 @media (max-width: 767px) {
-  /* line 21, ../scss/pagetypes/_homepage.scss */
+  /* line 27, ../scss/pagetypes/_homepage.scss */
   body.page-home #design {
     -moz-transform-origin: 0 50%;
     -ms-transform-origin: 0 50%;
@@ -2714,7 +2729,7 @@ body.page-home #design {
     bottom: 20%;
   }
 }
-/* line 32, ../scss/pagetypes/_homepage.scss */
+/* line 38, ../scss/pagetypes/_homepage.scss */
 body.page-home #basetwo,
 body.page-home #design {
   overflow: hidden;
@@ -2722,7 +2737,7 @@ body.page-home #design {
   position: absolute;
 }
 @media (max-width: 767px) {
-  /* line 32, ../scss/pagetypes/_homepage.scss */
+  /* line 38, ../scss/pagetypes/_homepage.scss */
   body.page-home #basetwo,
   body.page-home #design {
     -moz-transform: scale(0.5);
@@ -2731,7 +2746,7 @@ body.page-home #design {
     transform: scale(0.5);
   }
 }
-/* line 42, ../scss/pagetypes/_homepage.scss */
+/* line 48, ../scss/pagetypes/_homepage.scss */
 body.page-home #btn-read-on {
   bottom: 4.5rem;
   left: 50%;
@@ -2749,11 +2764,11 @@ body.page-home #btn-read-on {
   transition: color 0.3s ease-in-out;
   text-decoration: none;
 }
-/* line 51, ../scss/pagetypes/_homepage.scss */
+/* line 57, ../scss/pagetypes/_homepage.scss */
 body.page-home #btn-read-on:hover {
   color: white;
 }
-/* line 57, ../scss/pagetypes/_homepage.scss */
+/* line 63, ../scss/pagetypes/_homepage.scss */
 body.page-home #btn-read-on:before {
   font-size: 3.125rem;
   font-weight: lighter;
@@ -2765,7 +2780,15 @@ body.page-SearchResultController #main,
 body.page-type-blogs-page #main {
   padding-top: 71px;
 }
-/* line 5, ../scss/pagetypes/_blogpage.scss */
+@media (max-width: 767px) {
+  /* line 1, ../scss/pagetypes/_blogpage.scss */
+  body.page-Security #main,
+  body.page-SearchResultController #main,
+  body.page-type-blogs-page #main {
+    padding-top: 2.5625rem;
+  }
+}
+/* line 8, ../scss/pagetypes/_blogpage.scss */
 body.page-Security #page-title,
 body.page-SearchResultController #page-title,
 body.page-type-blogs-page #page-title {
@@ -2774,26 +2797,63 @@ body.page-type-blogs-page #page-title {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }
-/* line 12, ../scss/pagetypes/_blogpage.scss */
+@media (max-width: 767px) {
+  /* line 8, ../scss/pagetypes/_blogpage.scss */
+  body.page-Security #page-title,
+  body.page-SearchResultController #page-title,
+  body.page-type-blogs-page #page-title {
+    margin: 0;
+    padding: 0;
+  }
+}
+/* line 19, ../scss/pagetypes/_blogpage.scss */
 body.page-Security #header,
 body.page-SearchResultController #header,
 body.page-type-blogs-page #header {
   border-color: #ef483d;
 }
-/* line 14, ../scss/pagetypes/_blogpage.scss */
+/* line 21, ../scss/pagetypes/_blogpage.scss */
 body.page-Security #header #btn-search,
 body.page-SearchResultController #header #btn-search,
 body.page-type-blogs-page #header #btn-search {
   border-right: 1px solid #ef483d;
 }
-/* line 19, ../scss/pagetypes/_blogpage.scss */
+/* line 26, ../scss/pagetypes/_blogpage.scss */
 body.page-Security .container .row,
 body.page-SearchResultController .container .row,
 body.page-type-blogs-page .container .row {
   padding: 0 0.9375rem;
 }
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 26, ../scss/pagetypes/_blogpage.scss */
+  body.page-Security .container .row,
+  body.page-SearchResultController .container .row,
+  body.page-type-blogs-page .container .row {
+    margin: 0;
+    padding: 0 0.3125rem;
+  }
+  /* line 31, ../scss/pagetypes/_blogpage.scss */
+  body.page-Security .container .row.sub-title,
+  body.page-SearchResultController .container .row.sub-title,
+  body.page-type-blogs-page .container .row.sub-title {
+    padding: 0;
+  }
+}
 
-/* line 4, ../scss/pagetypes/_search_result.scss */
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 1, ../scss/pagetypes/_search_result.scss */
+  body.page-SearchResultController #main {
+    padding-bottom: 1.875rem;
+  }
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 8, ../scss/pagetypes/_search_result.scss */
+  body.page-SearchResultController .search-result.container .row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* line 14, ../scss/pagetypes/_search_result.scss */
 body.page-SearchResultController .search-result.container .row .search-result-item {
   display: block;
   border-top: 1px solid #ef483d;
@@ -2804,24 +2864,24 @@ body.page-SearchResultController .search-result.container .row .search-result-it
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 5, ../scss/pagetypes/_search_result.scss */
+/* line 15, ../scss/pagetypes/_search_result.scss */
 body.page-SearchResultController .search-result.container .row .search-result-item:link, body.page-SearchResultController .search-result.container .row .search-result-item:active {
   text-decoration: none;
 }
-/* line 14, ../scss/pagetypes/_search_result.scss */
+/* line 24, ../scss/pagetypes/_search_result.scss */
 body.page-SearchResultController .search-result.container .row .search-result-item .item-title {
   color: #000;
   font-size: 2rem;
   margin: 0.5em 0 0.25em;
   font-weight: bold;
 }
-/* line 21, ../scss/pagetypes/_search_result.scss */
+/* line 31, ../scss/pagetypes/_search_result.scss */
 body.page-SearchResultController .search-result.container .row .search-result-item .item-content {
   font-size: 1.25rem;
   color: gray;
   font-weight: 100;
 }
-/* line 25, ../scss/pagetypes/_search_result.scss */
+/* line 35, ../scss/pagetypes/_search_result.scss */
 body.page-SearchResultController .search-result.container .row .search-result-item .item-content .highlight {
   display: inline-block;
   color: #ef483d;
@@ -2829,29 +2889,29 @@ body.page-SearchResultController .search-result.container .row .search-result-it
   padding: 0 0.25em;
   border-radius: 0.125rem;
 }
-/* line 35, ../scss/pagetypes/_search_result.scss */
+/* line 45, ../scss/pagetypes/_search_result.scss */
 body.page-SearchResultController .search-result.container .row .search-result-item:hover {
   padding-left: 0.9375rem;
   background-color: #eeeeee;
 }
-/* line 41, ../scss/pagetypes/_search_result.scss */
+/* line 51, ../scss/pagetypes/_search_result.scss */
 body.page-SearchResultController .search-result.container .row .pagination {
   margin-top: 1.875rem;
   color: #ef483d;
 }
-/* line 47, ../scss/pagetypes/_search_result.scss */
+/* line 57, ../scss/pagetypes/_search_result.scss */
 body.page-SearchResultController .search-result.container .pagination {
   margin-top: 1.875rem;
   color: #ef483d;
 }
-/* line 50, ../scss/pagetypes/_search_result.scss */
+/* line 60, ../scss/pagetypes/_search_result.scss */
 body.page-SearchResultController .search-result.container .pagination a {
   -moz-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-/* line 52, ../scss/pagetypes/_search_result.scss */
+/* line 62, ../scss/pagetypes/_search_result.scss */
 body.page-SearchResultController .search-result.container .pagination a:hover {
   color: #000;
 }
@@ -2983,95 +3043,199 @@ body.page-type-contact-page #content-area .work .container .work-title .address 
 .work .container body.page-type-contact-page #content-area .work-title .address p {
   margin-top: 0;
 }
-/* line 15, ../scss/pagetypes/_contactpage.scss */
+@media (max-width: 1024px) {
+  /* line 13, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #content-area .content, body.page-type-contact-page #content-area .showcase .container .showcase-content, .showcase .container body.page-type-contact-page #content-area .showcase-content,
+  body.page-type-contact-page #content-area .showcase .container .work-content,
+  .showcase .container body.page-type-contact-page #content-area .work-content,
+  body.page-type-contact-page #content-area .work .container .showcase-content,
+  .work .container body.page-type-contact-page #content-area .showcase-content,
+  body.page-type-contact-page #content-area .work .container .work-content,
+  .work .container body.page-type-contact-page #content-area .work-content {
+    max-width: 38.375rem;
+  }
+}
+/* line 21, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm textarea,
 body.page-type-contact-page #Form_contactForm input {
   border: 1px solid #bbb;
   background-color: #eee;
 }
-/* line 21, ../scss/pagetypes/_contactpage.scss */
+/* line 27, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm p.message {
   color: #388C10;
 }
-/* line 23, ../scss/pagetypes/_contactpage.scss */
+/* line 29, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm p.message.bad {
   color: #ef483d;
 }
-/* line 30, ../scss/pagetypes/_contactpage.scss */
+/* line 36, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset .field {
   float: left;
   width: 100%;
-  max-width: 19.5rem;
+  max-width: 19.0625rem;
   margin-bottom: 1.25rem;
 }
-/* line 35, ../scss/pagetypes/_contactpage.scss */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 36, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm fieldset .field {
+    max-width: 21.125rem;
+  }
+}
+@media (max-width: 767px) {
+  /* line 36, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm fieldset .field {
+    max-width: 21.125rem;
+  }
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 36, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm fieldset .field {
+    max-width: none;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 36, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm fieldset .field {
+    max-width: 18.25rem;
+  }
+}
+/* line 56, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset .field:nth-child(odd) {
   margin-right: 1.875rem;
 }
-/* line 39, ../scss/pagetypes/_contactpage.scss */
+/* line 60, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset .field label {
   color: #1a1a1a;
   font-size: 1.25rem;
   margin-bottom: 0.625rem;
   display: block;
 }
-/* line 46, ../scss/pagetypes/_contactpage.scss */
+/* line 67, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset .field input.text {
   padding: 0.25em 0.5em;
   font-size: 1.25rem;
   width: 100%;
   display: block;
 }
-/* line 53, ../scss/pagetypes/_contactpage.scss */
+/* line 74, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset .field.textarea {
   clear: both;
   float: none;
   max-width: none;
 }
-/* line 57, ../scss/pagetypes/_contactpage.scss */
+/* line 78, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset .field.textarea textarea {
   display: block;
   width: 100%;
   height: 12.5rem;
 }
-/* line 64, ../scss/pagetypes/_contactpage.scss */
+/* line 85, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset .field .message.required {
   color: #ef483d;
   font-style: italic;
   font-size: 0.75rem;
 }
-/* line 73, ../scss/pagetypes/_contactpage.scss */
+/* line 94, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset #Form_contactForm_Email_Holder label:after,
 body.page-type-contact-page #Form_contactForm fieldset #Form_contactForm_Message_Holder label:after {
   content: '*';
   color: #ef483d;
   margin-left: 0.25em;
 }
-/* line 83, ../scss/pagetypes/_contactpage.scss */
+/* line 104, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm .Actions .action,
 body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha {
   float: left;
   width: 100%;
-  max-width: 19.5rem;
+  max-width: 19.0625rem;
   margin-bottom: 1.25rem;
 }
-/* line 91, ../scss/pagetypes/_contactpage.scss */
+/* line 113, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha {
   margin-right: 1.875rem;
 }
-/* line 95, ../scss/pagetypes/_contactpage.scss */
+@media (max-width: 1024px) {
+  /* line 113, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha {
+    max-width: 18.25rem;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 113, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  /* line 128, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha div {
+    width: 100% !important;
+  }
+  /* line 130, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha div iframe {
+    display: block;
+    width: 100%;
+  }
+}
+/* line 138, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm .Actions .action {
   display: block;
   width: 100%;
   height: 4.75rem;
+  float: right;
   font-size: 1.25rem;
 }
-/* line 105, ../scss/pagetypes/_contactpage.scss */
+@media (max-width: 767px) {
+  /* line 138, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm .Actions .action {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 138, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm .Actions .action {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 138, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm .Actions .action {
+    max-width: 18.25rem;
+  }
+}
+/* line 164, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .guide-gmap {
   padding-top: 1.25rem;
   border-top: 0.25rem solid #ef483d;
 }
-/* line 110, ../scss/pagetypes/_contactpage.scss */
+@media (max-width: 767px) {
+  /* line 164, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap {
+    padding-top: 0;
+    border-top: none;
+  }
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 164, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap {
+    padding-top: 0;
+    border-top: none;
+  }
+}
+/* line 178, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .guide-gmap header h2 {
   margin-top: 0;
   font-size: 2rem;
@@ -3079,7 +3243,13 @@ body.page-type-contact-page .guide-gmap header h2 {
   line-height: 1.2;
   margin-bottom: 1.25rem;
 }
-/* line 119, ../scss/pagetypes/_contactpage.scss */
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 177, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap header {
+    padding: 0;
+  }
+}
+/* line 191, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .guide-gmap .title, body.page-type-contact-page .guide-gmap .showcase .container .showcase-title, .showcase .container body.page-type-contact-page .guide-gmap .showcase-title,
 body.page-type-contact-page .guide-gmap .showcase .container .work-title,
 .showcase .container body.page-type-contact-page .guide-gmap .work-title,
@@ -3091,7 +3261,7 @@ body.page-type-contact-page .guide-gmap .work .container .work-title,
   font-weight: normal;
   color: #000;
 }
-/* line 123, ../scss/pagetypes/_contactpage.scss */
+/* line 195, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .guide-gmap .title p, body.page-type-contact-page .guide-gmap .showcase .container .showcase-title p, .showcase .container body.page-type-contact-page .guide-gmap .showcase-title p,
 body.page-type-contact-page .guide-gmap .showcase .container .work-title p,
 .showcase .container body.page-type-contact-page .guide-gmap .work-title p,
@@ -3101,7 +3271,35 @@ body.page-type-contact-page .guide-gmap .work .container .work-title p,
 .work .container body.page-type-contact-page .guide-gmap .work-title p {
   margin-top: 0;
 }
-/* line 128, ../scss/pagetypes/_contactpage.scss */
+@media (max-width: 767px) {
+  /* line 191, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .title, body.page-type-contact-page .guide-gmap .showcase .container .showcase-title, .showcase .container body.page-type-contact-page .guide-gmap .showcase-title,
+  body.page-type-contact-page .guide-gmap .showcase .container .work-title,
+  .showcase .container body.page-type-contact-page .guide-gmap .work-title,
+  body.page-type-contact-page .guide-gmap .work .container .showcase-title,
+  .work .container body.page-type-contact-page .guide-gmap .showcase-title,
+  body.page-type-contact-page .guide-gmap .work .container .work-title,
+  .work .container body.page-type-contact-page .guide-gmap .work-title {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 191, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .title, body.page-type-contact-page .guide-gmap .showcase .container .showcase-title, .showcase .container body.page-type-contact-page .guide-gmap .showcase-title,
+  body.page-type-contact-page .guide-gmap .showcase .container .work-title,
+  .showcase .container body.page-type-contact-page .guide-gmap .work-title,
+  body.page-type-contact-page .guide-gmap .work .container .showcase-title,
+  .work .container body.page-type-contact-page .guide-gmap .showcase-title,
+  body.page-type-contact-page .guide-gmap .work .container .work-title,
+  .work .container body.page-type-contact-page .guide-gmap .work-title {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+}
+/* line 212, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
 body.page-type-contact-page .guide-gmap .showcase .container .work-content,
 .showcase .container body.page-type-contact-page .guide-gmap .work-content,
@@ -3112,7 +3310,61 @@ body.page-type-contact-page .guide-gmap .work .container .work-content,
   margin-left: 0.9375rem;
   margin-right: 0;
 }
-/* line 131, ../scss/pagetypes/_contactpage.scss */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 212, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
+  body.page-type-contact-page .guide-gmap .showcase .container .work-content,
+  .showcase .container body.page-type-contact-page .guide-gmap .work-content,
+  body.page-type-contact-page .guide-gmap .work .container .showcase-content,
+  .work .container body.page-type-contact-page .guide-gmap .showcase-content,
+  body.page-type-contact-page .guide-gmap .work .container .work-content,
+  .work .container body.page-type-contact-page .guide-gmap .work-content {
+    margin-left: 0 !important;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 767px) {
+  /* line 212, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
+  body.page-type-contact-page .guide-gmap .showcase .container .work-content,
+  .showcase .container body.page-type-contact-page .guide-gmap .work-content,
+  body.page-type-contact-page .guide-gmap .work .container .showcase-content,
+  .work .container body.page-type-contact-page .guide-gmap .showcase-content,
+  body.page-type-contact-page .guide-gmap .work .container .work-content,
+  .work .container body.page-type-contact-page .guide-gmap .work-content {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 212, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
+  body.page-type-contact-page .guide-gmap .showcase .container .work-content,
+  .showcase .container body.page-type-contact-page .guide-gmap .work-content,
+  body.page-type-contact-page .guide-gmap .work .container .showcase-content,
+  .work .container body.page-type-contact-page .guide-gmap .showcase-content,
+  body.page-type-contact-page .guide-gmap .work .container .work-content,
+  .work .container body.page-type-contact-page .guide-gmap .work-content {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 212, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
+  body.page-type-contact-page .guide-gmap .showcase .container .work-content,
+  .showcase .container body.page-type-contact-page .guide-gmap .work-content,
+  body.page-type-contact-page .guide-gmap .work .container .showcase-content,
+  .work .container body.page-type-contact-page .guide-gmap .showcase-content,
+  body.page-type-contact-page .guide-gmap .work .container .work-content,
+  .work .container body.page-type-contact-page .guide-gmap .work-content {
+    max-width: 38.375rem;
+  }
+}
+/* line 238, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .guide-gmap .content iframe, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content iframe, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content iframe,
 body.page-type-contact-page .guide-gmap .showcase .container .work-content iframe,
 .showcase .container body.page-type-contact-page .guide-gmap .work-content iframe,
@@ -3125,25 +3377,150 @@ body.page-type-contact-page .guide-gmap .work .container .work-content iframe,
   width: 100%;
   height: 30rem;
 }
+@media (max-width: 767px) {
+  /* line 250, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #content-area .title, body.page-type-contact-page #content-area .showcase .container .showcase-title, .showcase .container body.page-type-contact-page #content-area .showcase-title,
+  body.page-type-contact-page #content-area .showcase .container .work-title,
+  .showcase .container body.page-type-contact-page #content-area .work-title,
+  body.page-type-contact-page #content-area .work .container .showcase-title,
+  .work .container body.page-type-contact-page #content-area .showcase-title,
+  body.page-type-contact-page #content-area .work .container .work-title,
+  .work .container body.page-type-contact-page #content-area .work-title,
+  body.page-type-contact-page #content-area .content,
+  body.page-type-contact-page #content-area .showcase .container .showcase-content,
+  .showcase .container body.page-type-contact-page #content-area .showcase-content,
+  body.page-type-contact-page #content-area .showcase .container .work-content,
+  .showcase .container body.page-type-contact-page #content-area .work-content,
+  body.page-type-contact-page #content-area .work .container .showcase-content,
+  .work .container body.page-type-contact-page #content-area .showcase-content,
+  body.page-type-contact-page #content-area .work .container .work-content,
+  .work .container body.page-type-contact-page #content-area .work-content {
+    max-width: none !important;
+    width: 100% !important;
+  }
+  /* line 257, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm .g-recaptcha,
+  body.page-type-contact-page #Form_contactForm .action,
+  body.page-type-contact-page #Form_contactForm fieldset .field {
+    width: 100% !important;
+    margin-right: 0 !important;
+    max-width: none !important;
+  }
+  /* line 265, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap {
+    padding-left: 0.9375rem !important;
+    padding-right: 0.9375rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 274, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .title, body.page-type-contact-page .guide-gmap .showcase .container .showcase-title, .showcase .container body.page-type-contact-page .guide-gmap .showcase-title,
+  body.page-type-contact-page .guide-gmap .showcase .container .work-title,
+  .showcase .container body.page-type-contact-page .guide-gmap .work-title,
+  body.page-type-contact-page .guide-gmap .work .container .showcase-title,
+  .work .container body.page-type-contact-page .guide-gmap .showcase-title,
+  body.page-type-contact-page .guide-gmap .work .container .work-title,
+  .work .container body.page-type-contact-page .guide-gmap .work-title,
+  body.page-type-contact-page #content-area .title,
+  body.page-type-contact-page #content-area .showcase .container .showcase-title,
+  .showcase .container body.page-type-contact-page #content-area .showcase-title,
+  body.page-type-contact-page #content-area .showcase .container .work-title,
+  .showcase .container body.page-type-contact-page #content-area .work-title,
+  body.page-type-contact-page #content-area .work .container .showcase-title,
+  .work .container body.page-type-contact-page #content-area .showcase-title,
+  body.page-type-contact-page #content-area .work .container .work-title,
+  .work .container body.page-type-contact-page #content-area .work-title {
+    max-width: 320px !important;
+  }
+  /* line 278, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
+  body.page-type-contact-page .guide-gmap .showcase .container .work-content,
+  .showcase .container body.page-type-contact-page .guide-gmap .work-content,
+  body.page-type-contact-page .guide-gmap .work .container .showcase-content,
+  .work .container body.page-type-contact-page .guide-gmap .showcase-content,
+  body.page-type-contact-page .guide-gmap .work .container .work-content,
+  .work .container body.page-type-contact-page .guide-gmap .work-content,
+  body.page-type-contact-page #content-area .content,
+  body.page-type-contact-page #content-area .showcase .container .showcase-content,
+  .showcase .container body.page-type-contact-page #content-area .showcase-content,
+  body.page-type-contact-page #content-area .showcase .container .work-content,
+  .showcase .container body.page-type-contact-page #content-area .work-content,
+  body.page-type-contact-page #content-area .work .container .showcase-content,
+  .work .container body.page-type-contact-page #content-area .showcase-content,
+  body.page-type-contact-page #content-area .work .container .work-content,
+  .work .container body.page-type-contact-page #content-area .work-content {
+    max-width: calc(100% - 350px) !important;
+    padding: 0 !important;
+  }
+  /* line 285, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
+  body.page-type-contact-page .guide-gmap .showcase .container .work-content,
+  .showcase .container body.page-type-contact-page .guide-gmap .work-content,
+  body.page-type-contact-page .guide-gmap .work .container .showcase-content,
+  .work .container body.page-type-contact-page .guide-gmap .showcase-content,
+  body.page-type-contact-page .guide-gmap .work .container .work-content,
+  .work .container body.page-type-contact-page .guide-gmap .work-content {
+    max-width: calc(100% - 365px) !important;
+  }
+  /* line 290, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm .g-recaptcha,
+  body.page-type-contact-page #Form_contactForm .action,
+  body.page-type-contact-page #Form_contactForm fieldset .field {
+    width: 100% !important;
+    margin-right: 0 !important;
+    max-width: none !important;
+  }
+}
 
 /* line 90, ../scss/styles.scss */
 #content-area {
   padding: 2.5rem 0.9375rem;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 94, ../scss/styles.scss */
+  #content-area .content, #content-area .showcase .container .showcase-content, .showcase .container #content-area .showcase-content,
+  #content-area .showcase .container .work-content,
+  .showcase .container #content-area .work-content,
+  #content-area .work .container .showcase-content,
+  .work .container #content-area .showcase-content,
+  #content-area .work .container .work-content,
+  .work .container #content-area .work-content {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 90, ../scss/styles.scss */
+  #content-area {
+    padding: 1.25rem 0.9375rem;
+  }
+}
 
-/* line 94, ../scss/styles.scss */
+/* line 105, ../scss/styles.scss */
 #page-title {
   color: #ef483d;
   font-size: 2rem;
 }
-/* line 97, ../scss/styles.scss */
+/* line 108, ../scss/styles.scss */
 #page-title .sub-title {
   color: #000;
 }
 
-/* line 102, ../scss/styles.scss */
+/* line 113, ../scss/styles.scss */
 #main {
   padding-bottom: calc(52px * 2);
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 113, ../scss/styles.scss */
+  #main {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, ../scss/styles.scss */
+  #main {
+    padding-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

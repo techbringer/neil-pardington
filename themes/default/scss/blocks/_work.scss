@@ -3,6 +3,7 @@
 	.container {
 		padding-top: rem(40);
 		padding-bottom: rem(40);
+		
 		.showcase-title,
 		.work-title {
 			@extend .title;
@@ -19,6 +20,22 @@
 			p {
 				color: #000;
 				font-size: rem(32);
+			}
+			
+			.showcase-title-holder {
+				padding-left: rem(15);
+				padding-right: rem(15);
+				@include breakpoint($container_portrait) {
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+		}
+		
+		.showcase-title {
+			@include breakpoint($container_portrait) {
+				margin-left: 0;
+				margin-right: 0;
 			}
 		}
 		

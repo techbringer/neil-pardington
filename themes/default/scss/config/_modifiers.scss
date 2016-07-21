@@ -69,15 +69,29 @@
 	max-width: 320px;
 	margin-left: rem(15);
 	margin-right: rem(15);
-	@include breakpoint($container_portrait) {
+	@include breakpoint($container_ipadToDesktop) {
 		margin-bottom: 1em;
+	}
+	@include breakpoint($container_portrait) {
+		margin-bottom: 0.5em;
+	}
+	
+	@include breakpoint($container_small) {
+		margin-bottom: 0.5em;
 	}
 }
 
 .content {
 	float: left;
 	width: 100%;
-	max-width: 655px;
+	max-width: 640px;
+	@include breakpoint($container_ipadToDesktop) {
+		max-width: none;
+		margin-right: 0;
+		margin-left: 0;
+		padding-left: rem(30);
+		padding-right: rem(30);
+	}
 	margin-left: rem(15);
 	margin-right: rem(15);
 	h2,h3,h4,h5,h6,p,ul,li {
@@ -105,6 +119,7 @@
 		font-size: rem(16);
 	}
 	
+	li,
 	p {
 		font-size: rem(20);
 		@include breakpoint($container_portrait) {
