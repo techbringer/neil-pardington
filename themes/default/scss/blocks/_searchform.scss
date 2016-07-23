@@ -21,6 +21,7 @@
 			&:before {
 				display: block;
 				font-size: rem(32);
+				
 			}
 			
 			@include breakpoint($container_portrait) {

@@ -2474,7 +2474,7 @@ textarea {
   }
 }
 
-/* line 36, ../scss/blocks/_searchform.scss */
+/* line 37, ../scss/blocks/_searchform.scss */
 #GeneralSearchForm_GeneralSearchForm {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -2484,7 +2484,7 @@ textarea {
   left: 50%;
   position: absolute;
 }
-/* line 38, ../scss/blocks/_searchform.scss */
+/* line 39, ../scss/blocks/_searchform.scss */
 #GeneralSearchForm_GeneralSearchForm label {
   position: absolute;
   letter-spacing: 1px;
@@ -2500,12 +2500,12 @@ textarea {
   user-select: none;
 }
 @media (max-width: 767px) {
-  /* line 38, ../scss/blocks/_searchform.scss */
+  /* line 39, ../scss/blocks/_searchform.scss */
   #GeneralSearchForm_GeneralSearchForm label {
     font-size: 2rem;
   }
 }
-/* line 51, ../scss/blocks/_searchform.scss */
+/* line 52, ../scss/blocks/_searchform.scss */
 #GeneralSearchForm_GeneralSearchForm label:before {
   content: '';
   width: 2px;
@@ -2526,13 +2526,13 @@ textarea {
   font-weight: 100;
 }
 @media (max-width: 767px) {
-  /* line 51, ../scss/blocks/_searchform.scss */
+  /* line 52, ../scss/blocks/_searchform.scss */
   #GeneralSearchForm_GeneralSearchForm label:before {
     height: 50px;
     margin-left: 0.125rem;
   }
 }
-/* line 67, ../scss/blocks/_searchform.scss */
+/* line 68, ../scss/blocks/_searchform.scss */
 #GeneralSearchForm_GeneralSearchForm .text {
   letter-spacing: 1px;
   font-size: 5.375rem;
@@ -2544,7 +2544,7 @@ textarea {
   background: none;
 }
 @media (max-width: 767px) {
-  /* line 67, ../scss/blocks/_searchform.scss */
+  /* line 68, ../scss/blocks/_searchform.scss */
   #GeneralSearchForm_GeneralSearchForm .text {
     font-size: 2rem;
   }
