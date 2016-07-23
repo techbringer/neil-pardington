@@ -20,6 +20,7 @@
 			width: rem(70);
 			&:before {
 				display: block;
+				font-size: rem(32);
 			}
 			
 			@include breakpoint($container_portrait) {

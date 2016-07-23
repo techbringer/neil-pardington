@@ -1748,7 +1748,7 @@ textarea {
   top: 0;
   z-index: 10;
   height: 71px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid white;
 }
 /* line 9, ../scss/blocks/_header.scss */
 #header .container {
@@ -2025,11 +2025,23 @@ textarea {
   #header .container .socials .social-icons a.social {
     display: block;
   }
-  /* line 267, ../scss/blocks/_header.scss */
+}
+@media (max-width: 1024px) and (max-width: 1023px) {
+  /* line 260, ../scss/blocks/_header.scss */
+  #header .container .socials .social-icons a.social {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  /* line 264, ../scss/blocks/_header.scss */
+  #header .container .socials .social-icons a.social:hover {
+    background-color: white;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 273, ../scss/blocks/_header.scss */
   #header.toggled {
     border-bottom: 1px solid white;
   }
-  /* line 271, ../scss/blocks/_header.scss */
+  /* line 277, ../scss/blocks/_header.scss */
   #header.toggled .container .nav {
     display: block;
     position: fixed;
@@ -2041,73 +2053,73 @@ textarea {
     padding-top: 1.5625rem;
     padding-right: 0.9375rem;
   }
-  /* line 284, ../scss/blocks/_header.scss */
+  /* line 290, ../scss/blocks/_header.scss */
   #header.toggled .container .socials .social-icons {
     right: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 302, ../scss/blocks/_header.scss */
+  /* line 308, ../scss/blocks/_header.scss */
   #header .container .nav ul li ul li a {
     font-size: 1rem;
   }
-  /* line 305, ../scss/blocks/_header.scss */
+  /* line 311, ../scss/blocks/_header.scss */
   #header .container .nav ul li ul li ul li {
     margin-bottom: 0.9375rem;
   }
 }
 @media (max-width: 767px) {
-  /* line 318, ../scss/blocks/_header.scss */
+  /* line 324, ../scss/blocks/_header.scss */
   #header {
     height: 2.5625rem;
   }
-  /* line 322, ../scss/blocks/_header.scss */
+  /* line 328, ../scss/blocks/_header.scss */
   #header.toggled .container,
   #header .container {
     height: 2.5rem;
   }
-  /* line 325, ../scss/blocks/_header.scss */
+  /* line 331, ../scss/blocks/_header.scss */
   #header.toggled .container .nav,
   #header .container .nav {
     padding: 1.5625rem 0.625rem;
   }
-  /* line 327, ../scss/blocks/_header.scss */
+  /* line 333, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul,
   #header .container .nav ul {
     height: 100%;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
-  /* line 331, ../scss/blocks/_header.scss */
+  /* line 337, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li,
   #header .container .nav ul li {
     margin: 0 0 0.9375rem;
     float: none;
     width: 100%;
   }
-  /* line 332, ../scss/blocks/_header.scss */
+  /* line 338, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li a,
   #header .container .nav ul li a {
     display: inline-block;
   }
-  /* line 336, ../scss/blocks/_header.scss */
+  /* line 342, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li:last-child,
   #header .container .nav ul li:last-child {
     margin-bottom: 0;
   }
-  /* line 342, ../scss/blocks/_header.scss */
+  /* line 348, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li ul,
   #header .container .nav ul li ul {
     padding-top: 0.9375rem;
     padding-bottom: 0.9375rem;
     position: static;
   }
-  /* line 346, ../scss/blocks/_header.scss */
+  /* line 352, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li ul.level-2,
   #header .container .nav ul li ul.level-2 {
     height: auto !important;
   }
-  /* line 349, ../scss/blocks/_header.scss */
+  /* line 355, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li ul li,
   #header .container .nav ul li ul li {
     position: relative;
@@ -2116,7 +2128,7 @@ textarea {
     width: 100%;
     padding-left: 1.25rem;
   }
-  /* line 354, ../scss/blocks/_header.scss */
+  /* line 360, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li ul li.multi:after,
   #header .container .nav ul li ul li.multi:after {
     position: absolute;
@@ -2133,12 +2145,12 @@ textarea {
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
   }
-  /* line 368, ../scss/blocks/_header.scss */
+  /* line 374, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li ul li.multi.hover ul,
   #header .container .nav ul li ul li.multi.hover ul {
     display: block;
   }
-  /* line 372, ../scss/blocks/_header.scss */
+  /* line 378, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li ul li.multi.hover:after,
   #header .container .nav ul li ul li.multi.hover:after {
     -moz-transform: rotate(45deg);
@@ -2146,24 +2158,24 @@ textarea {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  /* line 378, ../scss/blocks/_header.scss */
+  /* line 384, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li ul li.multi li.multi:after,
   #header .container .nav ul li ul li.multi li.multi:after {
     content: '';
     display: none;
   }
-  /* line 386, ../scss/blocks/_header.scss */
+  /* line 392, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li ul li a,
   #header .container .nav ul li ul li a {
     display: block;
   }
-  /* line 388, ../scss/blocks/_header.scss */
+  /* line 394, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li ul li a.active,
   #header .container .nav ul li ul li a.active {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.2);
   }
-  /* line 394, ../scss/blocks/_header.scss */
+  /* line 400, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li ul li a,
   #header.toggled .container .nav ul li ul li a:hover,
   #header.toggled .container .nav ul li ul li a.current,
@@ -2173,46 +2185,50 @@ textarea {
     background-color: transparent;
     color: #fff;
   }
-  /* line 404, ../scss/blocks/_header.scss */
+  /* line 410, ../scss/blocks/_header.scss */
   #header.toggled .container .nav ul li ul li ul,
   #header .container .nav ul li ul li ul {
     display: none;
   }
-  /* line 413, ../scss/blocks/_header.scss */
+  /* line 419, ../scss/blocks/_header.scss */
   #header.toggled .container .socials .social-icons,
   #header .container .socials .social-icons {
     height: 2.5rem;
-    right: -12.5rem;
     -moz-transition: right 0.5s ease-in 0.05s;
     -o-transition: right 0.5s ease-in 0.05s;
     -webkit-transition: right 0.5s ease-in;
     -webkit-transition-delay: 0.05s;
     transition: right 0.5s ease-in 0.05s;
   }
-  /* line 417, ../scss/blocks/_header.scss */
+  /* line 423, ../scss/blocks/_header.scss */
   #header.toggled .container .socials .social-icons a.social,
   #header .container .socials .social-icons a.social {
     display: block;
   }
-  /* line 423, ../scss/blocks/_header.scss */
+  /* line 429, ../scss/blocks/_header.scss */
   #header.toggled .container .socials button,
   #header .container .socials button {
     width: 2.5rem;
   }
-  /* line 429, ../scss/blocks/_header.scss */
+  /* line 435, ../scss/blocks/_header.scss */
   #header.toggled .container .socials #btn-mobile i.first,
   #header .container .socials #btn-mobile i.first {
     margin-top: -4px;
   }
-  /* line 433, ../scss/blocks/_header.scss */
+  /* line 439, ../scss/blocks/_header.scss */
   #header.toggled .container .socials #btn-mobile i.third,
   #header .container .socials #btn-mobile i.third {
     margin-top: 4px;
   }
-  /* line 444, ../scss/blocks/_header.scss */
+  /* line 450, ../scss/blocks/_header.scss */
   #header.toggled .container .nav {
     top: 2.5625rem;
     height: calc(100% - 41px);
+    left: 0;
+  }
+  /* line 456, ../scss/blocks/_header.scss */
+  #header.toggled .container .socials {
+    right: auto;
     left: 0;
   }
 }
@@ -2446,6 +2462,7 @@ textarea {
 /* line 21, ../scss/blocks/_searchform.scss */
 #search-wrapper .container #btn-close:before {
   display: block;
+  font-size: 2rem;
 }
 @media (max-width: 767px) {
   /* line 15, ../scss/blocks/_searchform.scss */
@@ -2457,7 +2474,7 @@ textarea {
   }
 }
 
-/* line 35, ../scss/blocks/_searchform.scss */
+/* line 36, ../scss/blocks/_searchform.scss */
 #GeneralSearchForm_GeneralSearchForm {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -2467,7 +2484,7 @@ textarea {
   left: 50%;
   position: absolute;
 }
-/* line 37, ../scss/blocks/_searchform.scss */
+/* line 38, ../scss/blocks/_searchform.scss */
 #GeneralSearchForm_GeneralSearchForm label {
   position: absolute;
   letter-spacing: 1px;
@@ -2483,12 +2500,12 @@ textarea {
   user-select: none;
 }
 @media (max-width: 767px) {
-  /* line 37, ../scss/blocks/_searchform.scss */
+  /* line 38, ../scss/blocks/_searchform.scss */
   #GeneralSearchForm_GeneralSearchForm label {
     font-size: 2rem;
   }
 }
-/* line 50, ../scss/blocks/_searchform.scss */
+/* line 51, ../scss/blocks/_searchform.scss */
 #GeneralSearchForm_GeneralSearchForm label:before {
   content: '';
   width: 2px;
@@ -2509,13 +2526,13 @@ textarea {
   font-weight: 100;
 }
 @media (max-width: 767px) {
-  /* line 50, ../scss/blocks/_searchform.scss */
+  /* line 51, ../scss/blocks/_searchform.scss */
   #GeneralSearchForm_GeneralSearchForm label:before {
     height: 50px;
     margin-left: 0.125rem;
   }
 }
-/* line 66, ../scss/blocks/_searchform.scss */
+/* line 67, ../scss/blocks/_searchform.scss */
 #GeneralSearchForm_GeneralSearchForm .text {
   letter-spacing: 1px;
   font-size: 5.375rem;
@@ -2527,7 +2544,7 @@ textarea {
   background: none;
 }
 @media (max-width: 767px) {
-  /* line 66, ../scss/blocks/_searchform.scss */
+  /* line 67, ../scss/blocks/_searchform.scss */
   #GeneralSearchForm_GeneralSearchForm .text {
     font-size: 2rem;
   }
@@ -2654,6 +2671,8 @@ a:active {
 }
 
 /* line 57, ../scss/styles.scss */
+html.lt-ie9,
+html.lt-ie9 body,
 html.locked,
 html.locked body {
   height: 100%;
@@ -2764,14 +2783,39 @@ body.page-home #btn-read-on {
   transition: color 0.3s ease-in-out;
   text-decoration: none;
 }
-/* line 57, ../scss/pagetypes/_homepage.scss */
+@media (max-width: 1023px) {
+  /* line 48, ../scss/pagetypes/_homepage.scss */
+  body.page-home #btn-read-on {
+    bottom: 2.25rem;
+  }
+}
+/* line 60, ../scss/pagetypes/_homepage.scss */
 body.page-home #btn-read-on:hover {
   color: white;
 }
-/* line 63, ../scss/pagetypes/_homepage.scss */
+/* line 66, ../scss/pagetypes/_homepage.scss */
 body.page-home #btn-read-on:before {
-  font-size: 3.125rem;
+  font-size: 1.25rem;
   font-weight: lighter;
+}
+/* line 72, ../scss/pagetypes/_homepage.scss */
+body.page-home #ie-go-home {
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 81, ../scss/pagetypes/_homepage.scss */
+body.page-home #ie-go-home .container {
+  padding-top: 100px;
+  color: #333;
+}
+/* line 84, ../scss/pagetypes/_homepage.scss */
+body.page-home #ie-go-home .container h1 {
+  color: #ef483d;
 }
 
 /* line 1, ../scss/pagetypes/_blogpage.scss */
@@ -3472,12 +3516,220 @@ body.page-type-contact-page .guide-gmap .work .container .work-content iframe,
   }
 }
 
-/* line 90, ../scss/styles.scss */
+/* line 5, ../scss/pagetypes/tnc.scss */
+body.page-terms-and-conditions #content-area .content ol, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ol,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ol,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ol,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ol,
+body.page-terms-and-conditions #content-area .work .container .work-content ol,
+.work .container body.page-terms-and-conditions #content-area .work-content ol {
+  counter-reset: item;
+}
+/* line 6, ../scss/pagetypes/tnc.scss */
+body.page-terms-and-conditions #content-area .content li, body.page-terms-and-conditions #content-area .showcase .container .showcase-content li, .showcase .container body.page-terms-and-conditions #content-area .showcase-content li,
+body.page-terms-and-conditions #content-area .showcase .container .work-content li,
+.showcase .container body.page-terms-and-conditions #content-area .work-content li,
+body.page-terms-and-conditions #content-area .work .container .showcase-content li,
+.work .container body.page-terms-and-conditions #content-area .showcase-content li,
+body.page-terms-and-conditions #content-area .work .container .work-content li,
+.work .container body.page-terms-and-conditions #content-area .work-content li {
+  display: block;
+  margin-bottom: 0.5em;
+}
+/* line 7, ../scss/pagetypes/tnc.scss */
+body.page-terms-and-conditions #content-area .content li:before, body.page-terms-and-conditions #content-area .showcase .container .showcase-content li:before, .showcase .container body.page-terms-and-conditions #content-area .showcase-content li:before,
+body.page-terms-and-conditions #content-area .showcase .container .work-content li:before,
+.showcase .container body.page-terms-and-conditions #content-area .work-content li:before,
+body.page-terms-and-conditions #content-area .work .container .showcase-content li:before,
+.work .container body.page-terms-and-conditions #content-area .showcase-content li:before,
+body.page-terms-and-conditions #content-area .work .container .work-content li:before,
+.work .container body.page-terms-and-conditions #content-area .work-content li:before {
+  font-weight: bold;
+  margin-right: 0.25em;
+  content: counters(item,".") " ";
+  counter-increment: item;
+}
+/* line 8, ../scss/pagetypes/tnc.scss */
+body.page-terms-and-conditions #content-area .content ol, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ol,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ol,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ol,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ol,
+body.page-terms-and-conditions #content-area .work .container .work-content ol,
+.work .container body.page-terms-and-conditions #content-area .work-content ol, body.page-terms-and-conditions #content-area .content ul, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ul,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ul,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ul,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ul,
+body.page-terms-and-conditions #content-area .work .container .work-content ul,
+.work .container body.page-terms-and-conditions #content-area .work-content ul {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 10, ../scss/pagetypes/tnc.scss */
+body.page-terms-and-conditions #content-area .content ol h2 strong, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol h2 strong, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol h2 strong,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ol h2 strong,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ol h2 strong,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ol h2 strong,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ol h2 strong,
+body.page-terms-and-conditions #content-area .work .container .work-content ol h2 strong,
+.work .container body.page-terms-and-conditions #content-area .work-content ol h2 strong,
+body.page-terms-and-conditions #content-area .content ol h2,
+body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol h2,
+.showcase .container body.page-terms-and-conditions #content-area .showcase-content ol h2,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ol h2,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ol h2,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ol h2,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ol h2,
+body.page-terms-and-conditions #content-area .work .container .work-content ol h2,
+.work .container body.page-terms-and-conditions #content-area .work-content ol h2, body.page-terms-and-conditions #content-area .content ul h2 strong, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul h2 strong, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul h2 strong,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ul h2 strong,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ul h2 strong,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ul h2 strong,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ul h2 strong,
+body.page-terms-and-conditions #content-area .work .container .work-content ul h2 strong,
+.work .container body.page-terms-and-conditions #content-area .work-content ul h2 strong,
+body.page-terms-and-conditions #content-area .content ul h2,
+body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul h2,
+.showcase .container body.page-terms-and-conditions #content-area .showcase-content ul h2,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ul h2,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ul h2,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ul h2,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ul h2,
+body.page-terms-and-conditions #content-area .work .container .work-content ul h2,
+.work .container body.page-terms-and-conditions #content-area .work-content ul h2 {
+  font-size: 1.25rem;
+}
+/* line 17, ../scss/pagetypes/tnc.scss */
+body.page-terms-and-conditions #content-area .content ol ol, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol ol, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol ol,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ol ol,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ol ol,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ol ol,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ol ol,
+body.page-terms-and-conditions #content-area .work .container .work-content ol ol,
+.work .container body.page-terms-and-conditions #content-area .work-content ol ol, body.page-terms-and-conditions #content-area .content ol ul, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol ul, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol ul,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ol ul,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ol ul,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ol ul,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ol ul,
+body.page-terms-and-conditions #content-area .work .container .work-content ol ul,
+.work .container body.page-terms-and-conditions #content-area .work-content ol ul, body.page-terms-and-conditions #content-area .content ul ol, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul ol, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul ol,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ul ol,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ul ol,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ul ol,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ul ol,
+body.page-terms-and-conditions #content-area .work .container .work-content ul ol,
+.work .container body.page-terms-and-conditions #content-area .work-content ul ol, body.page-terms-and-conditions #content-area .content ul ul, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul ul, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul ul,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ul ul,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ul ul,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ul ul,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ul ul,
+body.page-terms-and-conditions #content-area .work .container .work-content ul ul,
+.work .container body.page-terms-and-conditions #content-area .work-content ul ul {
+  padding-left: 1em;
+}
+/* line 19, ../scss/pagetypes/tnc.scss */
+body.page-terms-and-conditions #content-area .content ol ol *, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol ol *, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol ol *,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ol ol *,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ol ol *,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ol ol *,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ol ol *,
+body.page-terms-and-conditions #content-area .work .container .work-content ol ol *,
+.work .container body.page-terms-and-conditions #content-area .work-content ol ol *, body.page-terms-and-conditions #content-area .content ol ul *, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol ul *, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol ul *,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ol ul *,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ol ul *,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ol ul *,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ol ul *,
+body.page-terms-and-conditions #content-area .work .container .work-content ol ul *,
+.work .container body.page-terms-and-conditions #content-area .work-content ol ul *, body.page-terms-and-conditions #content-area .content ul ol *, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul ol *, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul ol *,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ul ol *,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ul ol *,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ul ol *,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ul ol *,
+body.page-terms-and-conditions #content-area .work .container .work-content ul ol *,
+.work .container body.page-terms-and-conditions #content-area .work-content ul ol *, body.page-terms-and-conditions #content-area .content ul ul *, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul ul *, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul ul *,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ul ul *,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ul ul *,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ul ul *,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ul ul *,
+body.page-terms-and-conditions #content-area .work .container .work-content ul ul *,
+.work .container body.page-terms-and-conditions #content-area .work-content ul ul * {
+  font-size: 0.875rem;
+}
+/* line 25, ../scss/pagetypes/tnc.scss */
+body.page-terms-and-conditions #content-area .content ol li h2, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol li h2, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol li h2,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h2,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ol li h2,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ol li h2,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ol li h2,
+body.page-terms-and-conditions #content-area .work .container .work-content ol li h2,
+.work .container body.page-terms-and-conditions #content-area .work-content ol li h2, body.page-terms-and-conditions #content-area .content ol li h3, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol li h3, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol li h3,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h3,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ol li h3,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ol li h3,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ol li h3,
+body.page-terms-and-conditions #content-area .work .container .work-content ol li h3,
+.work .container body.page-terms-and-conditions #content-area .work-content ol li h3, body.page-terms-and-conditions #content-area .content ol li h4, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol li h4, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol li h4,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h4,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ol li h4,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ol li h4,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ol li h4,
+body.page-terms-and-conditions #content-area .work .container .work-content ol li h4,
+.work .container body.page-terms-and-conditions #content-area .work-content ol li h4, body.page-terms-and-conditions #content-area .content ol li h5, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol li h5, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol li h5,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h5,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ol li h5,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ol li h5,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ol li h5,
+body.page-terms-and-conditions #content-area .work .container .work-content ol li h5,
+.work .container body.page-terms-and-conditions #content-area .work-content ol li h5, body.page-terms-and-conditions #content-area .content ol li h6, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol li h6, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol li h6,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h6,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ol li h6,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ol li h6,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ol li h6,
+body.page-terms-and-conditions #content-area .work .container .work-content ol li h6,
+.work .container body.page-terms-and-conditions #content-area .work-content ol li h6, body.page-terms-and-conditions #content-area .content ul li h2, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul li h2, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul li h2,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h2,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ul li h2,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ul li h2,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ul li h2,
+body.page-terms-and-conditions #content-area .work .container .work-content ul li h2,
+.work .container body.page-terms-and-conditions #content-area .work-content ul li h2, body.page-terms-and-conditions #content-area .content ul li h3, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul li h3, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul li h3,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h3,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ul li h3,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ul li h3,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ul li h3,
+body.page-terms-and-conditions #content-area .work .container .work-content ul li h3,
+.work .container body.page-terms-and-conditions #content-area .work-content ul li h3, body.page-terms-and-conditions #content-area .content ul li h4, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul li h4, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul li h4,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h4,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ul li h4,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ul li h4,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ul li h4,
+body.page-terms-and-conditions #content-area .work .container .work-content ul li h4,
+.work .container body.page-terms-and-conditions #content-area .work-content ul li h4, body.page-terms-and-conditions #content-area .content ul li h5, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul li h5, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul li h5,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h5,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ul li h5,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ul li h5,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ul li h5,
+body.page-terms-and-conditions #content-area .work .container .work-content ul li h5,
+.work .container body.page-terms-and-conditions #content-area .work-content ul li h5, body.page-terms-and-conditions #content-area .content ul li h6, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul li h6, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul li h6,
+body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h6,
+.showcase .container body.page-terms-and-conditions #content-area .work-content ul li h6,
+body.page-terms-and-conditions #content-area .work .container .showcase-content ul li h6,
+.work .container body.page-terms-and-conditions #content-area .showcase-content ul li h6,
+body.page-terms-and-conditions #content-area .work .container .work-content ul li h6,
+.work .container body.page-terms-and-conditions #content-area .work-content ul li h6 {
+  display: inline-block;
+}
+
+/* line 96, ../scss/styles.scss */
 #content-area {
   padding: 2.5rem 0.9375rem;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 94, ../scss/styles.scss */
+  /* line 100, ../scss/styles.scss */
   #content-area .content, #content-area .showcase .container .showcase-content, .showcase .container #content-area .showcase-content,
   #content-area .showcase .container .work-content,
   .showcase .container #content-area .work-content,
@@ -3490,34 +3742,34 @@ body.page-type-contact-page .guide-gmap .work .container .work-content iframe,
   }
 }
 @media (min-width: 0) and (max-width: 639px) {
-  /* line 90, ../scss/styles.scss */
+  /* line 96, ../scss/styles.scss */
   #content-area {
     padding: 1.25rem 0.9375rem;
   }
 }
 
-/* line 105, ../scss/styles.scss */
+/* line 111, ../scss/styles.scss */
 #page-title {
   color: #ef483d;
   font-size: 2rem;
 }
-/* line 108, ../scss/styles.scss */
+/* line 114, ../scss/styles.scss */
 #page-title .sub-title {
   color: #000;
 }
 
-/* line 113, ../scss/styles.scss */
+/* line 119, ../scss/styles.scss */
 #main {
   padding-bottom: calc(52px * 2);
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 113, ../scss/styles.scss */
+  /* line 119, ../scss/styles.scss */
   #main {
     padding-bottom: 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 113, ../scss/styles.scss */
+  /* line 119, ../scss/styles.scss */
   #main {
     padding-bottom: 0;
   }

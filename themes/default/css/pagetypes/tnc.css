@@ -1,0 +1,43 @@
+/* line 5, ../../scss/pagetypes/tnc.scss */
+#content-area .content ol {
+  counter-reset: item;
+}
+/* line 6, ../../scss/pagetypes/tnc.scss */
+#content-area .content li {
+  display: block;
+  margin-bottom: 0.5em;
+}
+/* line 7, ../../scss/pagetypes/tnc.scss */
+#content-area .content li:before {
+  font-weight: bold;
+  margin-right: 0.25em;
+  content: counters(item,".") " ";
+  counter-increment: item;
+}
+/* line 8, ../../scss/pagetypes/tnc.scss */
+#content-area .content ol, #content-area .content ul {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 10, ../../scss/pagetypes/tnc.scss */
+#content-area .content ol h2 strong,
+#content-area .content ol h2, #content-area .content ul h2 strong,
+#content-area .content ul h2 {
+  font-size: rem(20);
+}
+/* line 17, ../../scss/pagetypes/tnc.scss */
+#content-area .content ol ol, #content-area .content ol ul, #content-area .content ul ol, #content-area .content ul ul {
+  padding-left: 1em;
+}
+/* line 19, ../../scss/pagetypes/tnc.scss */
+#content-area .content ol ol *, #content-area .content ol ul *, #content-area .content ul ol *, #content-area .content ul ul * {
+  font-size: rem(14);
+}
+/* line 25, ../../scss/pagetypes/tnc.scss */
+#content-area .content ol li h2, #content-area .content ol li h3, #content-area .content ol li h4, #content-area .content ol li h5, #content-area .content ol li h6, #content-area .content ul li h2, #content-area .content ul li h3, #content-area .content ul li h4, #content-area .content ul li h5, #content-area .content ul li h6 {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=tnc.css.map */

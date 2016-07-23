@@ -68,5 +68,6 @@
 		</main>
 		
 		<% include Footer %>
+		<% include IEGoHome %>
 	</body>
 </html>
