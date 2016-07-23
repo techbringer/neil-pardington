@@ -54,6 +54,8 @@
 
 @import 'typography';
 
+html.lt-ie9,
+html.lt-ie9 body,
 html.locked,
 html.locked body {
 	height: 100%;
@@ -85,6 +87,10 @@ body.single-blog-entry-page {
 
 body.page-type-contact-page {
 	@import 'pagetypes/contactpage';
+}
+
+body.page-terms-and-conditions {
+	@import 'pagetypes/tnc';
 }
 
 #content-area {

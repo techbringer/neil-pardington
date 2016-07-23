@@ -18,5 +18,5 @@ Image::set_backend("ImagickBackend");
 Requirements::set_write_js_to_body(false);
 
 if (Director::isLive()) {
-	SS_Log::add_writer(new SS_LogEmailWriter('administration@saltedherring.com'), SS_Log::ERR);
+	SS_Log::add_writer(new SS_LogEmailWriter('leo@leochen.co.nz'), SS_Log::ERR);
 }

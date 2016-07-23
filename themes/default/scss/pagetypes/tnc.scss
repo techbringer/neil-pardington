@@ -1,0 +1,33 @@
+#content-area {
+	.content {
+		
+		
+		ol { counter-reset: item; }
+		li { display: block; margin-bottom: 0.5em; }
+		li:before { font-weight: bold; margin-right: 0.25em; content: counters(item, ".") " "; counter-increment: item; }
+		ol, ul {
+			margin-top: 0.5em;
+			h2 strong,
+			h2 {
+				font-size: rem(20);
+			}
+			margin-bottom: 1.5em;
+			padding-left: 0;
+			padding-right: 0;
+			ol, ul {
+				padding-left: 1em;
+				* {
+					font-size: rem(14);
+				}
+			}
+			
+			li {
+				h2, h3, h4, h5, h6 {
+					display: inline-block;
+				}
+				
+			}
+			
+		}
+	}
+}

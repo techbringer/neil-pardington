@@ -194,7 +194,7 @@ jQuery(document).ready(function($) {
 			} else {
 				if (t) { t.kill(); t = null; }
 				arrow.show();
-				t = TweenMax.to(arrow, 1, {bottom: 72, opacity: 1, onComplete:function() {
+				t = TweenMax.to(arrow, 1, {bottom: 36, opacity: 1, onComplete:function() {
 					arrow.removeAttr('style');
 					t = null;
 				}});

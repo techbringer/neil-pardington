@@ -5,7 +5,7 @@
 	top: 0;
 	z-index: 10;
 	height: $header-outter-height;
-	border-bottom: 1px solid rgba(255,255,255,0.6);
+	border-bottom: 1px solid rgba(255,255,255,1);
 	.container {
 		height: $header-height;
 		padding: 17px 0 18px;
@@ -259,6 +259,12 @@
 					@include transition(right ease-in 0.5s 0.05s);
 					a.social {
 						display: block;
+						@include breakpoint(max-width 1023px) {
+							background-color: rgba(255, 255, 255, 0);
+							&:hover {
+								background-color: rgba(255, 255, 255, 1);
+							}
+						}
 					}
 				}
 			}
@@ -412,7 +418,7 @@
 			.socials {
 				.social-icons {
 					height: rem(40);
-					right: -#{rem(200)};
+					
 					@include transition(right ease-in 0.5s 0.05s);
 					a.social {
 						display: block;
@@ -448,6 +454,8 @@
 				}
 				
 				.socials {
+					right: auto;
+					left: 0;
 					.social-icons {
 						
 					}
