@@ -84,7 +84,7 @@
 .content {
 	float: left;
 	width: 100%;
-	max-width: 640px;
+	max-width: 610px;
 	@include breakpoint($container_ipadToDesktop) {
 		max-width: none;
 		margin-right: 0;

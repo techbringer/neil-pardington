@@ -213,6 +213,8 @@
 		margin-left: rem(15);
 		margin-right: 0;
 		
+		overflow: hidden;
+		
 		@include breakpoint($container_ipadToDesktop) {
 			margin-left: 0 !important;
 			margin-right: 0;

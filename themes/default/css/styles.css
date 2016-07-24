@@ -1141,7 +1141,7 @@
 .work .container .work-content {
   float: left;
   width: 100%;
-  max-width: 640px;
+  max-width: 610px;
   margin-left: 0.9375rem;
   margin-right: 0.9375rem;
 }
@@ -3353,6 +3353,7 @@ body.page-type-contact-page .guide-gmap .work .container .work-content,
 .work .container body.page-type-contact-page .guide-gmap .work-content {
   margin-left: 0.9375rem;
   margin-right: 0;
+  overflow: hidden;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   /* line 212, ../scss/pagetypes/_contactpage.scss */
@@ -3408,7 +3409,7 @@ body.page-type-contact-page .guide-gmap .work .container .work-content,
     max-width: 38.375rem;
   }
 }
-/* line 238, ../scss/pagetypes/_contactpage.scss */
+/* line 240, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .guide-gmap .content iframe, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content iframe, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content iframe,
 body.page-type-contact-page .guide-gmap .showcase .container .work-content iframe,
 .showcase .container body.page-type-contact-page .guide-gmap .work-content iframe,
@@ -3422,7 +3423,7 @@ body.page-type-contact-page .guide-gmap .work .container .work-content iframe,
   height: 30rem;
 }
 @media (max-width: 767px) {
-  /* line 250, ../scss/pagetypes/_contactpage.scss */
+  /* line 252, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #content-area .title, body.page-type-contact-page #content-area .showcase .container .showcase-title, .showcase .container body.page-type-contact-page #content-area .showcase-title,
   body.page-type-contact-page #content-area .showcase .container .work-title,
   .showcase .container body.page-type-contact-page #content-area .work-title,
@@ -3442,7 +3443,7 @@ body.page-type-contact-page .guide-gmap .work .container .work-content iframe,
     max-width: none !important;
     width: 100% !important;
   }
-  /* line 257, ../scss/pagetypes/_contactpage.scss */
+  /* line 259, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm .g-recaptcha,
   body.page-type-contact-page #Form_contactForm .action,
   body.page-type-contact-page #Form_contactForm fieldset .field {
@@ -3450,14 +3451,14 @@ body.page-type-contact-page .guide-gmap .work .container .work-content iframe,
     margin-right: 0 !important;
     max-width: none !important;
   }
-  /* line 265, ../scss/pagetypes/_contactpage.scss */
+  /* line 267, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page .guide-gmap {
     padding-left: 0.9375rem !important;
     padding-right: 0.9375rem !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 274, ../scss/pagetypes/_contactpage.scss */
+  /* line 276, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page .guide-gmap .title, body.page-type-contact-page .guide-gmap .showcase .container .showcase-title, .showcase .container body.page-type-contact-page .guide-gmap .showcase-title,
   body.page-type-contact-page .guide-gmap .showcase .container .work-title,
   .showcase .container body.page-type-contact-page .guide-gmap .work-title,
@@ -3476,7 +3477,7 @@ body.page-type-contact-page .guide-gmap .work .container .work-content iframe,
   .work .container body.page-type-contact-page #content-area .work-title {
     max-width: 320px !important;
   }
-  /* line 278, ../scss/pagetypes/_contactpage.scss */
+  /* line 280, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
   body.page-type-contact-page .guide-gmap .showcase .container .work-content,
   .showcase .container body.page-type-contact-page .guide-gmap .work-content,
@@ -3496,7 +3497,7 @@ body.page-type-contact-page .guide-gmap .work .container .work-content iframe,
     max-width: calc(100% - 350px) !important;
     padding: 0 !important;
   }
-  /* line 285, ../scss/pagetypes/_contactpage.scss */
+  /* line 287, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
   body.page-type-contact-page .guide-gmap .showcase .container .work-content,
   .showcase .container body.page-type-contact-page .guide-gmap .work-content,
@@ -3506,7 +3507,7 @@ body.page-type-contact-page .guide-gmap .work .container .work-content iframe,
   .work .container body.page-type-contact-page .guide-gmap .work-content {
     max-width: calc(100% - 365px) !important;
   }
-  /* line 290, ../scss/pagetypes/_contactpage.scss */
+  /* line 292, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm .g-recaptcha,
   body.page-type-contact-page #Form_contactForm .action,
   body.page-type-contact-page #Form_contactForm fieldset .field {

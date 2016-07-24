@@ -108,7 +108,7 @@ jQuery(document).ready(function($) {
 					e.preventDefault();
 				} else {
 					if (li.find('ul').length == 1) {
-						e.preventDefault();
+						if (!$(this).parent().hasClass('hover')) { e.preventDefault(); }
 						if (!$('ul.level-2 .hover').is($(this).parent())) {
 							$('ul.level-2 .hover').removeClass('hover');
 						}
@@ -194,7 +194,7 @@ jQuery(document).ready(function($) {
 			} else {
 				if (t) { t.kill(); t = null; }
 				arrow.show();
-				t = TweenMax.to(arrow, 1, {bottom: 36, opacity: 1, onComplete:function() {
+				t = TweenMax.to(arrow, 1, {bottom: ($('#footer').css('position') == 'fixed' ? 72 : 36), opacity: 1, onComplete:function() {
 					arrow.removeAttr('style');
 					t = null;
 				}});
