@@ -2,7 +2,7 @@
   "name": "default",
   "version": "1.0.0",
   "authors": [
-    "Simon Winter <simon@saltedherring.com>"
+    "Leo Chen <leo@leochen.co.nz>"
   ],
   "private": true,
   "description": "Base SS dependencies",
