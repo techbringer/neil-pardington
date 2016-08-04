@@ -5,7 +5,6 @@ gridfieldextensions/
 gridfieldpaginatorwithshowall/
 html5/
 image-orientation-fixer/
-index.php
 lumberjack/
 quickaddnew/
 reports/
@@ -31,7 +30,5 @@ silverstripe-socialnetwork-links
 silverstripe-menumanager
 rightsidebar/
 themes/default/.sass-cache/
-
-salted-cropper/
 var/
 themes/default/font-old/
