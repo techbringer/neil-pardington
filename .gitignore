@@ -33,3 +33,4 @@ themes/default/.sass-cache/
 var/
 themes/default/font-old/
 salted-cropper/
+composer.lock
