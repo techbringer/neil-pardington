@@ -36,7 +36,7 @@
 		.field {
 			float: left;
 			width: 100%;
-			max-width: rem(305);
+			max-width: rem(290);
 			@include breakpoint($container_ipadToDesktop) {
 				max-width: rem(338);
 			}
@@ -105,15 +105,14 @@
 		.g-recaptcha {
 			float: left;
 			width: 100%;
-			max-width: rem(305);
+			max-width: rem(290);
 			margin-bottom: rem(20);
-			
 		}
 		
 		.g-recaptcha {
 			margin-right: rem(30);
 			@include breakpoint($container_landscape) {
-				max-width: rem(292);
+				max-width: rem(290);
 			}
 			@include breakpoint($container_portrait) {
 				margin-left: 0;
@@ -155,7 +154,7 @@
 			}
 			
 			@include breakpoint($container_landscape) {
-				max-width: rem(292);
+				max-width: rem(290);
 			}
 		}
 	}
