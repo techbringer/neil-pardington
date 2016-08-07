@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "070db48d78a9a7739a5ffcc26f51e257",
-    "content-hash": "e6f56586dccf234026a42d6276139f71",
+    "hash": "be0f4751e2f7da6a20bf1a9ed86c8a95",
+    "content-hash": "f02f08b04125d557ed4c097064e1e44a",
     "packages": [
         {
             "name": "composer/installers",
@@ -389,16 +389,16 @@
         },
         {
             "name": "salted-herring/salted-library",
-            "version": "v0.0.1",
+            "version": "v0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/salted-herring/salted-library.git",
-                "reference": "abfe3f0f6fca0e98f1b6e9b55f10941333ac1ee4"
+                "reference": "70bc2a5255d29d2a41588eae0948e9b9375f25ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/salted-herring/salted-library/zipball/abfe3f0f6fca0e98f1b6e9b55f10941333ac1ee4",
-                "reference": "abfe3f0f6fca0e98f1b6e9b55f10941333ac1ee4",
+                "url": "https://api.github.com/repos/salted-herring/salted-library/zipball/70bc2a5255d29d2a41588eae0948e9b9375f25ea",
+                "reference": "70bc2a5255d29d2a41588eae0948e9b9375f25ea",
                 "shasum": ""
             },
             "type": "silverstripe-module",
@@ -418,7 +418,7 @@
                 "library",
                 "php"
             ],
-            "time": "2016-05-30 05:14:09"
+            "time": "2016-07-21 23:07:16"
         },
         {
             "name": "sheadawson/quickaddnew",
@@ -899,16 +899,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v2.8.8",
+            "version": "v2.8.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "89f33c16796415ccfd8bb3cf8d520cbb79899bfe"
+                "reference": "d20332e43e8774ff8870b394f3dd6020cc7f8e0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/89f33c16796415ccfd8bb3cf8d520cbb79899bfe",
-                "reference": "89f33c16796415ccfd8bb3cf8d520cbb79899bfe",
+                "url": "https://api.github.com/repos/symfony/process/zipball/d20332e43e8774ff8870b394f3dd6020cc7f8e0c",
+                "reference": "d20332e43e8774ff8870b394f3dd6020cc7f8e0c",
                 "shasum": ""
             },
             "require": {
@@ -944,7 +944,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29 05:29:29"
+            "time": "2016-07-28 11:13:19"
         },
         {
             "name": "undefinedoffset/sortablegridfield",
@@ -1355,16 +1355,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.8",
+            "version": "v2.8.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "dba4bb5846798cd12f32e2d8f3f35d77045773c8"
+                "reference": "0ceab136f43ed9d3e97b3eea32a7855dc50c121d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/dba4bb5846798cd12f32e2d8f3f35d77045773c8",
-                "reference": "dba4bb5846798cd12f32e2d8f3f35d77045773c8",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/0ceab136f43ed9d3e97b3eea32a7855dc50c121d",
+                "reference": "0ceab136f43ed9d3e97b3eea32a7855dc50c121d",
                 "shasum": ""
             },
             "require": {
@@ -1400,7 +1400,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29 05:29:29"
+            "time": "2016-07-17 09:06:15"
         }
     ],
     "aliases": [],
