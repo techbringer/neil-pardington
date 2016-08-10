@@ -31,6 +31,9 @@ class CategoryPage extends Page {
 		return $fields;
 	}
 	
+	public function mySubCategories() {
+		return $this->SubCategories()->sort(array('SortOrder' => 'ASC'));
+	}
 }
 
 

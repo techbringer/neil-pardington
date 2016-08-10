@@ -21,6 +21,10 @@ class Category extends DataObject {
 		'Works'			=>	'Work'
 	);
 	
+	/*public function forTemplate() {
+		return $this->renderWith('Category');
+	}*/
+	
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->removeByName('SortOrder');

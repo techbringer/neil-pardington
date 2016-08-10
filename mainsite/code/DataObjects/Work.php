@@ -21,6 +21,15 @@ class Work extends DataObject {
 		'OnPage'		=>	'WorksPage',
 		'Category'		=>	'Category'
 	);
+	
+	protected static $summary_fields = array(
+		'theCategory',
+		'Title'
+	);
+	
+	protected static $field_labels = array(
+		'theCategory'	=>	'Category'
+	);
 		
 	protected static $many_many = array(
         'Tags'			=>	'Tag'
@@ -35,11 +44,18 @@ class Work extends DataObject {
 		return $this->customise(array(
 					'Title'					=>	$this->Title,
 					'Content'				=>	$this->Content,
-					'Category'				=>	$this->Category()->Title,
+					'Category'				=>	$this->theCategory(),
 					'ViewportHeight'		=>	$this->ViewportHeight,
 					'ViewportCustomHeight'	=>	$this->ViewportCustomHeight,
 					'HeaderImage'			=>	$this->HeaderImage()
 				))->renderWith('Work');
+	}
+	
+	public function theCategory() {
+		if ($category = DataObject::get_one('Category', array('ID' => $this->CategoryID))) {
+			return $category->Title;
+		}
+		return 'Uncategorised';
 	}
 	
 	public function getCMSFields() {

@@ -1,5 +1,4 @@
 <?php use SaltedHerring\Grid as Grid;
-
 class WorksPage extends Page {
 	
 	protected static $allowed_children = array(

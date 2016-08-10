@@ -12,7 +12,7 @@
 		"silverstripe-australia/gridfieldextensions": "~1.3.0",
 		"silverstripe/staticpublisher": "~1.0.0",
 		"silverstripe/lumberjack": "~1.1",
-		"silverstripe/tagfield": "^1.3",
+		"silverstripe/tagfield": "~1.3",
 		
 		"hubertusanton/silverstripe-seo": "~2.0",
 		"kinglozzer/silverstripegmapsobject": "~1.0.1",
@@ -20,9 +20,9 @@
 		"sheadawson/quickaddnew": "dev-master",
 		"heyday/silverstripe-dataobjectpreview": "~1.0.2",
 		"normann/gridfieldpaginatorwithshowall": "dev-master",
-		"undefinedoffset/sortablegridfield": "^0.6.1",
-		"salted-herring/image-orientation-fixer": "^1.0",
-		"salted-herring/salted-library": "^0.0.4"
+		"undefinedoffset/sortablegridfield": "~0.6.1",
+		"salted-herring/image-orientation-fixer": "~1.0",
+		"salted-herring/salted-library": "~0.0.4"
 	},
 	"require-dev": {
     	"phpunit/phpunit": "3.7.*"
