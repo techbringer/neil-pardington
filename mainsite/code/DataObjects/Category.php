@@ -8,8 +8,18 @@ class Category extends DataObject {
 		'Content'		=>	'HTMLText'
 	);
 	
+	private static $create_table_options = array(
+		'MySQLDatabase'		=> 'ENGINE=MyISAM'
+    );
+	
+	private static $searchable_fields = array(
+		'Title',
+		'Content'
+	);
+	
 	protected static $extensions = array(
-		'HeaderImageExtension'
+		'HeaderImageExtension',
+		'SearchableExtension'
 	);
 	
 	protected static $summary_fields = array(

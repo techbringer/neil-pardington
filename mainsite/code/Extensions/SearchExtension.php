@@ -62,6 +62,7 @@ class SearchExtension extends DataExtension {
 		
 		$page_conditions = array();
 		$work_conditions = array();
+		$category_conditions = array();
 		$blog_conditions = array();
 		$tag_conditions = array();
 		$controller = Controller::curr();
@@ -82,6 +83,11 @@ class SearchExtension extends DataExtension {
 				'Content:PartialMatch'		=>	$keyword
 			);
 			
+			$category_conditions = array (
+				'Title:PartialMatch' 		=>	$keyword,
+				'Content:PartialMatch'		=>	$keyword
+			);
+			
 			$work_conditions = array (
 				'Title:PartialMatch' 		=>	$keyword,
 				'Content:PartialMatch'		=>	$keyword
@@ -93,11 +99,13 @@ class SearchExtension extends DataExtension {
 			);
 			
 			$page_results = Versioned::get_by_stage('Page', 'Live')->filterAny($page_conditions);
+			$cat_results = Category::get()->filterAny($category_conditions);
 			$work_results = Work::get()->filterAny($work_conditions);
 			$blog_results = BlogEntry::get()->filter($blog_conditions);
 			
 			$results = new ArrayList();
 			$results->merge($page_results);
+			$results->merge($cat_results);
 			
 		} elseif ($tag) {
 			$results = new ArrayList();

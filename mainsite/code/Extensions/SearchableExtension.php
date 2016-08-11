@@ -45,6 +45,8 @@ class SearchableExtension extends DataExtension {
 			return '/work#work-'. $this->owner->Slag;
 		} elseif ($this->owner->ClassName == 'BlogEntry') {
 			return '/blog/'.$this->owner->Slag;
+		} elseif ($this->owner->ClassName == 'Category') {
+			return '/work/' . $this->owner->inCategory()->URLSegment . '/' . $this->owner->Slag;
 		}
 		
 		return $this->owner->Link();
