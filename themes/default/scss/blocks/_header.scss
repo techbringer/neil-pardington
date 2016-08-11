@@ -1,11 +1,11 @@
 #header {
+	background-color: $b2-red;
 	position: fixed;
 	width: 100%;
 	left: 0;
 	top: 0;
 	z-index: 10;
 	height: $header-outter-height;
-	border-bottom: 1px solid rgba(255,255,255,1);
 	.container {
 		height: $header-height;
 		padding: 17px 0 18px;
@@ -39,6 +39,10 @@
 					float: left;
 					margin: 0 rem(15);
 					ul {
+						&.level-2 {
+							border-top: 1px solid rgba(255,255,255,0.2);
+						}
+						
 						a {
 							text-transform: none;
 						}
@@ -225,8 +229,7 @@
 	
 	#header {
 		@include transition(all ease-in 0.1s);
-		height: rem(71);
-		border-bottom: 1px solid rgba(255, 255, 255, 0);
+		height: rem(70);
 		.container {
 			background: none;
 			.nav {
@@ -271,15 +274,14 @@
 		}
 		
 		&.toggled {
-			border-bottom: 1px solid rgba(255, 255, 255, 1);
 			
 			.container {
 				.nav {
 					display: block;
 					position: fixed;
-					top: rem(71);
+					top: rem(70);
 					width: 100%;
-					height: calc(100% - 71px);
+					height: calc(100% - 70px);
 					left: 0;
 					z-index: 9;
 					padding-top: rem(25);
@@ -304,6 +306,9 @@
 			.nav {
 				ul li {
 					ul {
+						&.level-2 {
+							border-top: none;
+						}
 						li {
 							a {
 								font-size: rem(16);
@@ -322,7 +327,7 @@
 @include breakpoint($container_portrait) {
 	
 	#header {
-		height: rem(41);
+		height: rem(40);
 		
 		
 		&.toggled .container,
@@ -331,6 +336,9 @@
 			.nav {
 				padding: rem(25) rem(10);
 				ul {
+					&.level-2 {
+						border-top: none;
+					}
 					height: 100%;
 					overflow-y: auto;
   					-webkit-overflow-scrolling: touch;
@@ -448,8 +456,8 @@
 			
 			.container {
 				.nav {
-					top: rem(41);
-					height: calc(100% - 41px);
+					top: rem(40);
+					height: calc(100% - 40px);
 					left: 0;
 				}
 				
