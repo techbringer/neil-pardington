@@ -79,20 +79,21 @@ class CategoryPage_Controller extends Page_Controller {
 		$works = $obj->Works();
 		if ($works->count() == 0) {
 			return $this->customise(array(
-					'HeaderImage'		=>	$this->prepareHeaderImage($obj),
-					'SubTitle'			=>	$subtitle,
-					'ViewportHeight'	=>	'normal',
-					'HideTitle'			=>	false,
-					'Content'			=>	'<h2>Found no work</h2><p>Load some?</p>'
+					'HeaderImage'			=>	$this->prepareHeaderImage($obj),
+					'SubTitle'				=>	$subtitle,
+					'ViewportHeight'		=>	'normal',
+					'HideTitle'				=>	false,
+					'Content'				=>	'<h2>Found no work</h2><p>Load some?</p>'
 				))->renderWith(array('Page'));
 		}
 		return $this->customise(array(
-					'CategoryHeader'	=>	$this->prepareHeaderImage($obj),
-					'ViewportHeight'	=>	'normal',
-					'CategoryTitle'		=>	$subtitle,
-					'CategoryIntro'		=>	empty(trim($obj->Content)) ? '- no content' : $obj->Content,
-					'Title'				=>	$this->Title,
-					'Works'				=>	$works->sort(array('SortOrder' => 'ASC', 'ID' => 'DESC'))
+					'CategoryHeader'		=>	$this->prepareHeaderImage($obj),
+					'ViewportHeight'		=>	$obj->ViewportHeight,
+					'ViewportCustomHeight'	=>	(!empty($obj->ViewportCustomHeight) ? $obj->ViewportCustomHeight : false),
+					'CategoryTitle'			=>	$subtitle,
+					'CategoryIntro'			=>	empty(trim($obj->Content)) ? '- no content' : $obj->Content,
+					'Title'					=>	$this->Title,
+					'Works'					=>	$works->sort(array('SortOrder' => 'ASC', 'ID' => 'DESC'))
 				))->renderWith(array('WorkList', 'Page'));
 	}
 	
