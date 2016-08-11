@@ -78,9 +78,8 @@ class CategoryPage_Controller extends Page_Controller {
 		$subtitle = $obj->Title;
 		$works = $obj->Works();
 		if ($works->count() == 0) {
-			$err = HomePage::get()->first();
 			return $this->customise(array(
-					'HeaderImage'		=>	$err->HeaderImage(),
+					'HeaderImage'		=>	$this->prepareHeaderImage($obj),
 					'SubTitle'			=>	$subtitle,
 					'ViewportHeight'	=>	'normal',
 					'HideTitle'			=>	false,
@@ -88,9 +87,18 @@ class CategoryPage_Controller extends Page_Controller {
 				))->renderWith(array('Page'));
 		}
 		return $this->customise(array(
-					'Title'		=>	$this->Title,
-					'Works'		=>	$works->sort(array('SortOrder' => 'ASC', 'ID' => 'DESC'))
+					'CategoryHeader'	=>	$this->prepareHeaderImage($obj),
+					'ViewportHeight'	=>	'normal',
+					'CategoryTitle'		=>	$subtitle,
+					'CategoryIntro'		=>	empty(trim($obj->Content)) ? '- no content' : $obj->Content,
+					'Title'				=>	$this->Title,
+					'Works'				=>	$works->sort(array('SortOrder' => 'ASC', 'ID' => 'DESC'))
 				))->renderWith(array('WorkList', 'Page'));
+	}
+	
+	private function prepareHeaderImage($cat) {
+		$image = !empty($cat->HeaderImageID) ? $cat->HeaderImage() : HomePage::get()->first()->HeaderImage();
+		return $image;
 	}
 	
 	public function isActive() {

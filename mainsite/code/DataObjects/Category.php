@@ -8,6 +8,10 @@ class Category extends DataObject {
 		'Content'		=>	'HTMLText'
 	);
 	
+	protected static $extensions = array(
+		'HeaderImageExtension'
+	);
+	
 	protected static $summary_fields = array(
 		'SortOrder',
 		'Title'
@@ -29,7 +33,7 @@ class Category extends DataObject {
 		$fields = parent::getCMSFields();
 		$fields->removeByName('SortOrder');
 		$fields->removeByName('Slag');
-		
+		$fields->fieldByName('Root.Main.Content')->setTitle('Introduction');
 		if ($this->exists()) {
 			$fields->addFieldToTab('Root.Main', ReadonlyField::create('Slag'), 'Content');
 		}
