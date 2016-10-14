@@ -7,11 +7,11 @@ class BlogsPage extends Page {
 
 	protected static $has_one = array(
 	);
-	
+
 	protected static $has_many = array(
 		'Blogs'			=>	'BlogEntry'
 	);
-	
+
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 		if (!empty($this->ID)) {
@@ -24,7 +24,6 @@ class BlogsPage extends Page {
 		}
 		return $fields;
 	}
-	
 }
 
 
@@ -33,33 +32,28 @@ class BlogsPage_Controller extends Page_Controller {
 		''		=>	'index',
 		'$slag'	=>  'getEntry'
 	);
-	
+
 	protected static $allowed_actions = array(
 		'index',
 		'getEntry'
 	);
-	
+
 	public function index($request) {
+		if (!$this->isPublished()) {
+			return $this->httpError(404);
+		}
 		return $this->renderWith(array('BlogsPage', 'Page'));
 	}
-	
+
 	public function getEntry($request) {
 		$slag = $request->param('slag');
-		//Debugger::inspect($slag);
 		$blog = $this->Blogs()->filter(array('slag' => $slag))->first();
-		/*if ($works->count() == 0) {
-			$err = HomePage::get()->first();
-			return $this->customise(array(
-					'HeaderImage'		=>	$err->HeaderImage(),
-					'SubTitle'			=>	$subtitle,
-					'ViewportHeight'	=>	'normal',
-					'HideTitle'			=>	false,
-					'Content'			=>	'<h2>Found no work</h2><p>Load some?</p>'
-				))->renderWith(array('Page'));
-		}*/
+		if (empty($blog)) {
+			return $this->httpError(404);
+		}
 		return $this->customise($blog)->renderWith(array('Page'));
 	}
-	
+
 	public function isBlogEntry() {
 		$request = $this->request;
 		$slag = $request->param('slag');
