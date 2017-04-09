@@ -11,33 +11,33 @@ class TwitterCardExtension extends DataExtension {
 		'TwitterTitle' 			=> 'Varchar(255)',
 		'TwitterDescription'	=> 'Varchar(255)',
 	);
-	
+
 	private static $has_one =  array(
 		'TwitterImage' 			=> 'Image',
 		'TwitterImageCropped'	=> 'Image'
 	);
-	
+
 	public function updateCMSFields(FieldList $fields) {
 		$baseClass = ClassInfo::baseDataClass($this->owner->class);
-		
+
 		$title = new TextField('TwitterTitle', 'Title');
 
 		// If extending a page, disable access to the title - the page title will suffice.
 		if ($baseClass == 'SiteTree') {
 			$title = $title->performReadonlyTransformation();
 		}
-		
+
 		$twitter = ToggleCompositeField::create(
 			'Twitter',
 			new LabelField('Twitter', 'Twitter Card Tags'),
 			array(
-				new DropdownField('TitterCard', 'Card Type', 
+				new DropdownField('TitterCard', 'Card Type',
 					singleton($this->owner->ClassName)->dbObject('TitterCard')->enumValues()
 				),
 				$title,
 				new TextareaField('TwitterDescription', 'Description'),
 				$TwitterImage = new UploadField('TwitterImage', 'Image'),
-				$TwitterCropper = new SaltedCropperField('TwitterImageCropped', 'TwitterImage', $this->owner, 470/246)
+				$TwitterCropper = SaltedUploader::create('TwitterImageCropped', 'TwitterImage')->setCropperRatio(470/246)
 				/*$TwitterCropper = new CropperField\CropperField(
 					'TwitterImageCropped',
 					'Cropped Twitter Card Image',
