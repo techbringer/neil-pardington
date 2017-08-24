@@ -28,5 +28,8 @@
     "salted-js": "*",
     "parallax.js": "^1.4.2",
     "jquery.scrollTo": "^2.1.2"
+  },
+  "resolutions": {
+    "fizzy-ui-utils": "^2.0.5"
   }
 }

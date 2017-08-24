@@ -34,3 +34,4 @@ var/
 themes/default/font-old/
 salted-cropper/
 composer.lock
+silverstripe.log
