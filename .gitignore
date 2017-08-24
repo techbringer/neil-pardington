@@ -34,4 +34,8 @@ var/
 themes/default/font-old/
 salted-cropper/
 composer.lock
+<<<<<<< HEAD
 salted-cropper
+=======
+silverstripe.log
+>>>>>>> dc205edacf7eb2391a9548adb2b3b2e2cd4c4c80
