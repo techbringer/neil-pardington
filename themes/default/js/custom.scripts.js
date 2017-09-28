@@ -6,33 +6,33 @@ jQuery(document).ready(function($) {
      * For each parallax block, get the backgound image & apply as
      * a parallax layer.
      * */
-    
-	
-	$(window).resize(function(e) {
-		$('.parallax').each(function() {
-			var url			=	$(this).data('image-src');
-			
-			if ($(this).hasClass('full')) {
-				$(this).height($(window).height());
-			}
-	
-			if ($('body').is('.mobile')) {
-				$(this).css({
-					'background-image': 'url(' + url + ')',
-					'background-size': 'cover'
-				});
-			} else {
-				$(this).parallax({imageSrc: url});
-			}
-		});
-	}).resize();
-	
+
+
+	// $(window).resize(function(e) {
+	// 	$('.parallax').each(function() {
+	// 		var url			=	$(this).data('image-src');
+	//
+	// 		if ($(this).hasClass('full')) {
+	// 			$(this).height($(window).height());
+	// 		}
+	//
+	// 		if ($('body').is('.mobile')) {
+	// 			$(this).css({
+	// 				'background-image': 'url(' + url + ')',
+	// 				'background-size': 'cover'
+	// 			});
+	// 		} else {
+	// 			$(this).parallax({imageSrc: url});
+	// 		}
+	// 	});
+	// }).resize();
+
 	/**
      * Menu works:
      * ----------------
      * ditto
      * */
-	
+
 	var former_current		=	$('.nav li a.current:eq(0)'),
 		current_active		=	null,
 		hide_ul				=	function(ul) {
@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
 									if (current_active.is(ul)) {
 										current_active = false;
 									}
-									
+
 									TweenMax.to(ul, 0.3, {opacity: 0, height: 0, onComplete: function() {
 										ul.hide();
 										ul.removeAttr('style');
@@ -52,37 +52,37 @@ jQuery(document).ready(function($) {
 			hide_ul(current_active);
 		}
     });
-	
+
 	$('#header').mouseleave(function(e) {
 		if (current_active) {
 			hide_ul(current_active);
 		}
 	});
-	
+
     $('.nav li:not(".nav li li")').mouseenter(function(e) {
-		
+
 		var ul 				=	$(this).find('ul').length > 0 ? $(this).find('ul:eq(0)') : null;
 			ul_height		=	0;
-		
+
 		if (!$(this).find('a:eq(0)').is(former_current)) {
 			former_current.removeClass('current');
 		}
-		
+
 		if (current_active && !current_active.is(ul)) {
 			hide_ul(current_active);
 		}
 		if (ul && !ul.is(':visible')) {
-			
+
 			$(this).find('a:eq(0)').addClass('current');
-			
+
 			current_active	=	ul;
-			
+
 			ul.show();
 			ul_height = ul.outerHeight();
 	        TweenMax.to(ul, 0, {opacity: 0, height: 0, onComplete: function() {
 				TweenMax.to(ul, 0.3, {opacity: 1, height: ul_height});
 			}});
-			
+
 			ul.mouseleave(function(e) {
 				hide_ul(ul);
 			});
@@ -95,13 +95,13 @@ jQuery(document).ready(function($) {
 			former_current.addClass('current');
 		}
     });
-	
+
 	$('.nav li').each(function(index, element) {
 		var li = $(this);
 		if (li.find('ul').length > 1) {
 			li.find('ul li').addClass('multi');
 		}
-		
+
         li.find('a:eq(0)').click(function(e) {
 			if ($('#btn-mobile').is(':visible')) {
 				if (li.find('ul').length > 1) {
@@ -118,9 +118,9 @@ jQuery(document).ready(function($) {
 			}
 		});
     })
-	
+
 	$('.nav ul.level-2 a.current').parent().addClass('hover');
-	
+
 	/**
      * Search input effect
      * ----------------
@@ -129,7 +129,7 @@ jQuery(document).ready(function($) {
 	var label				=	$('#GeneralSearchForm_GeneralSearchForm label'),
 		input				=	$('#GeneralSearchForm_GeneralSearchForm_Search').css('opacity', 0),
 		scrollTop			=	0;
-		
+
     input.focus(function(e) {
 		TweenMax.to(input, 0, {opacity: 0, onComplete: function() {
 			TweenMax.to(input, 0.2, {opacity: 1, delay: 0.15});
@@ -141,7 +141,7 @@ jQuery(document).ready(function($) {
 		}});
         TweenMax.to(label.css('display', 'block'), 0.2, {scale: 1, opacity: 1});
     });
-	
+
 	$('#btn-search').click(function(e) {
         e.preventDefault();
 		scrollTop = $(window).scrollTop();
@@ -163,7 +163,7 @@ jQuery(document).ready(function($) {
             });
 		}});
     });
-	
+
 	$('#btn-close').click(function(e) {
         e.preventDefault();
 		$('html').removeClass('locked');
@@ -173,8 +173,8 @@ jQuery(document).ready(function($) {
 			//input.val('');
 		}});
     });
-	
-	
+
+
 	/**
      * hide down arrow
      * ----------------
@@ -185,7 +185,7 @@ jQuery(document).ready(function($) {
 		var t = null;
 		$(window).scroll(function(e) {
 			if ($(window).scrollTop() > $('#footer').outerHeight()) {
-				
+
 				if (t) { t.kill(); t = null; }
 				t = TweenMax.to(arrow, 1, {bottom: 100, opacity: 0, onComplete:function() {
 					arrow.hide();
@@ -205,14 +205,14 @@ jQuery(document).ready(function($) {
 			$.scrollTo($('#content-area'), 500);
 		});
 	}
-	
+
 	/**
      * remove marked elements
      * ----------------
      * ...
      * */
 	$('.js-to-hide').remove();
-	
+
 	/**
      * mobile menu
      * ----------------
@@ -227,27 +227,27 @@ jQuery(document).ready(function($) {
 		bar_3				=	burger.find('.third'),
 		tray				=	$('#mobile-menu-tray'),
 		clicked				=	false;
-	
-	
+
+
 	timeline_1.pause();
 	timeline_1.to(bar_1, 0.3, {'margin-top': 0});
 	timeline_1.to(bar_1, 0.3, {rotation: -45, width: '60%', left: '20%', height: 2});
 	timeline_1.eventCallback("onReverseComplete", function() {
 		bar_1.removeAttr('style');
 	});
-	
+
 	timeline_2.pause();
 	timeline_2.to(bar_2, 0.3, {opacity: 0});
 	timeline_2.to(bar_2, 0.3, {});
-	
+
 	timeline_3.pause();
 	timeline_3.to(bar_3, 0.3, {'margin-top': 0});
 	timeline_3.to(bar_3, 0.3, {rotation: 45, width: '60%', left: '20%', height: 2});
 	timeline_3.eventCallback("onReverseComplete", function() {
 		bar_3.removeAttr('style');
 	});
-	
-	
+
+
 	$(burger).click(function(e) {
         e.preventDefault();
 		$('#header').toggleClass('toggled');
@@ -256,7 +256,7 @@ jQuery(document).ready(function($) {
 			timeline_1.reverse();
 			timeline_2.reverse();
 			timeline_3.reverse();
-			
+
 			TweenMax.to(tray, 0.3, {scale: 1, onComplete:function(){
 				tray.parent().hide();
 				clicked = false;
@@ -274,7 +274,7 @@ jQuery(document).ready(function($) {
 			}});
 		}
     });
-	
+
 	$(window).resize(function(e) {
 		if (tray.is(':visible')) {
 			if (burger.is(':visible')) {
@@ -289,50 +289,50 @@ jQuery(document).ready(function($) {
 			}
 		}
     });
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

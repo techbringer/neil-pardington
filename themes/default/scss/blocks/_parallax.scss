@@ -1,8 +1,13 @@
+.jarallax,
 .parallax {
-	position: relative;
-	width: 100%;
-	&.normal {
-		height: 400px;
-	}
-	overflow: hidden;
+    position: relative;
+    width: 100%;
+    &.full {
+        height: 100vh;
+    }
+
+    &.normal {
+        height: 400px;
+    }
+    overflow: hidden;
 }

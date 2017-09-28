@@ -1730,12 +1730,19 @@ textarea {
  * Blocks.
  * */
 /* line 1, ../scss/blocks/_parallax.scss */
+.jarallax,
 .parallax {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-/* line 4, ../scss/blocks/_parallax.scss */
+/* line 5, ../scss/blocks/_parallax.scss */
+.jarallax.full,
+.parallax.full {
+  height: 100vh;
+}
+/* line 9, ../scss/blocks/_parallax.scss */
+.jarallax.normal,
 .parallax.normal {
   height: 400px;
 }

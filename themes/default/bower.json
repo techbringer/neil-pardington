@@ -17,16 +17,17 @@
     "tests"
   ],
   "dependencies": {
-    "imagesloaded": "~3.1.0",
-    "infinite-scroll": "*",
     "jquery-easing": "*",
     "jquery-placeholder": "~2.0.7",
     "jquery.uniform": "~2.1.2",
-    "masonry": "~3.1.2",
     "zepto": "~1.0.0",
     "gsap": "^1.18.2",
     "salted-js": "*",
-    "parallax.js": "^1.4.2",
-    "jquery.scrollTo": "^2.1.2"
+    "handlebars": "^4.0.10",
+    "jquery.scrollTo": "^2.1.2",
+    "jarallax": "^1.8.0"
+  },
+  "resolutions": {
+    "fizzy-ui-utils": "^2.0.5"
   }
 }
