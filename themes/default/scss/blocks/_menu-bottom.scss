@@ -1,0 +1,47 @@
+.section {
+    &.menu-bottom {
+        @include mobile {
+            display: none;
+        }
+        margin-top: rem(60);
+        background-color: black;
+        padding: rem(35) 0 rem(55);
+        .nav {
+            .level-root {
+                margin: 0;
+                padding: 0;
+                @include display-flex;
+
+                li {
+
+                    list-style: none;
+                    a {
+                        line-height: 1.6;
+                        color: white;
+                        font-size: rem(20);
+                        &.leading {
+                            font-size: rem(24);
+                            font-weight: bold;
+                        }
+                    }
+
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                & > li {
+                    padding: 0 rem(15);
+                    display: block;
+                    flex-basis: 0;
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    ul li {
+                        margin: rem(20) 0;
+                    }
+                }
+            }
+        }
+    }
+}

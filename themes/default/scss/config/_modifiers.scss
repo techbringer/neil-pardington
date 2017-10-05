@@ -1,194 +1,161 @@
 .clearfix:after {
-	content: '';
-	clear: both;
-	display: table;
+    content: '';
+    clear: both;
+    display: table;
 }
 
 .hide {
-	display: none;
+    display: none;
 }
 
 .text-centered {
-	text-align: center;
+    text-align: center;
 }
 
 .text-right {
-	text-align: right;
+    text-align: right;
 }
 
 .float-left {
-	float: left;
+    float: left;
 }
 
 .float-right {
-	float: right;
+    float: right;
 }
 
 .as-block {
-	display: block;
+    display: block;
 }
 
 .as-inline-block {
-	display: inline-block;
+    display: inline-block;
 }
 
 .as-table {
-	display: table;
-	table-layout: fixed;
-	.as-row {
-		display: table-row;
-	}
-	
-	.as-cell {
-		display: table-cell;
-	}
+    display: table;
+    table-layout: fixed;
+    .as-row {
+        display: table-row;
+    }
+
+    .as-cell {
+        display: table-cell;
+    }
 }
 
 .absolute {
-	position: absolute;
+    position: absolute;
 }
 
 .relative {
-	position: relative;
+    position: relative;
 }
 
 .icon-centered {
-	@include transform(translate(-50%, -50%));
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	font-size: rem(20);
+    @include transform(translate(-50%, -50%));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: rem(20);
 }
 
 .title {
-	color: $b2-red;
-	font-size: rem(32);
-	font-weight: 900;
-	float: left;
-	width: 100%;
-	max-width: 320px;
-	margin-left: rem(15);
-	margin-right: rem(15);
-	@include breakpoint($container_ipadToDesktop) {
-		margin-bottom: 1em;
-	}
-	@include breakpoint($container_portrait) {
-		margin-bottom: 0.5em;
-	}
-	
-	@include breakpoint($container_small) {
-		margin-bottom: 0.5em;
-	}
+    color: $b2-red;
+    font-size: rem(32);
+    font-weight: 900;
+    float: left;
+    width: 100%;
+    max-width: 320px;
+    margin-left: rem(15);
+    margin-right: rem(15);
+    @include breakpoint($container_ipadToDesktop) {
+        margin-bottom: 1em;
+    }
+    @include breakpoint($container_portrait) {
+        margin-bottom: 0.5em;
+    }
+
+    @include breakpoint($container_small) {
+        margin-bottom: 0.5em;
+    }
 }
 
 .content {
-	float: left;
-	width: 100%;
-	max-width: 610px;
-	@include breakpoint($container_ipadToDesktop) {
-		max-width: none;
-		margin-right: 0;
-		margin-left: 0;
-		padding-left: rem(30);
-		padding-right: rem(30);
-	}
-	margin-left: rem(15);
-	margin-right: rem(15);
-	h2,h3,h4,h5,h6,p,ul,li {
-		margin-top: 0;
-		line-height: 1.2;
-	}
-	
-	h2 {
-		font-size: rem(32);
-	}
-	
-	h3 {
-		font-size: rem(26);
-	}
-	
-	h4 {
-		font-size: rem(20);
-	}
-	
-	h5 {
-		font-size: rem(18);
-	}
-	
-	h6 {
-		font-size: rem(16);
-	}
-	
-	li,
-	p {
-		font-size: rem(20);
-		@include breakpoint($container_portrait) {
-			font-size: rem(18);
-			line-height: 1.4;
-		}
-	}
-	
-	a {
-		word-wrap: break-word;
-	}
+    float: left;
+    width: 100%;
+    max-width: 610px;
+    @include breakpoint($container_ipadToDesktop) {
+        max-width: none;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: rem(30);
+        padding-right: rem(30);
+    }
+    margin-left: rem(15);
+    margin-right: rem(15);
+    h2,h3,h4,h5,h6,p,ul,li {
+        margin-top: 0;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: rem(32);
+    }
+
+    h3 {
+        font-size: rem(26);
+    }
+
+    h4 {
+        font-size: rem(20);
+    }
+
+    h5 {
+        font-size: rem(18);
+    }
+
+    h6 {
+        font-size: rem(16);
+    }
+
+    li,
+    p {
+        font-size: rem(20);
+        @include breakpoint($container_portrait) {
+            font-size: rem(18);
+            line-height: 1.4;
+        }
+    }
+
+    a {
+        word-wrap: break-word;
+    }
 }
 
 .title,
 .content {
-	@include breakpoint($container_portrait) {
-		margin-left: 0;
-		margin-right: 0;
-		float: none;
-	}
+    @include breakpoint($container_portrait) {
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+    }
 }
 
 .padding-left-15 {
-	padding-left: rem(15);
+    padding-left: rem(15);
 }
 
 .padding-15 {
-	padding-left: rem(15);
-	padding-right: rem(15);
+    padding-left: rem(15);
+    padding-right: rem(15);
 }
 
 .padding-30 {
-	padding-left: rem(30);
-	padding-right: rem(30);
+    padding-left: rem(30);
+    padding-right: rem(30);
 }
 
 .margin-bottom-half-em {
-	margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

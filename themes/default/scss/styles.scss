@@ -16,13 +16,13 @@
  * import config.
  * */
 @import 'config/variables',
-		'config/colours',
-		'config/mixins',
-		'config/grid',
-		'config/b2font',
-		'config/fonts',
-		'config/sprite',
-		'config/modifiers';
+        'config/colours',
+        'config/mixins',
+        'config/grid',
+        'config/b2font',
+        'config/fonts',
+        'config/sprite',
+        'config/modifiers';
 
 /**
  * Import Sprite sheet.
@@ -38,11 +38,12 @@
  * Blocks.
  * */
 @import 'blocks/parallax',
-		'blocks/header',
-		'blocks/footer',
-		'blocks/work',
-		'blocks/blogentry',
-		'blocks/searchform';
+        'blocks/header',
+        'blocks/footer',
+        'blocks/work',
+        'blocks/blogentry',
+        'blocks/searchform',
+        'blocks/menu-bottom';
 
 /**
  * Elements.
@@ -54,12 +55,15 @@
 
 @import 'typography';
 
-html.lt-ie9,
-html.lt-ie9 body,
-html.locked,
-html.locked body {
-	height: 100%;
-	overflow: hidden;
+html {
+    -webkit-tap-highlight-color: rgba(201, 224, 253, 0.8);
+    &.lt-ie9,
+    &.lt-ie9 body,
+    &.locked,
+    &.locked body {
+        height: 100%;
+        overflow: hidden;
+    }
 }
 
 
@@ -68,81 +72,61 @@ html.locked body {
  * */
 
 body.page-home {
-	@import 'pagetypes/homepage';
+    @import 'pagetypes/homepage';
 }
 
 body.page-Security,
 body.page-SearchResultController,
 body.page-type-blogs-page {
-	@import 'pagetypes/blogpage';
+    @import 'pagetypes/blogpage';
 }
 
 body.page-SearchResultController {
-	@import 'pagetypes/search_result';
+    @import 'pagetypes/search_result';
 }
 
 body.single-blog-entry-page {
-	@import 'pagetypes/single_blog_entry';
+    @import 'pagetypes/single_blog_entry';
 }
 
 body.page-type-contact-page {
-	@import 'pagetypes/contactpage';
+    @import 'pagetypes/contactpage';
 }
 
 body.page-terms-and-conditions {
-	@import 'pagetypes/tnc';
+    @import 'pagetypes/tnc';
 }
 
 #content-area {
-	padding: rem(40) rem(15); 
-	
-	@include breakpoint($container_ipadToDesktop) {
-		.content {
-			padding-left: rem(15);
-			padding-right: rem(15);
-		}
-	}
-	
-	@include breakpoint($container_small) {
-		padding: rem(20) rem(15); 
-	}
+    padding: rem(40) rem(15);
+
+    @include breakpoint($container_ipadToDesktop) {
+        .content {
+            padding-left: rem(15);
+            padding-right: rem(15);
+        }
+    }
+
+    @include breakpoint($container_small) {
+        padding: rem(20) rem(15);
+    }
 }
 
 #page-title {
-	color: $b2-red;
-	font-size: rem(32);
-	.sub-title {
-		color: #000;
-	}
+    color: $b2-red;
+    font-size: rem(32);
+    .sub-title {
+        color: #000;
+    }
 }
 
 #main {
-	padding-bottom: calc(#{$footer-height} * 2);
-	@include breakpoint($container_ipadToDesktop) {
-		padding-bottom: 0;
-	}
-	
-	@include breakpoint($container_portrait) {
-		padding-bottom: 0;
-	}
+
+    @include breakpoint($container_ipadToDesktop) {
+        padding-bottom: 0;
+    }
+
+    @include breakpoint($container_portrait) {
+        padding-bottom: 0;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
