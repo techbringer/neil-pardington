@@ -1,4 +1,4 @@
-<% if $CategoryHeader %>
+<%-- <% if $CategoryHeader %>
     <section id="subcategory-section" class="work">
         <% include Parallax HeaderImage=$CategoryHeader %>
         <div class="container">
@@ -13,4 +13,7 @@
 <% end_if %>
 <% loop $Works %>
     $Me
-<% end_loop %>
+<% end_loop %> --%>
+<div class="works ajax-content" data-endpoint="/api/v/1/works/$Endpoint">
+    <div class="ajax-list"></div>
+</div>

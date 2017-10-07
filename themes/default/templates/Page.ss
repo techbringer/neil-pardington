@@ -12,7 +12,7 @@
         $getCSS
 
         <script src="$ThemeDir/js/lib/modernizr.min.js"></script>
-
+        <script src="/$themeDir/js/components/handlebars/handlebars.min.js"></script>
         <% include GA %>
     </head>
     <body class="page-$URLSegment<% if $isMobile %> mobile<% end_if %> page-type-$BodyClass.LowerCase<% if $isBlogEntry %> single-blog-entry-page<% end_if %>">
@@ -26,8 +26,12 @@
                 <% end_if %>
             <% if $HeaderImage && $Content %></div><% end_if %>
             <% if $Form || $Content || not $HideTitle %>
-            <div id="content-area" class="container">
-                <% if $isBlogEntry %>
+            <div id="content-area">
+                <div id="page-title-wrapper">
+                    <h1 id="page-title" class="container">$Title</h1>
+                </div>
+                <div class="container">
+                <%-- <% if $isBlogEntry %>
                     <div class="title">
                         <span class="row as-block sub-title">Blog</span>
                         <h1 id="page-title">$Title</h1>
@@ -47,16 +51,19 @@
                     <% else %>
                         <h1 id="page-title" class="title<% if $HideTitle %> hide<% end_if %>">$Title<% if $SubTitle %> <span class="sub-title as-block">$SubTitle</span><% end_if %></h1>
                     <% end_if %>
-                <% end_if %>
-                <div class="content">
-                    $Content
-                    <% if $HiddenContent %>
-                        <div class="js-to-hide">$HiddenContent</div>
-                    <% end_if %>
-                    $Form
-                    <% if $Form %>
-                        <script src='https://www.google.com/recaptcha/api.js'></script>
-                    <% end_if %>
+                <% end_if %> --%>
+                    <div class="content">
+                        $Content
+                        <% if $HiddenContent %>
+                            <div class="js-to-hide">$HiddenContent</div>
+                        <% end_if %>
+                        <% if $URLSegment != 'contact-us' %>
+                            $Form
+                            <% if $Form %>
+                                <script src='https://www.google.com/recaptcha/api.js'></script>
+                            <% end_if %>
+                        <% end_if %>
+                    </div>
                 </div>
             </div>
             <% else %>

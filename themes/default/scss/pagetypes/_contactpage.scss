@@ -1,348 +1,314 @@
 #content-area {
-	.title {
-		.address {
-			margin-top: 1em;
-			font-weight: normal;
-			color: #000;
-			p {
-				margin-top: 0;
-			}
-		}
-	}
-	
-	.content {
-		@include breakpoint($container_landscape) {
-			max-width: rem(614);
-		}
-	}
+    .title {
+        .address {
+            margin-top: 1em;
+            font-weight: normal;
+            color: #000;
+            p {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .content {
+        @include breakpoint($container_landscape) {
+            max-width: rem(614);
+        }
+    }
 }
 
 #Form_contactForm {
-	textarea,
-	input {		
-		border: 1px solid #bbb;
-		background-color: #eee;
-	}
-	
-	p.message {
-		color: #388C10;
-		&.bad {
-			color: $b2-red;
-		}
-	}
-	fieldset {
-		@extend .clearfix;
-		
-		.field {
-			float: left;
-			width: 100%;
-			max-width: rem(290);
-			@include breakpoint($container_ipadToDesktop) {
-				max-width: rem(338);
-			}
-			@include breakpoint($container_portrait) {
-				max-width: rem(338);
-			}
-			
-			@include breakpoint($container_small) {
-				max-width: none;
-			}
-			
-			@include breakpoint($container_landscape) {
-				max-width: rem(292);
-			}
-			
-			margin-bottom: rem(20);
-			&:nth-child(odd) {
-				margin-right: rem(30);
-			}
-			
-			label {
-				color: #1a1a1a;
-				font-size: rem(20);
-				margin-bottom: rem(10);
-				display: block;
-			}
-			
-			input.text {
-				padding: 0.25em 0.5em;
-				font-size: rem(20);
-				width: 100%;
-				display: block;
-			}
-			
-			&.textarea {
-				clear: both;
-				float: none;
-				max-width: none;
-				textarea {
-					display: block;
-					width: 100%;
-					height: rem(200);
-				}
-			}
-			
-			.message.required {
-				color: $b2-red;
-				font-style: italic;
-				font-size: rem(12);
-			}
-		}
-		
-		#Form_contactForm_Email_Holder label,
-		#Form_contactForm_Message_Holder label {
-			&:after {
-				content: '*';
-				color: $b2-red;
-				margin-left: 0.25em;
-			}
-		}	
-	}
-	
-	.Actions {
-		@extend .clearfix;
-		.action,
-		.g-recaptcha {
-			float: left;
-			width: 100%;
-			max-width: rem(290);
-			margin-bottom: rem(20);
-		}
-		
-		.g-recaptcha {
-			margin-right: rem(30);
-			@include breakpoint($container_landscape) {
-				max-width: rem(290);
-			}
-			@include breakpoint($container_portrait) {
-				margin-left: 0;
-				margin-right: 0;
-				float: none;
-			}
-			
-			@include breakpoint($container_small) {
-				margin-left: 0;
-				margin-right: 0;
-				float: none;
-				div {
-					width: 100% !important;
-					iframe {
-						display: block;
-						width: 100%;
-					}
-				}
-			}
-		}
-		
-		.action {
-			display: block;
-			width: 100%;
-			height: rem(76);
-			float: right;
-			@extend .uppercase;
-			font-size: rem(20);
-			@include breakpoint($container_portrait) {
-				margin-left: 0;
-				margin-right: 0;
-				float: none;
-			}
-			
-			@include breakpoint($container_small) {
-				margin-left: 0;
-				margin-right: 0;
-				float: none;
-			}
-			
-			@include breakpoint($container_landscape) {
-				max-width: rem(290);
-			}
-		}
-	}
+    textarea,
+    input {
+        border: 1px solid #bbb;
+        background-color: #eee;
+    }
+
+    p.message {
+        color: #388C10;
+        &.bad {
+            color: $b2-red;
+        }
+    }
+    fieldset {
+        @extend .clearfix;
+
+        .field {
+            float: left;
+            width: 100%;
+            max-width: rem(290);
+            @include breakpoint($container_ipadToDesktop) {
+                max-width: rem(338);
+            }
+            @include breakpoint($container_portrait) {
+                max-width: rem(338);
+            }
+
+            @include breakpoint($container_small) {
+                max-width: none;
+            }
+
+            @include breakpoint($container_landscape) {
+                max-width: rem(292);
+            }
+
+            margin-bottom: rem(20);
+            &:nth-child(odd) {
+                margin-right: rem(30);
+            }
+
+            label {
+                color: #1a1a1a;
+                font-size: rem(20);
+                margin-bottom: rem(10);
+                display: block;
+            }
+
+            input.text {
+                padding: 0.25em 0.5em;
+                font-size: rem(20);
+                width: 100%;
+                display: block;
+            }
+
+            &.textarea {
+                clear: both;
+                float: none;
+                max-width: none;
+                textarea {
+                    display: block;
+                    width: 100%;
+                    height: rem(200);
+                }
+            }
+
+            .message.required {
+                color: $b2-red;
+                font-style: italic;
+                font-size: rem(12);
+            }
+        }
+
+        #Form_contactForm_Email_Holder label,
+        #Form_contactForm_Message_Holder label {
+            &:after {
+                content: '*';
+                color: $b2-red;
+                margin-left: 0.25em;
+            }
+        }
+    }
+
+    .Actions {
+        @extend .clearfix;
+        .action,
+        .g-recaptcha {
+            float: left;
+            width: 100%;
+            max-width: rem(290);
+            margin-bottom: rem(20);
+        }
+
+        .g-recaptcha {
+            margin-right: rem(30);
+            @include breakpoint($container_landscape) {
+                max-width: rem(290);
+            }
+            @include breakpoint($container_portrait) {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+            }
+
+            @include breakpoint($container_small) {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+                div {
+                    width: 100% !important;
+                    iframe {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .action {
+            display: block;
+            width: 100%;
+            height: rem(76);
+            float: right;
+            @extend .uppercase;
+            font-size: rem(20);
+            @include breakpoint($container_portrait) {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+            }
+
+            @include breakpoint($container_small) {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+            }
+
+            @include breakpoint($container_landscape) {
+                max-width: rem(290);
+            }
+        }
+    }
 }
 
 .guide-gmap {
-	padding-top: rem(20);
-	border-top: rem(4) solid $b2-red;
-	@include breakpoint($container_portrait) {
-		padding-top: 0;
-		border-top: none;
-	}
-	
-	@include breakpoint($container_small) {
-		padding-top: 0;
-		border-top: none;
-	}
-	
-	header {
-		h2 {
-			margin-top: 0;
-			font-size: rem(32);
-			color: $b2-red;
-			line-height: 1.2;
-			margin-bottom: rem(20);
-		}
-		
-		@include breakpoint($container_small) {
-			padding: 0;
-		}
-	}
-	
-	.title {
-		margin-left: rem(30);
-		font-weight: normal;
-		color: #000;
-		p {
-			margin-top: 0;
-		}
-		
-		@include breakpoint($container_portrait) {
-			margin-left: 0;
-			margin-right: 0;
-			margin-bottom: 1em;
-		}
-		
-		@include breakpoint($container_small) {
-			margin-left: 0;
-			margin-right: 0;
-			margin-bottom: 1em;
-		}
-	}
-	
-	.content {
-		margin-left: rem(15);
-		margin-right: 0;
-		
-		overflow: hidden;
-		
-		@include breakpoint($container_ipadToDesktop) {
-			margin-left: 0 !important;
-			margin-right: 0;
-			margin-bottom: 1em;
-			
-		}
-		@include breakpoint($container_portrait) {
-			margin-left: 0;
-			margin-right: 0;
-			margin-bottom: 1em;
-		}
-		
-		@include breakpoint($container_small) {
-			margin-left: 0;
-			margin-right: 0;
-			margin-bottom: 1em;
-		}
-		
-		@include breakpoint($container_landscape) {
-			max-width: rem(614);
-		}
-		
-		iframe {
-			box-shadow: 0 0 10px rgba(0,0,0,0.2);
-			display: block;
-			width: 100%;
-			height: rem(480);
-		}
-		
-	}
+    padding-top: rem(20);
+    border-top: rem(4) solid $b2-red;
+    @include breakpoint($container_portrait) {
+        padding-top: 0;
+        border-top: none;
+    }
+
+    @include breakpoint($container_small) {
+        padding-top: 0;
+        border-top: none;
+    }
+
+    header {
+        h2 {
+            margin-top: 0;
+            font-size: rem(32);
+            color: $b2-red;
+            line-height: 1.2;
+            margin-bottom: rem(20);
+        }
+
+        @include breakpoint($container_small) {
+            padding: 0;
+        }
+    }
+
+    .title {
+        margin-left: rem(30);
+        font-weight: normal;
+        color: #000;
+        p {
+            margin-top: 0;
+        }
+
+        @include breakpoint($container_portrait) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 1em;
+        }
+
+        @include breakpoint($container_small) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 1em;
+        }
+    }
+
+    .content {
+        margin-left: rem(15);
+        margin-right: 0;
+
+        overflow: hidden;
+
+        @include breakpoint($container_ipadToDesktop) {
+            margin-left: 0 !important;
+            margin-right: 0;
+            margin-bottom: 1em;
+
+        }
+        @include breakpoint($container_portrait) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 1em;
+        }
+
+        @include breakpoint($container_small) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 1em;
+        }
+
+        @include breakpoint($container_landscape) {
+            max-width: rem(614);
+        }
+
+        iframe {
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            display: block;
+            width: 100%;
+            height: rem(480);
+        }
+
+    }
 }
 
 @include breakpoint(max-width 767px) {
-	#content-area {
-		.title,
-		.content {
-			max-width: none !important;
-			width: 100% !important;
-		}
-	}
-	
-	#Form_contactForm .g-recaptcha,
-	#Form_contactForm .action,
-	#Form_contactForm fieldset .field {
-		width: 100% !important;
-		margin-right: 0 !important;
-		max-width: none !important;
-	}
-	
-	.guide-gmap {
-		padding-left: rem(15) !important;
-		padding-right: rem(15) !important;
-	}
+    #content-area {
+        .title,
+        .content {
+            max-width: none !important;
+            width: 100% !important;
+        }
+    }
+
+    #Form_contactForm .g-recaptcha,
+    #Form_contactForm .action,
+    #Form_contactForm fieldset .field {
+        width: 100% !important;
+        margin-right: 0 !important;
+        max-width: none !important;
+    }
+
+    .guide-gmap {
+        padding-left: rem(15) !important;
+        padding-right: rem(15) !important;
+    }
 }
 
 @include breakpoint(768px 1023px) {
-	.guide-gmap,
-	#content-area {
-		.title {
-			max-width: 320px !important;
-		}
-		
-		.content {
-			max-width: calc(100% - 350px) !important;
-			padding: 0 !important;
-		}
-	}
-	
-	.guide-gmap {
-		.content {
-			max-width: calc(100% - 365px) !important;
-		}
-	}
-	
-	#Form_contactForm .g-recaptcha,
-	#Form_contactForm .action,
-	#Form_contactForm fieldset .field {
-		width: 100% !important;
-		margin-right: 0 !important;
-		max-width: none !important;
-	}
+    .guide-gmap,
+    #content-area {
+        .title {
+            max-width: 320px !important;
+        }
+
+        .content {
+            max-width: calc(100% - 350px) !important;
+            padding: 0 !important;
+        }
+    }
+
+    .guide-gmap {
+        .content {
+            max-width: calc(100% - 365px) !important;
+        }
+    }
+
+    #Form_contactForm .g-recaptcha,
+    #Form_contactForm .action,
+    #Form_contactForm fieldset .field {
+        width: 100% !important;
+        margin-right: 0 !important;
+        max-width: none !important;
+    }
 }
 
+.director {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0 rem(15);
+    &s {
+        @include display-flex;
+    }
 
+    &__details {
+        padding-left: rem(20);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

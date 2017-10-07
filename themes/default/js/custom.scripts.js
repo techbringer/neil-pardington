@@ -33,20 +33,21 @@ jQuery(document).ready(function($) {
      * ditto
      * */
 
-    var former_current        =    $('.nav li a.current:eq(0)'),
-        current_active        =    null,
-        hide_ul                =    function(ul) {
-                                    ul.parent().find('a:eq(0)').removeClass('current');
-                                    if (current_active.is(ul)) {
-                                        current_active = false;
-                                    }
+    var former_current  =   $('.nav li a.current:eq(0)'),
+        current_active  =   null,
+        hide_ul         =   function(ul) {
+                                ul.parent().find('a:eq(0)').removeClass('current');
+                                if (current_active.is(ul)) {
+                                    current_active = false;
+                                }
 
-                                    TweenMax.to(ul, 0.3, {opacity: 0, height: 0, onComplete: function() {
-                                        ul.hide();
-                                        ul.removeAttr('style');
-                                        ul.unbind('mouseleave');
-                                    }});
-                                };
+                                TweenMax.to(ul, 0.3, {opacity: 0, height: 0, onComplete: function() {
+                                    ul.hide();
+                                    ul.removeAttr('style');
+                                    ul.unbind('mouseleave');
+                                }});
+                            };
+
     $('#logo').mouseenter(function(e) {
         if (current_active) {
             hide_ul(current_active);
@@ -173,7 +174,6 @@ jQuery(document).ready(function($) {
             //input.val('');
         }});
     });
-
 
     /**
      * hide down arrow
@@ -318,6 +318,21 @@ jQuery(document).ready(function($) {
                     $(burger).click();
                 }
             }
+        }
+    });
+
+    $('.works.ajax-content').afetch(function(data, to)
+    {
+        if (data && data.list.length > 0) {
+            data.list.forEach(function(o)
+            {
+                var work    =   new Work(o);
+                to.append(work);
+                work.find('.jarallax').jarallax({
+                    speed: 0.2
+                });
+            });
+
         }
     });
 

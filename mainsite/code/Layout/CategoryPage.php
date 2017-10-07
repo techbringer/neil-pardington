@@ -1,10 +1,11 @@
 <?php
 
-use SaltedHerring\Grid as Grid;
-use SaltedHerring\Debugger as Debugger;
+use SaltedHerring\Grid;
+use SaltedHerring\Debugger;
+use SaltedHerring\SaltedCache;
 
-class CategoryPage extends Page {
-
+class CategoryPage extends Page
+{
     protected static $db = array(
     );
 
@@ -29,13 +30,40 @@ class CategoryPage extends Page {
         return $fields;
     }
 
-    public function mySubCategories() {
+    public function mySubCategories()
+    {
         return $this->SubCategories()->sort(array('SortOrder' => 'ASC'));
     }
+
+    public function getCachedWorks()
+    {
+        $factory                        =   $this->ClassName;
+        $key                            =   $this->ID . '_' . strtotime($this->LastEdited);
+
+        $data                           =   SaltedCache::read($factory, $key);
+
+        if (empty($data)) {
+
+            $categories                 =   $this->mySubCategories();//->filter(array('slag' => $slag))->first()->Works();
+            $list                       =   [];
+
+            foreach ($categories as $category) {
+                $list                   =   array_merge($list, $category->Works()->column());
+            }
+            
+            $data                       =   Work::get()->filter(['ID' => $list]);
+
+            SaltedCache::save($factory, $key, $data);
+        }
+
+        return $data;
+    }
+
 }
 
 
-class CategoryPage_Controller extends Page_Controller {
+class CategoryPage_Controller extends Page_Controller
+{
     protected static $url_handlers = array(
         ''              =>  'index',
         '$slag'         =>  'getworks'
@@ -106,4 +134,13 @@ class CategoryPage_Controller extends Page_Controller {
         return $slag;
     }
 
+    public function getEndpoint()
+    {
+        // Debugger::inspect($this->request->param('slag'));
+        if ($slug   =   $this->request->param('slag')) {
+            return $slug;
+        }
+
+        return $this->ID;
+    }
 }

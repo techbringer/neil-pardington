@@ -159,3 +159,26 @@
 .margin-bottom-half-em {
     margin-bottom: 0.5em;
 }
+
+.is-flex {
+    @include display-flex;
+    &.align {
+        &-vertical {
+            &-bottom {
+                align-items: flex-end;
+            }
+        }
+    }
+
+    .width-auto {
+        width: auto;
+    }
+
+    .column {
+        display: block;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 0 rem(15);
+    }
+}

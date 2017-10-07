@@ -38,3 +38,10 @@ HeaderImage:
     "normal": "Normal (400px)"
     "full": "Screen height (100%)"
     "custom": "Custom..."
+
+DataList:
+  extensions:
+    - DataListJSONExtension
+ArrayList:
+  extensions:
+    - DataListJSONExtension

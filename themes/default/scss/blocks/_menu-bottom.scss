@@ -3,9 +3,15 @@
         @include mobile {
             display: none;
         }
+
         margin-top: rem(60);
         background-color: black;
         padding: rem(35) 0 rem(55);
+
+        .page-type-home-page & {
+            padding-bottom: rem(107);
+        }
+
         .nav {
             .level-root {
                 margin: 0;

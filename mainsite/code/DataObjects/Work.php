@@ -1,4 +1,6 @@
-<?php use SaltedHerring\Utilities as Utilities;
+<?php
+use SaltedHerring\Utilities;
+use SaltedHerring\SaltedCache;
 
 class Work extends DataObject {
     protected static $db = array(
@@ -7,6 +9,12 @@ class Work extends DataObject {
         'Slag'              =>  'Varchar(1024)',
         'Content'           =>  'HTMLText'
     );
+
+    /**
+     * Default sort ordering
+     * @var array
+     */
+    private static $default_sort = ['SortOrder' => 'ASC'];
 
     private static $create_table_options = array(
         'MySQLDatabase'     =>  'ENGINE=MyISAM'
@@ -26,10 +34,6 @@ class Work extends DataObject {
         'Title'             =>  'Title'
     );
 
-    protected static $field_labels = array(
-        'theCategory'       =>  'Category'
-    );
-
     protected static $many_many = array(
         'Tags'              =>  'Tag'
     );
@@ -43,19 +47,13 @@ class Work extends DataObject {
         return $this->customise(array(
                     'Title'                 =>  $this->Title,
                     'Content'               =>  $this->Content,
-                    'Category'              =>  $this->theCategory(),
+                    'Category'              =>  $this->Category()->Title,
                     'ViewportHeight'        =>  $this->ViewportHeight,
                     'ViewportCustomHeight'  =>  $this->ViewportCustomHeight,
                     'HeaderImage'           =>  $this->HeaderImage()
                 ))->renderWith('Work');
     }
 
-    public function theCategory() {
-        if ($category = DataObject::get_one('Category', array('ID' => $this->CategoryID))) {
-            return $category->Title;
-        }
-        return 'Uncategorised';
-    }
 
     public function getCMSFields() {
         $fields = parent::getCMSFields();
@@ -82,11 +80,50 @@ class Work extends DataObject {
         return $fields;
     }
 
-    public function onBeforeWrite() {
+    public function onBeforeWrite()
+    {
         parent::onBeforeWrite();
         $this->OnPageID = WorksPage::get()->first()->ID;
         $slag = Utilities::sanitiseClassName($this->Title);
         $this->Slag = Utilities::SlagGen('Work', $slag, $this->ID);
+    }
+
+    /**
+     * Event handler called after writing to the database.
+     */
+    public function onAfterWrite()
+    {
+        parent::onAfterWrite();
+        $this->cached();
+    }
+
+    public function cached($json_format = false, $force = false)
+    {
+        $factory                        =   $this->ClassName;
+        $key                            =   $this->ID . '_' . strtotime($this->LastEdited);
+
+        $data                           =   SaltedCache::read($factory, $key);
+
+        if (empty($data) || $force) {
+
+            $data = array(
+                'Title'                 =>  $this->Title,
+                'Slug'                  =>  $this->Slag,
+                'Content'               =>  $this->Content,
+                'Category'              =>  $this->Category()->Title,
+                'ViewportHeight'        =>  $this->ViewportHeight,
+                'ViewportCustomHeight'  =>  $this->ViewportCustomHeight,
+                'HeaderImage'           =>  $this->HeaderImage()->URL
+            );
+
+            SaltedCache::save($factory, $key, $data);
+        }
+
+        if ($json_format) {
+            return $data;
+        }
+
+        return new ArrayData($data);
     }
 
 }

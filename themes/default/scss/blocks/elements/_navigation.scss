@@ -13,12 +13,30 @@
                     left: 100%;
                     @include transition(all 0.3s ease-in-out);
                     @include transform(translateX(0%));
+
+                    & > li {
+                        &:hover {
+                            ul {
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                    }
                 }
             }
             padding: 0;
             margin: 0;
             li {
+                position: relative;
                 list-style: none;
+                &:hover {
+                    a {
+                        &.leading {
+                            background-color: #AE352F;
+                            text-decoration: none;
+                        }
+                    }
+                }
                 a {
                     font-size: rem(20);
                     color: white;
@@ -26,23 +44,48 @@
                     white-space: nowrap;
                     @include transition(all 0.3s);
                     outline: none;
-                }
-                & > a {
-                    line-height: 1;
-                    font-size: rem(24);
-                    padding: rem(10) rem(50) rem(14);
-                    &:hover,
-                    &:focus,
-                    &:active,
-                    &.current {
-                        background-color: #AE352F;
-                        text-decoration: none;
+                    &.leading {
+                        line-height: 1;
+                        font-size: rem(24);
+                        padding: rem(10) rem(70) rem(14) rem(25);
+                        &:hover,
+                        &:focus,
+                        &:active,
+                        &.current {
+                            background-color: #AE352F;
+                            text-decoration: none;
+                        }
                     }
                 }
                 ul {
+                    background-color: black;
+                    width: 100%;
                     position: absolute;
                     visibility: hidden;
                     opacity: 0;
+                    li {
+                        padding: 0 rem(25);
+                        a {
+                            padding: rem(12) 0;
+                            border-bottom: 1px solid rgba(white, 0.8);
+                            white-space: normal;
+                            word-break: break-word;
+                            &.current,
+                            &.active,
+                            &:hover,
+                            &:active,
+                            &:focus {
+                                color: $b2-red;
+                                text-decoration: none;
+                            }
+                        }
+
+                        &:last-child {
+                            a {
+                                border: none;
+                            }
+                        }
+                    }
                 }
             }
         }

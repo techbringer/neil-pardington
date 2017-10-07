@@ -3,7 +3,7 @@
         <ul class="level-root">
         <% loop Menu(1) %>
             <li>
-                <a href="$Link" class="<% if LinkOrCurrent = current || $LinkOrSection = section %>current<% end_if %>">$MenuTitle.XML</a>
+                <a href="$Link" class="leading <% if LinkOrCurrent = current || $LinkOrSection = section %> current<% end_if %>">$MenuTitle.XML</a>
                 <% if $ClassName.LowerCase == 'categorypage' %>
                 <ul class="children level-2">
                 <% loop $mySubCategories %>

@@ -98,8 +98,8 @@ body.page-terms-and-conditions {
 }
 
 #content-area {
-    padding: rem(40) rem(15);
-
+    padding: rem(84) rem(15);
+    position: relative;
     @include breakpoint($container_ipadToDesktop) {
         .content {
             padding-left: rem(15);
@@ -113,10 +113,15 @@ body.page-terms-and-conditions {
 }
 
 #page-title {
-    color: $b2-red;
-    font-size: rem(32);
-    .sub-title {
-        color: #000;
+    font-size: rem(24);
+    color: white;
+    padding: rem(10) rem(15);
+    &-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $b2-red;
     }
 }
 

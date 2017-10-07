@@ -25,7 +25,8 @@
     "salted-js": "*",
     "handlebars": "^4.0.10",
     "jquery.scrollTo": "^2.1.2",
-    "jarallax": "^1.8.0"
+    "jarallax": "^1.8.0",
+    "df-visible": "jquery-visible#^1.2.0"
   },
   "resolutions": {
     "fizzy-ui-utils": "^2.0.5"

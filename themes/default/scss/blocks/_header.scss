@@ -48,6 +48,25 @@
         }
     }
 
+    #weird-title {
+        position: absolute;
+        display: block;
+        line-height: rem(60);
+        color: white;
+        font-size: rem(30);
+        font-weight: bold;
+        left: 50%;
+        @include transform(translateX(-50%));
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        @include transition(all ease-in-out 0.3s);
+        max-width: calc(100% - 340px);
+        .scrolled & {
+            max-width: calc(100% - 180px);
+        }
+    }
+
     @import 'elements/navigation';
 }
 

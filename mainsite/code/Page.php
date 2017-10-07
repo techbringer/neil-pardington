@@ -60,7 +60,9 @@ class Page_Controller extends ContentController
                 'themes/default/js/components/gsap/src/minified/TweenMax.min.js',
                 'themes/default/js/components/gsap/src/minified/TimelineMax.min.js',
                 'themes/default/js/components/salted-js/dist/minified/salted-js.min.js',
-
+                'themes/default/js/components/df-visible/jquery.visible.min.js',
+                'themes/default/js/plugins/ajax-fetcher.js',
+                'themes/default/js/ui/work.js',
                 'themes/default/js/custom.scripts.js'
             ]
         );
