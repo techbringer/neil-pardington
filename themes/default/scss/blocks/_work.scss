@@ -1,48 +1,41 @@
 .showcase,
 .work {
-	.container {
-		padding-top: rem(40);
-		padding-bottom: rem(40);
-		
-		.showcase-title,
-		.work-title {
-			@extend .title;
-			h2, p {
-				line-height: 1.2;
-				margin-top: 0;
-				margin-bottom: 0;
-			}
-			
-			h2 {
-				font-size: rem(32);
-			}
-			
-			p {
-				color: #000;
-				font-size: rem(32);
-			}
-			
-			.showcase-title-holder {
-				padding-left: rem(15);
-				padding-right: rem(15);
-				@include breakpoint($container_portrait) {
-					padding-left: 0;
-					padding-right: 0;
-				}
-			}
-		}
-		
-		.showcase-title {
-			@include breakpoint($container_portrait) {
-				margin-left: 0;
-				margin-right: 0;
-			}
-		}
-		
-		.showcase-content,
-		.work-content {
-			@extend .content;
-			
-		}
-	}
+    .work-title {
+        background-color: $b2-red;
+        margin-bottom: rem(30);
+        h2 {
+            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: rem(24);
+            margin-top: 0;
+            margin-bottom: 0;
+            color: white;
+            &.container {
+                padding: rem(10) rem(15);
+            }
+        }
+
+    }
+    .container {
+        padding-bottom: rem(120);
+
+        @include breakpoint($container_small) {
+            padding-bottom: rem(40);
+        }
+
+        &.work-content {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .work-content {
+            @extend .content;
+            padding-left: rem(15);
+            padding-right: rem(15);
+            h2, h3, h4, h5, h6, p, li, td {
+                line-height: 1.6;
+            }
+        }
+    }
 }

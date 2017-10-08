@@ -7,10 +7,8 @@ Handlebars.registerHelper('ifEqual', function(a, b, options) {
 
 var WorkTemplate    =   '<section id="work-{{Slug}}" class="work">\
                             <div class="{{ViewportHeight}} jarallax"{{#if HeaderImage}} style="background-image: url({{HeaderImage}});{{#ifEqual ViewportHeight "custom"}}{{#if ViewportCustomHeight}} height: {{ViewportCustomHeight}}px;{{/if}}{{/ifEqual}}{{/if}}"></div>\
-                            <div class="container">\
-                                <div class="work-title">\
-                                    <header class="work-title"><p><strong>{{Category}}</strong></p><h2>{{Title}}</h2></header>\
-                                </div>\
+                            <header class="work-title"><h2 class="container">{{Title}}</h2></header>\
+                            <div class="container work-content">\
                                 <div class="work-content">\
                                     {{{Content}}}\
                                 </div>\

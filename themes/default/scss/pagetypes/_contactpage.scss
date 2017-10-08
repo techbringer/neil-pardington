@@ -18,11 +18,32 @@
 }
 
 #Form_contactForm {
+    max-width: rem(480);
     textarea,
     input {
-        border: 1px solid #bbb;
-        background-color: #eee;
+        border: none;
+        background-color: white;
+        &.text {
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: $b2-red;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                color: $b2-red;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                color: $b2-red;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+                color: $b2-red;
+            }
+        }
     }
+
+    input.text {
+        height: rem(50);
+    }
+
+
 
     p.message {
         color: #388C10;
@@ -34,9 +55,7 @@
         @extend .clearfix;
 
         .field {
-            float: left;
             width: 100%;
-            max-width: rem(290);
             @include breakpoint($container_ipadToDesktop) {
                 max-width: rem(338);
             }
@@ -53,9 +72,6 @@
             }
 
             margin-bottom: rem(20);
-            &:nth-child(odd) {
-                margin-right: rem(30);
-            }
 
             label {
                 color: #1a1a1a;
@@ -79,6 +95,21 @@
                     display: block;
                     width: 100%;
                     height: rem(200);
+                    font-size: rem(20);
+                    padding: rem(12) rem(10);
+
+                    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                        color: $b2-red;
+                    }
+                    &::-moz-placeholder { /* Firefox 19+ */
+                        color: $b2-red;
+                    }
+                    &:-ms-input-placeholder { /* IE 10+ */
+                        color: $b2-red;
+                    }
+                    &:-moz-placeholder { /* Firefox 18- */
+                        color: $b2-red;
+                    }
                 }
             }
 
@@ -104,9 +135,7 @@
         .action,
         .g-recaptcha {
             float: left;
-            width: 100%;
-            max-width: rem(290);
-            margin-bottom: rem(20);
+            width: auto;
         }
 
         .g-recaptcha {
@@ -124,11 +153,10 @@
                 margin-left: 0;
                 margin-right: 0;
                 float: none;
-                div {
-                    width: 100% !important;
+                & > div {
+                    margin: 0 auto;
                     iframe {
                         display: block;
-                        width: 100%;
                     }
                 }
             }
@@ -136,11 +164,14 @@
 
         .action {
             display: block;
-            width: 100%;
-            height: rem(76);
+            background-color: black;
+            width: auto;
+            height: rem(50);
             float: right;
+            padding: rem(10) rem(35) rem(20);
             @extend .uppercase;
             font-size: rem(20);
+            margin: rem(13) 0 0;
             @include breakpoint($container_portrait) {
                 margin-left: 0;
                 margin-right: 0;
@@ -303,12 +334,86 @@
     flex-grow: 1;
     flex-shrink: 1;
     padding: 0 rem(15);
+    @include breakpoint($container_small) {
+        padding: 0;
+    }
     &s {
         @include display-flex;
+        margin-bottom: rem(90);
+        @include breakpoint($container_small) {
+            display: block;
+        }
+    }
+
+    &__portrait {
+        @include breakpoint($container_small) {
+            width: 40%;
+        }
     }
 
     &__details {
         padding-left: rem(20);
+        @include breakpoint($container_small) {
+            width: 60%;
+        }
     }
 
+    .is-flex {
+        @include breakpoint($container_small) {
+            margin-bottom: rem(20);
+        }
+    }
+}
+
+.location {
+    &s {
+        &-title {
+            color: $b2-red;
+            margin: 0 0 rem(24);
+            padding: 0 rem(15);
+            @include breakpoint($container_small) {
+                padding: 0;
+            }
+        }
+
+        @include breakpoint($container_small) {
+            display: block;
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+
+    @include breakpoint($container_small) {
+        padding: 0;
+        margin-bottom: rem(40);
+    }
+}
+
+.contact-us-form {
+    margin-top: rem(90);
+    padding: rem(35) rem(15) rem(60);
+    background-color: $b2-red;
+    color: white;
+    @include breakpoint($container_small) {
+        padding-left: rem(10);
+        padding-right: rem(10);
+    }
+
+    .container {
+        padding: 0 rem(15);
+        @include breakpoint($container_small) {
+            padding: 0;
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+    }
+
+    &__content {
+        margin-bottom: rem(40);
+    }
 }

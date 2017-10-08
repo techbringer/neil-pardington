@@ -9,5 +9,13 @@
     &.normal {
         height: 400px;
     }
+
+    @include breakpoint($container_small) {
+        height: 50vh !important;
+    }
+
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

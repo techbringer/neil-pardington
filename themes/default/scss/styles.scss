@@ -70,6 +70,9 @@ html {
 /**
  * Pages.
  * */
+body {
+    padding-top: rem(60);
+}
 
 body.page-home {
     @import 'pagetypes/homepage';
@@ -98,7 +101,11 @@ body.page-terms-and-conditions {
 }
 
 #content-area {
-    padding: rem(84) rem(15);
+    padding-bottom: rem(15);
+    .container {
+        padding-left: rem(15);
+        padding-right: rem(15);
+    }
     position: relative;
     @include breakpoint($container_ipadToDesktop) {
         .content {
@@ -107,20 +114,17 @@ body.page-terms-and-conditions {
         }
     }
 
-    @include breakpoint($container_small) {
-        padding: rem(20) rem(15);
-    }
+    // @include breakpoint($container_small) {
+    //     padding: rem(20) rem(15);
+    // }
 }
 
 #page-title {
     font-size: rem(24);
     color: white;
     padding: rem(10) rem(15);
+    margin-bottom: rem(30);
     &-wrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
         background-color: $b2-red;
     }
 }

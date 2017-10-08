@@ -1093,10 +1093,7 @@
 }
 
 /* line 63, ../scss/config/_modifiers.scss */
-.title, .showcase .container .showcase-title,
-.showcase .container .work-title,
-.work .container .showcase-title,
-.work .container .work-title {
+.title {
   color: #ef483d;
   font-size: 2rem;
   font-weight: 900;
@@ -1108,48 +1105,32 @@
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   /* line 63, ../scss/config/_modifiers.scss */
-  .title, .showcase .container .showcase-title,
-  .showcase .container .work-title,
-  .work .container .showcase-title,
-  .work .container .work-title {
+  .title {
     margin-bottom: 1em;
   }
 }
 @media (max-width: 767px) {
   /* line 63, ../scss/config/_modifiers.scss */
-  .title, .showcase .container .showcase-title,
-  .showcase .container .work-title,
-  .work .container .showcase-title,
-  .work .container .work-title {
+  .title {
     margin-bottom: 0.5em;
   }
 }
 @media (min-width: 0) and (max-width: 639px) {
   /* line 63, ../scss/config/_modifiers.scss */
-  .title, .showcase .container .showcase-title,
-  .showcase .container .work-title,
-  .work .container .showcase-title,
-  .work .container .work-title {
+  .title {
     margin-bottom: 0.5em;
   }
 }
 
 /* line 84, ../scss/config/_modifiers.scss */
-.content, .showcase .container .showcase-content,
-.showcase .container .work-content,
-.work .container .showcase-content,
+.content, .showcase .container .work-content,
 .work .container .work-content {
-  float: left;
   width: 100%;
-  max-width: 610px;
-  margin-left: 0.9375rem;
-  margin-right: 0.9375rem;
+  max-width: 800px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   /* line 84, ../scss/config/_modifiers.scss */
-  .content, .showcase .container .showcase-content,
-  .showcase .container .work-content,
-  .work .container .showcase-content,
+  .content, .showcase .container .work-content,
   .work .container .work-content {
     max-width: none;
     margin-right: 0;
@@ -1158,115 +1139,74 @@
     padding-right: 1.875rem;
   }
 }
-/* line 97, ../scss/config/_modifiers.scss */
-.content h2, .showcase .container .showcase-content h2,
-.showcase .container .work-content h2,
-.work .container .showcase-content h2,
-.work .container .work-content h2, .content h3, .showcase .container .showcase-content h3,
-.showcase .container .work-content h3,
-.work .container .showcase-content h3,
-.work .container .work-content h3, .content h4, .showcase .container .showcase-content h4,
-.showcase .container .work-content h4,
-.work .container .showcase-content h4,
-.work .container .work-content h4, .content h5, .showcase .container .showcase-content h5,
-.showcase .container .work-content h5,
-.work .container .showcase-content h5,
-.work .container .work-content h5, .content h6, .showcase .container .showcase-content h6,
-.showcase .container .work-content h6,
-.work .container .showcase-content h6,
-.work .container .work-content h6, .content p, .showcase .container .showcase-content p,
-.showcase .container .work-content p,
-.work .container .showcase-content p,
-.work .container .work-content p, .content ul, .showcase .container .showcase-content ul,
-.showcase .container .work-content ul,
-.work .container .showcase-content ul,
-.work .container .work-content ul, .content li, .showcase .container .showcase-content li,
-.showcase .container .work-content li,
-.work .container .showcase-content li,
+/* line 94, ../scss/config/_modifiers.scss */
+.content h2, .showcase .container .work-content h2,
+.work .container .work-content h2, .content h3, .showcase .container .work-content h3,
+.work .container .work-content h3, .content h4, .showcase .container .work-content h4,
+.work .container .work-content h4, .content h5, .showcase .container .work-content h5,
+.work .container .work-content h5, .content h6, .showcase .container .work-content h6,
+.work .container .work-content h6, .content p, .showcase .container .work-content p,
+.work .container .work-content p, .content ul, .showcase .container .work-content ul,
+.work .container .work-content ul, .content li, .showcase .container .work-content li,
 .work .container .work-content li {
   margin-top: 0;
   line-height: 1.2;
 }
-/* line 102, ../scss/config/_modifiers.scss */
-.content h2, .showcase .container .showcase-content h2,
-.showcase .container .work-content h2,
-.work .container .showcase-content h2,
+/* line 99, ../scss/config/_modifiers.scss */
+.content h2, .showcase .container .work-content h2,
 .work .container .work-content h2 {
   font-size: 2rem;
 }
-/* line 106, ../scss/config/_modifiers.scss */
-.content h3, .showcase .container .showcase-content h3,
-.showcase .container .work-content h3,
-.work .container .showcase-content h3,
+/* line 103, ../scss/config/_modifiers.scss */
+.content h3, .showcase .container .work-content h3,
 .work .container .work-content h3 {
   font-size: 1.625rem;
 }
-/* line 110, ../scss/config/_modifiers.scss */
-.content h4, .showcase .container .showcase-content h4,
-.showcase .container .work-content h4,
-.work .container .showcase-content h4,
+/* line 107, ../scss/config/_modifiers.scss */
+.content h4, .showcase .container .work-content h4,
 .work .container .work-content h4 {
   font-size: 1.25rem;
 }
-/* line 114, ../scss/config/_modifiers.scss */
-.content h5, .showcase .container .showcase-content h5,
-.showcase .container .work-content h5,
-.work .container .showcase-content h5,
+/* line 111, ../scss/config/_modifiers.scss */
+.content h5, .showcase .container .work-content h5,
 .work .container .work-content h5 {
   font-size: 1.125rem;
 }
-/* line 118, ../scss/config/_modifiers.scss */
-.content h6, .showcase .container .showcase-content h6,
-.showcase .container .work-content h6,
-.work .container .showcase-content h6,
+/* line 115, ../scss/config/_modifiers.scss */
+.content h6, .showcase .container .work-content h6,
 .work .container .work-content h6 {
   font-size: 1rem;
 }
-/* line 122, ../scss/config/_modifiers.scss */
-.content li, .showcase .container .showcase-content li,
-.showcase .container .work-content li,
-.work .container .showcase-content li,
+/* line 119, ../scss/config/_modifiers.scss */
+.content li, .showcase .container .work-content li,
 .work .container .work-content li,
 .content p,
-.showcase .container .showcase-content p,
 .showcase .container .work-content p,
-.work .container .showcase-content p,
 .work .container .work-content p {
   font-size: 1.25rem;
 }
 @media (max-width: 767px) {
-  /* line 122, ../scss/config/_modifiers.scss */
-  .content li, .showcase .container .showcase-content li,
-  .showcase .container .work-content li,
-  .work .container .showcase-content li,
+  /* line 119, ../scss/config/_modifiers.scss */
+  .content li, .showcase .container .work-content li,
   .work .container .work-content li,
   .content p,
-  .showcase .container .showcase-content p,
   .showcase .container .work-content p,
-  .work .container .showcase-content p,
   .work .container .work-content p {
     font-size: 1.125rem;
     line-height: 1.4;
   }
 }
-/* line 131, ../scss/config/_modifiers.scss */
-.content a, .showcase .container .showcase-content a,
-.showcase .container .work-content a,
-.work .container .showcase-content a,
+/* line 128, ../scss/config/_modifiers.scss */
+.content a, .showcase .container .work-content a,
 .work .container .work-content a {
   word-wrap: break-word;
 }
 
 @media (max-width: 767px) {
-  /* line 136, ../scss/config/_modifiers.scss */
-  .title, .showcase .container .showcase-title,
-  .showcase .container .work-title,
-  .work .container .showcase-title,
-  .work .container .work-title,
+  /* line 133, ../scss/config/_modifiers.scss */
+  .title,
   .content,
-  .showcase .container .showcase-content,
   .showcase .container .work-content,
-  .work .container .showcase-content,
   .work .container .work-content {
     margin-left: 0;
     margin-right: 0;
@@ -1274,42 +1214,42 @@
   }
 }
 
-/* line 145, ../scss/config/_modifiers.scss */
+/* line 142, ../scss/config/_modifiers.scss */
 .padding-left-15 {
   padding-left: 0.9375rem;
 }
 
-/* line 149, ../scss/config/_modifiers.scss */
+/* line 146, ../scss/config/_modifiers.scss */
 .padding-15 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }
 
-/* line 154, ../scss/config/_modifiers.scss */
+/* line 151, ../scss/config/_modifiers.scss */
 .padding-30, body.page-SearchResultController .search-result.container .row {
   padding-left: 1.875rem;
   padding-right: 1.875rem;
 }
 
-/* line 159, ../scss/config/_modifiers.scss */
+/* line 156, ../scss/config/_modifiers.scss */
 .margin-bottom-half-em {
   margin-bottom: 0.5em;
 }
 
-/* line 163, ../scss/config/_modifiers.scss */
+/* line 160, ../scss/config/_modifiers.scss */
 .is-flex {
   display: -webkit-flex;
   display: flex;
 }
-/* line 167, ../scss/config/_modifiers.scss */
+/* line 164, ../scss/config/_modifiers.scss */
 .is-flex.align-vertical-bottom {
   align-items: flex-end;
 }
-/* line 173, ../scss/config/_modifiers.scss */
+/* line 170, ../scss/config/_modifiers.scss */
 .is-flex .width-auto {
   width: auto;
 }
-/* line 177, ../scss/config/_modifiers.scss */
+/* line 174, ../scss/config/_modifiers.scss */
 .is-flex .column {
   display: block;
   flex-basis: 0;
@@ -1757,6 +1697,9 @@ textarea {
   position: relative;
   width: 100%;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 /* line 5, ../scss/blocks/_parallax.scss */
 .jarallax.full,
@@ -1767,6 +1710,13 @@ textarea {
 .jarallax.normal,
 .parallax.normal {
   height: 400px;
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 1, ../scss/blocks/_parallax.scss */
+  .jarallax,
+  .parallax {
+    height: 50vh !important;
+  }
 }
 
 /* line 1, ../scss/blocks/_header.scss */
@@ -1825,7 +1775,17 @@ textarea {
   -webkit-transform: scale(0.375);
   transform: scale(0.375);
 }
-/* line 24, ../scss/blocks/_header.scss */
+@media (max-width: 767px) {
+  /* line 10, ../scss/blocks/_header.scss */
+  #header-new #logo {
+    left: 0;
+    -moz-transform: scale(0.375);
+    -ms-transform: scale(0.375);
+    -webkit-transform: scale(0.375);
+    transform: scale(0.375);
+  }
+}
+/* line 29, ../scss/blocks/_header.scss */
 #header-new #btn-call-menu {
   display: block;
   cursor: pointer;
@@ -1852,11 +1812,11 @@ textarea {
   transition: all 0.3s;
   outline: none;
 }
-/* line 43, ../scss/blocks/_header.scss */
+/* line 48, ../scss/blocks/_header.scss */
 #header-new #btn-call-menu:hover, #header-new #btn-call-menu:active, #header-new #btn-call-menu:focus, #header-new #btn-call-menu.is-active {
   background-color: #AE352F;
 }
-/* line 51, ../scss/blocks/_header.scss */
+/* line 56, ../scss/blocks/_header.scss */
 #header-new #weird-title {
   position: absolute;
   display: block;
@@ -1878,9 +1838,15 @@ textarea {
   transition: all 0.3s ease-in-out;
   max-width: calc(100% - 340px);
 }
-/* line 65, ../scss/blocks/_header.scss */
+/* line 70, ../scss/blocks/_header.scss */
 .scrolled #header-new #weird-title {
   max-width: calc(100% - 180px);
+}
+@media (max-width: 767px) {
+  /* line 56, ../scss/blocks/_header.scss */
+  #header-new #weird-title {
+    max-width: calc(100% - 150px);
+  }
 }
 /* line 1, ../scss/blocks/elements/_navigation.scss */
 #header-new .main-nav {
@@ -2031,63 +1997,62 @@ textarea {
 }
 
 /* line 3, ../scss/blocks/_work.scss */
-.showcase .container,
-.work .container {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.showcase .work-title,
+.work .work-title {
+  background-color: #ef483d;
+  margin-bottom: 1.875rem;
 }
-/* line 10, ../scss/blocks/_work.scss */
-.showcase .container .showcase-title h2, .showcase .container .showcase-title p,
-.showcase .container .work-title h2,
-.showcase .container .work-title p,
-.work .container .showcase-title h2,
-.work .container .showcase-title p,
-.work .container .work-title h2,
-.work .container .work-title p {
+/* line 6, ../scss/blocks/_work.scss */
+.showcase .work-title h2,
+.work .work-title h2 {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
 }
-/* line 16, ../scss/blocks/_work.scss */
-.showcase .container .showcase-title h2,
-.showcase .container .work-title h2,
-.work .container .showcase-title h2,
-.work .container .work-title h2 {
-  font-size: 2rem;
+/* line 14, ../scss/blocks/_work.scss */
+.showcase .work-title h2.container,
+.work .work-title h2.container {
+  padding: 0.625rem 0.9375rem;
 }
 /* line 20, ../scss/blocks/_work.scss */
-.showcase .container .showcase-title p,
-.showcase .container .work-title p,
-.work .container .showcase-title p,
-.work .container .work-title p {
-  color: #000;
-  font-size: 2rem;
+.showcase .container,
+.work .container {
+  padding-bottom: 7.5rem;
 }
-/* line 25, ../scss/blocks/_work.scss */
-.showcase .container .showcase-title .showcase-title-holder,
-.showcase .container .work-title .showcase-title-holder,
-.work .container .showcase-title .showcase-title-holder,
-.work .container .work-title .showcase-title-holder {
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 20, ../scss/blocks/_work.scss */
+  .showcase .container,
+  .work .container {
+    padding-bottom: 2.5rem;
+  }
+}
+/* line 27, ../scss/blocks/_work.scss */
+.showcase .container.work-content,
+.work .container.work-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+/* line 32, ../scss/blocks/_work.scss */
+.showcase .container .work-content,
+.work .container .work-content {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }
-@media (max-width: 767px) {
-  /* line 25, ../scss/blocks/_work.scss */
-  .showcase .container .showcase-title .showcase-title-holder,
-  .showcase .container .work-title .showcase-title-holder,
-  .work .container .showcase-title .showcase-title-holder,
-  .work .container .work-title .showcase-title-holder {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-@media (max-width: 767px) {
-  /* line 35, ../scss/blocks/_work.scss */
-  .showcase .container .showcase-title,
-  .work .container .showcase-title {
-    margin-left: 0;
-    margin-right: 0;
-  }
+/* line 36, ../scss/blocks/_work.scss */
+.showcase .container .work-content h2, .showcase .container .work-content h3, .showcase .container .work-content h4, .showcase .container .work-content h5, .showcase .container .work-content h6, .showcase .container .work-content p, .showcase .container .work-content li, .showcase .container .work-content td,
+.work .container .work-content h2,
+.work .container .work-content h3,
+.work .container .work-content h4,
+.work .container .work-content h5,
+.work .container .work-content h6,
+.work .container .work-content p,
+.work .container .work-content li,
+.work .container .work-content td {
+  line-height: 1.6;
 }
 
 /* line 1, ../scss/blocks/_blogentry.scss */
@@ -2325,38 +2290,42 @@ textarea {
     display: none;
   }
 }
-/* line 11, ../scss/blocks/_menu-bottom.scss */
+/* line 7, ../scss/blocks/_menu-bottom.scss */
+.page-type-contact-page .section.menu-bottom {
+  margin-top: 0;
+}
+/* line 15, ../scss/blocks/_menu-bottom.scss */
 .page-type-home-page .section.menu-bottom {
   padding-bottom: 6.6875rem;
 }
-/* line 16, ../scss/blocks/_menu-bottom.scss */
+/* line 20, ../scss/blocks/_menu-bottom.scss */
 .section.menu-bottom .nav .level-root {
   margin: 0;
   padding: 0;
   display: -webkit-flex;
   display: flex;
 }
-/* line 21, ../scss/blocks/_menu-bottom.scss */
+/* line 25, ../scss/blocks/_menu-bottom.scss */
 .section.menu-bottom .nav .level-root li {
   list-style: none;
 }
-/* line 24, ../scss/blocks/_menu-bottom.scss */
+/* line 28, ../scss/blocks/_menu-bottom.scss */
 .section.menu-bottom .nav .level-root li a {
   line-height: 1.6;
   color: white;
   font-size: 1.25rem;
 }
-/* line 28, ../scss/blocks/_menu-bottom.scss */
+/* line 32, ../scss/blocks/_menu-bottom.scss */
 .section.menu-bottom .nav .level-root li a.leading {
   font-size: 1.5rem;
   font-weight: bold;
 }
-/* line 34, ../scss/blocks/_menu-bottom.scss */
+/* line 38, ../scss/blocks/_menu-bottom.scss */
 .section.menu-bottom .nav .level-root li ul {
   padding: 0;
   margin: 0;
 }
-/* line 40, ../scss/blocks/_menu-bottom.scss */
+/* line 44, ../scss/blocks/_menu-bottom.scss */
 .section.menu-bottom .nav .level-root > li {
   padding: 0 0.9375rem;
   display: block;
@@ -2364,7 +2333,7 @@ textarea {
   flex-grow: 1;
   flex-shrink: 1;
 }
-/* line 46, ../scss/blocks/_menu-bottom.scss */
+/* line 50, ../scss/blocks/_menu-bottom.scss */
 .section.menu-bottom .nav .level-root > li ul li {
   margin: 1.25rem 0;
 }
@@ -2502,6 +2471,11 @@ html.lt-ie9, html.lt-ie9 body, html.locked, html.locked body {
 /**
  * Pages.
  * */
+/* line 73, ../scss/styles.scss */
+body {
+  padding-top: 3.75rem;
+}
+
 /* line 1, ../scss/pagetypes/_homepage.scss */
 body.page-home #footer {
   position: fixed;
@@ -2791,63 +2765,23 @@ body.single-blog-entry-page #main {
   padding-top: 0;
 }
 /* line 13, ../scss/pagetypes/_single_blog_entry.scss */
-body.single-blog-entry-page #content-area .title .sub-title, body.single-blog-entry-page #content-area .showcase .container .showcase-title .sub-title, .showcase .container body.single-blog-entry-page #content-area .showcase-title .sub-title,
-body.single-blog-entry-page #content-area .showcase .container .work-title .sub-title,
-.showcase .container body.single-blog-entry-page #content-area .work-title .sub-title,
-body.single-blog-entry-page #content-area .work .container .showcase-title .sub-title,
-.work .container body.single-blog-entry-page #content-area .showcase-title .sub-title,
-body.single-blog-entry-page #content-area .work .container .work-title .sub-title,
-.work .container body.single-blog-entry-page #content-area .work-title .sub-title {
+body.single-blog-entry-page #content-area .title .sub-title {
   color: #000;
 }
 /* line 17, ../scss/pagetypes/_single_blog_entry.scss */
-body.single-blog-entry-page #content-area .title h1, body.single-blog-entry-page #content-area .showcase .container .showcase-title h1, .showcase .container body.single-blog-entry-page #content-area .showcase-title h1,
-body.single-blog-entry-page #content-area .showcase .container .work-title h1,
-.showcase .container body.single-blog-entry-page #content-area .work-title h1,
-body.single-blog-entry-page #content-area .work .container .showcase-title h1,
-.work .container body.single-blog-entry-page #content-area .showcase-title h1,
-body.single-blog-entry-page #content-area .work .container .work-title h1,
-.work .container body.single-blog-entry-page #content-area .work-title h1 {
+body.single-blog-entry-page #content-area .title h1 {
   margin: 0.3125rem 0;
 }
 /* line 21, ../scss/pagetypes/_single_blog_entry.scss */
-body.single-blog-entry-page #content-area .title .blog-created, body.single-blog-entry-page #content-area .showcase .container .showcase-title .blog-created, .showcase .container body.single-blog-entry-page #content-area .showcase-title .blog-created,
-body.single-blog-entry-page #content-area .showcase .container .work-title .blog-created,
-.showcase .container body.single-blog-entry-page #content-area .work-title .blog-created,
-body.single-blog-entry-page #content-area .work .container .showcase-title .blog-created,
-.work .container body.single-blog-entry-page #content-area .showcase-title .blog-created,
-body.single-blog-entry-page #content-area .work .container .work-title .blog-created,
-.work .container body.single-blog-entry-page #content-area .work-title .blog-created,
-body.single-blog-entry-page #content-area .title .blog-tags,
-body.single-blog-entry-page #content-area .showcase .container .showcase-title .blog-tags,
-.showcase .container body.single-blog-entry-page #content-area .showcase-title .blog-tags,
-body.single-blog-entry-page #content-area .showcase .container .work-title .blog-tags,
-.showcase .container body.single-blog-entry-page #content-area .work-title .blog-tags,
-body.single-blog-entry-page #content-area .work .container .showcase-title .blog-tags,
-.work .container body.single-blog-entry-page #content-area .showcase-title .blog-tags,
-body.single-blog-entry-page #content-area .work .container .work-title .blog-tags,
-.work .container body.single-blog-entry-page #content-area .work-title .blog-tags {
+body.single-blog-entry-page #content-area .title .blog-created,
+body.single-blog-entry-page #content-area .title .blog-tags {
   font-size: 1.25rem;
   color: #1A1A1A;
   font-weight: normal;
 }
 /* line 26, ../scss/pagetypes/_single_blog_entry.scss */
-body.single-blog-entry-page #content-area .title .blog-created a, body.single-blog-entry-page #content-area .showcase .container .showcase-title .blog-created a, .showcase .container body.single-blog-entry-page #content-area .showcase-title .blog-created a,
-body.single-blog-entry-page #content-area .showcase .container .work-title .blog-created a,
-.showcase .container body.single-blog-entry-page #content-area .work-title .blog-created a,
-body.single-blog-entry-page #content-area .work .container .showcase-title .blog-created a,
-.work .container body.single-blog-entry-page #content-area .showcase-title .blog-created a,
-body.single-blog-entry-page #content-area .work .container .work-title .blog-created a,
-.work .container body.single-blog-entry-page #content-area .work-title .blog-created a,
-body.single-blog-entry-page #content-area .title .blog-tags a,
-body.single-blog-entry-page #content-area .showcase .container .showcase-title .blog-tags a,
-.showcase .container body.single-blog-entry-page #content-area .showcase-title .blog-tags a,
-body.single-blog-entry-page #content-area .showcase .container .work-title .blog-tags a,
-.showcase .container body.single-blog-entry-page #content-area .work-title .blog-tags a,
-body.single-blog-entry-page #content-area .work .container .showcase-title .blog-tags a,
-.work .container body.single-blog-entry-page #content-area .showcase-title .blog-tags a,
-body.single-blog-entry-page #content-area .work .container .work-title .blog-tags a,
-.work .container body.single-blog-entry-page #content-area .work-title .blog-tags a {
+body.single-blog-entry-page #content-area .title .blog-created a,
+body.single-blog-entry-page #content-area .title .blog-tags a {
   color: #1A1A1A;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -2855,178 +2789,188 @@ body.single-blog-entry-page #content-area .work .container .work-title .blog-tag
   transition: all 0.3s ease-in-out;
 }
 /* line 29, ../scss/pagetypes/_single_blog_entry.scss */
-body.single-blog-entry-page #content-area .title .blog-created a:hover, body.single-blog-entry-page #content-area .showcase .container .showcase-title .blog-created a:hover, .showcase .container body.single-blog-entry-page #content-area .showcase-title .blog-created a:hover,
-body.single-blog-entry-page #content-area .showcase .container .work-title .blog-created a:hover,
-.showcase .container body.single-blog-entry-page #content-area .work-title .blog-created a:hover,
-body.single-blog-entry-page #content-area .work .container .showcase-title .blog-created a:hover,
-.work .container body.single-blog-entry-page #content-area .showcase-title .blog-created a:hover,
-body.single-blog-entry-page #content-area .work .container .work-title .blog-created a:hover,
-.work .container body.single-blog-entry-page #content-area .work-title .blog-created a:hover,
-body.single-blog-entry-page #content-area .title .blog-tags a:hover,
-body.single-blog-entry-page #content-area .showcase .container .showcase-title .blog-tags a:hover,
-.showcase .container body.single-blog-entry-page #content-area .showcase-title .blog-tags a:hover,
-body.single-blog-entry-page #content-area .showcase .container .work-title .blog-tags a:hover,
-.showcase .container body.single-blog-entry-page #content-area .work-title .blog-tags a:hover,
-body.single-blog-entry-page #content-area .work .container .showcase-title .blog-tags a:hover,
-.work .container body.single-blog-entry-page #content-area .showcase-title .blog-tags a:hover,
-body.single-blog-entry-page #content-area .work .container .work-title .blog-tags a:hover,
-.work .container body.single-blog-entry-page #content-area .work-title .blog-tags a:hover {
+body.single-blog-entry-page #content-area .title .blog-created a:hover,
+body.single-blog-entry-page #content-area .title .blog-tags a:hover {
   color: rgba(26, 26, 26, 0.8);
 }
 /* line 35, ../scss/pagetypes/_single_blog_entry.scss */
-body.single-blog-entry-page #content-area .title .blog-created, body.single-blog-entry-page #content-area .showcase .container .showcase-title .blog-created, .showcase .container body.single-blog-entry-page #content-area .showcase-title .blog-created,
-body.single-blog-entry-page #content-area .showcase .container .work-title .blog-created,
-.showcase .container body.single-blog-entry-page #content-area .work-title .blog-created,
-body.single-blog-entry-page #content-area .work .container .showcase-title .blog-created,
-.work .container body.single-blog-entry-page #content-area .showcase-title .blog-created,
-body.single-blog-entry-page #content-area .work .container .work-title .blog-created,
-.work .container body.single-blog-entry-page #content-area .work-title .blog-created {
+body.single-blog-entry-page #content-area .title .blog-created {
   font-weight: 100;
   color: #7e7e7e;
 }
 
 /* line 3, ../scss/pagetypes/_contactpage.scss */
-body.page-type-contact-page #content-area .title .address, body.page-type-contact-page #content-area .showcase .container .showcase-title .address, .showcase .container body.page-type-contact-page #content-area .showcase-title .address,
-body.page-type-contact-page #content-area .showcase .container .work-title .address,
-.showcase .container body.page-type-contact-page #content-area .work-title .address,
-body.page-type-contact-page #content-area .work .container .showcase-title .address,
-.work .container body.page-type-contact-page #content-area .showcase-title .address,
-body.page-type-contact-page #content-area .work .container .work-title .address,
-.work .container body.page-type-contact-page #content-area .work-title .address {
+body.page-type-contact-page #content-area .title .address {
   margin-top: 1em;
   font-weight: normal;
   color: #000;
 }
 /* line 7, ../scss/pagetypes/_contactpage.scss */
-body.page-type-contact-page #content-area .title .address p, body.page-type-contact-page #content-area .showcase .container .showcase-title .address p, .showcase .container body.page-type-contact-page #content-area .showcase-title .address p,
-body.page-type-contact-page #content-area .showcase .container .work-title .address p,
-.showcase .container body.page-type-contact-page #content-area .work-title .address p,
-body.page-type-contact-page #content-area .work .container .showcase-title .address p,
-.work .container body.page-type-contact-page #content-area .showcase-title .address p,
-body.page-type-contact-page #content-area .work .container .work-title .address p,
-.work .container body.page-type-contact-page #content-area .work-title .address p {
+body.page-type-contact-page #content-area .title .address p {
   margin-top: 0;
 }
 @media (max-width: 1024px) {
   /* line 13, ../scss/pagetypes/_contactpage.scss */
-  body.page-type-contact-page #content-area .content, body.page-type-contact-page #content-area .showcase .container .showcase-content, .showcase .container body.page-type-contact-page #content-area .showcase-content,
-  body.page-type-contact-page #content-area .showcase .container .work-content,
-  .showcase .container body.page-type-contact-page #content-area .work-content,
-  body.page-type-contact-page #content-area .work .container .showcase-content,
-  .work .container body.page-type-contact-page #content-area .showcase-content,
+  body.page-type-contact-page #content-area .content, body.page-type-contact-page #content-area .showcase .container .work-content, .showcase .container body.page-type-contact-page #content-area .work-content,
   body.page-type-contact-page #content-area .work .container .work-content,
   .work .container body.page-type-contact-page #content-area .work-content {
     max-width: 38.375rem;
   }
 }
-/* line 21, ../scss/pagetypes/_contactpage.scss */
+/* line 20, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page #Form_contactForm {
+  max-width: 30rem;
+}
+/* line 22, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm textarea,
 body.page-type-contact-page #Form_contactForm input {
-  border: 1px solid #bbb;
-  background-color: #eee;
+  border: none;
+  background-color: white;
 }
 /* line 27, ../scss/pagetypes/_contactpage.scss */
-body.page-type-contact-page #Form_contactForm p.message {
-  color: #388C10;
+body.page-type-contact-page #Form_contactForm textarea.text::-webkit-input-placeholder,
+body.page-type-contact-page #Form_contactForm input.text::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ef483d;
 }
-/* line 29, ../scss/pagetypes/_contactpage.scss */
-body.page-type-contact-page #Form_contactForm p.message.bad {
+/* line 30, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page #Form_contactForm textarea.text::-moz-placeholder,
+body.page-type-contact-page #Form_contactForm input.text::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ef483d;
+}
+/* line 33, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page #Form_contactForm textarea.text:-ms-input-placeholder,
+body.page-type-contact-page #Form_contactForm input.text:-ms-input-placeholder {
+  /* IE 10+ */
   color: #ef483d;
 }
 /* line 36, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page #Form_contactForm textarea.text:-moz-placeholder,
+body.page-type-contact-page #Form_contactForm input.text:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ef483d;
+}
+/* line 42, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page #Form_contactForm input.text {
+  height: 3.125rem;
+}
+/* line 48, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page #Form_contactForm p.message {
+  color: #388C10;
+}
+/* line 50, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page #Form_contactForm p.message.bad {
+  color: #ef483d;
+}
+/* line 57, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset .field {
-  float: left;
   width: 100%;
-  max-width: 18.125rem;
   margin-bottom: 1.25rem;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 36, ../scss/pagetypes/_contactpage.scss */
+  /* line 57, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm fieldset .field {
     max-width: 21.125rem;
   }
 }
 @media (max-width: 767px) {
-  /* line 36, ../scss/pagetypes/_contactpage.scss */
+  /* line 57, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm fieldset .field {
     max-width: 21.125rem;
   }
 }
 @media (min-width: 0) and (max-width: 639px) {
-  /* line 36, ../scss/pagetypes/_contactpage.scss */
+  /* line 57, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm fieldset .field {
     max-width: none;
   }
 }
 @media (max-width: 1024px) {
-  /* line 36, ../scss/pagetypes/_contactpage.scss */
+  /* line 57, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm fieldset .field {
     max-width: 18.25rem;
   }
 }
-/* line 56, ../scss/pagetypes/_contactpage.scss */
-body.page-type-contact-page #Form_contactForm fieldset .field:nth-child(odd) {
-  margin-right: 1.875rem;
-}
-/* line 60, ../scss/pagetypes/_contactpage.scss */
+/* line 76, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset .field label {
   color: #1a1a1a;
   font-size: 1.25rem;
   margin-bottom: 0.625rem;
   display: block;
 }
-/* line 67, ../scss/pagetypes/_contactpage.scss */
+/* line 83, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset .field input.text {
   padding: 0.25em 0.5em;
   font-size: 1.25rem;
   width: 100%;
   display: block;
 }
-/* line 74, ../scss/pagetypes/_contactpage.scss */
+/* line 90, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset .field.textarea {
   clear: both;
   float: none;
   max-width: none;
 }
-/* line 78, ../scss/pagetypes/_contactpage.scss */
+/* line 94, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset .field.textarea textarea {
   display: block;
   width: 100%;
   height: 12.5rem;
+  font-size: 1.25rem;
+  padding: 0.75rem 0.625rem;
 }
-/* line 85, ../scss/pagetypes/_contactpage.scss */
+/* line 101, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page #Form_contactForm fieldset .field.textarea textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ef483d;
+}
+/* line 104, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page #Form_contactForm fieldset .field.textarea textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ef483d;
+}
+/* line 107, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page #Form_contactForm fieldset .field.textarea textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #ef483d;
+}
+/* line 110, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page #Form_contactForm fieldset .field.textarea textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ef483d;
+}
+/* line 116, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset .field .message.required {
   color: #ef483d;
   font-style: italic;
   font-size: 0.75rem;
 }
-/* line 94, ../scss/pagetypes/_contactpage.scss */
+/* line 125, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm fieldset #Form_contactForm_Email_Holder label:after,
 body.page-type-contact-page #Form_contactForm fieldset #Form_contactForm_Message_Holder label:after {
   content: '*';
   color: #ef483d;
   margin-left: 0.25em;
 }
-/* line 104, ../scss/pagetypes/_contactpage.scss */
+/* line 135, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm .Actions .action,
 body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha {
   float: left;
-  width: 100%;
-  max-width: 18.125rem;
-  margin-bottom: 1.25rem;
+  width: auto;
 }
-/* line 112, ../scss/pagetypes/_contactpage.scss */
+/* line 141, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha {
   margin-right: 1.875rem;
 }
 @media (max-width: 1024px) {
-  /* line 112, ../scss/pagetypes/_contactpage.scss */
+  /* line 141, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha {
     max-width: 18.125rem;
   }
 }
 @media (max-width: 767px) {
-  /* line 112, ../scss/pagetypes/_contactpage.scss */
+  /* line 141, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha {
     margin-left: 0;
     margin-right: 0;
@@ -3034,32 +2978,34 @@ body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha {
   }
 }
 @media (min-width: 0) and (max-width: 639px) {
-  /* line 112, ../scss/pagetypes/_contactpage.scss */
+  /* line 141, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha {
     margin-left: 0;
     margin-right: 0;
     float: none;
   }
-  /* line 127, ../scss/pagetypes/_contactpage.scss */
-  body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha div {
-    width: 100% !important;
+  /* line 156, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha > div {
+    margin: 0 auto;
   }
-  /* line 129, ../scss/pagetypes/_contactpage.scss */
-  body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha div iframe {
+  /* line 158, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha > div iframe {
     display: block;
-    width: 100%;
   }
 }
-/* line 137, ../scss/pagetypes/_contactpage.scss */
+/* line 165, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page #Form_contactForm .Actions .action {
   display: block;
-  width: 100%;
-  height: 4.75rem;
+  background-color: black;
+  width: auto;
+  height: 3.125rem;
   float: right;
+  padding: 0.625rem 2.1875rem 1.25rem;
   font-size: 1.25rem;
+  margin: 0.8125rem 0 0;
 }
 @media (max-width: 767px) {
-  /* line 137, ../scss/pagetypes/_contactpage.scss */
+  /* line 165, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm .Actions .action {
     margin-left: 0;
     margin-right: 0;
@@ -3067,7 +3013,7 @@ body.page-type-contact-page #Form_contactForm .Actions .action {
   }
 }
 @media (min-width: 0) and (max-width: 639px) {
-  /* line 137, ../scss/pagetypes/_contactpage.scss */
+  /* line 165, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm .Actions .action {
     margin-left: 0;
     margin-right: 0;
@@ -3075,31 +3021,31 @@ body.page-type-contact-page #Form_contactForm .Actions .action {
   }
 }
 @media (max-width: 1024px) {
-  /* line 137, ../scss/pagetypes/_contactpage.scss */
+  /* line 165, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm .Actions .action {
     max-width: 18.125rem;
   }
 }
-/* line 163, ../scss/pagetypes/_contactpage.scss */
+/* line 194, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .guide-gmap {
   padding-top: 1.25rem;
   border-top: 0.25rem solid #ef483d;
 }
 @media (max-width: 767px) {
-  /* line 163, ../scss/pagetypes/_contactpage.scss */
+  /* line 194, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page .guide-gmap {
     padding-top: 0;
     border-top: none;
   }
 }
 @media (min-width: 0) and (max-width: 639px) {
-  /* line 163, ../scss/pagetypes/_contactpage.scss */
+  /* line 194, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page .guide-gmap {
     padding-top: 0;
     border-top: none;
   }
 }
-/* line 177, ../scss/pagetypes/_contactpage.scss */
+/* line 208, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .guide-gmap header h2 {
   margin-top: 0;
   font-size: 2rem;
@@ -3108,67 +3054,39 @@ body.page-type-contact-page .guide-gmap header h2 {
   margin-bottom: 1.25rem;
 }
 @media (min-width: 0) and (max-width: 639px) {
-  /* line 176, ../scss/pagetypes/_contactpage.scss */
+  /* line 207, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page .guide-gmap header {
     padding: 0;
   }
 }
-/* line 190, ../scss/pagetypes/_contactpage.scss */
-body.page-type-contact-page .guide-gmap .title, body.page-type-contact-page .guide-gmap .showcase .container .showcase-title, .showcase .container body.page-type-contact-page .guide-gmap .showcase-title,
-body.page-type-contact-page .guide-gmap .showcase .container .work-title,
-.showcase .container body.page-type-contact-page .guide-gmap .work-title,
-body.page-type-contact-page .guide-gmap .work .container .showcase-title,
-.work .container body.page-type-contact-page .guide-gmap .showcase-title,
-body.page-type-contact-page .guide-gmap .work .container .work-title,
-.work .container body.page-type-contact-page .guide-gmap .work-title {
+/* line 221, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page .guide-gmap .title {
   margin-left: 1.875rem;
   font-weight: normal;
   color: #000;
 }
-/* line 194, ../scss/pagetypes/_contactpage.scss */
-body.page-type-contact-page .guide-gmap .title p, body.page-type-contact-page .guide-gmap .showcase .container .showcase-title p, .showcase .container body.page-type-contact-page .guide-gmap .showcase-title p,
-body.page-type-contact-page .guide-gmap .showcase .container .work-title p,
-.showcase .container body.page-type-contact-page .guide-gmap .work-title p,
-body.page-type-contact-page .guide-gmap .work .container .showcase-title p,
-.work .container body.page-type-contact-page .guide-gmap .showcase-title p,
-body.page-type-contact-page .guide-gmap .work .container .work-title p,
-.work .container body.page-type-contact-page .guide-gmap .work-title p {
+/* line 225, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page .guide-gmap .title p {
   margin-top: 0;
 }
 @media (max-width: 767px) {
-  /* line 190, ../scss/pagetypes/_contactpage.scss */
-  body.page-type-contact-page .guide-gmap .title, body.page-type-contact-page .guide-gmap .showcase .container .showcase-title, .showcase .container body.page-type-contact-page .guide-gmap .showcase-title,
-  body.page-type-contact-page .guide-gmap .showcase .container .work-title,
-  .showcase .container body.page-type-contact-page .guide-gmap .work-title,
-  body.page-type-contact-page .guide-gmap .work .container .showcase-title,
-  .work .container body.page-type-contact-page .guide-gmap .showcase-title,
-  body.page-type-contact-page .guide-gmap .work .container .work-title,
-  .work .container body.page-type-contact-page .guide-gmap .work-title {
+  /* line 221, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .title {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 1em;
   }
 }
 @media (min-width: 0) and (max-width: 639px) {
-  /* line 190, ../scss/pagetypes/_contactpage.scss */
-  body.page-type-contact-page .guide-gmap .title, body.page-type-contact-page .guide-gmap .showcase .container .showcase-title, .showcase .container body.page-type-contact-page .guide-gmap .showcase-title,
-  body.page-type-contact-page .guide-gmap .showcase .container .work-title,
-  .showcase .container body.page-type-contact-page .guide-gmap .work-title,
-  body.page-type-contact-page .guide-gmap .work .container .showcase-title,
-  .work .container body.page-type-contact-page .guide-gmap .showcase-title,
-  body.page-type-contact-page .guide-gmap .work .container .work-title,
-  .work .container body.page-type-contact-page .guide-gmap .work-title {
+  /* line 221, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .title {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 1em;
   }
 }
-/* line 211, ../scss/pagetypes/_contactpage.scss */
-body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
-body.page-type-contact-page .guide-gmap .showcase .container .work-content,
-.showcase .container body.page-type-contact-page .guide-gmap .work-content,
-body.page-type-contact-page .guide-gmap .work .container .showcase-content,
-.work .container body.page-type-contact-page .guide-gmap .showcase-content,
+/* line 242, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .work-content, .showcase .container body.page-type-contact-page .guide-gmap .work-content,
 body.page-type-contact-page .guide-gmap .work .container .work-content,
 .work .container body.page-type-contact-page .guide-gmap .work-content {
   margin-left: 0.9375rem;
@@ -3176,12 +3094,8 @@ body.page-type-contact-page .guide-gmap .work .container .work-content,
   overflow: hidden;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 211, ../scss/pagetypes/_contactpage.scss */
-  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
-  body.page-type-contact-page .guide-gmap .showcase .container .work-content,
-  .showcase .container body.page-type-contact-page .guide-gmap .work-content,
-  body.page-type-contact-page .guide-gmap .work .container .showcase-content,
-  .work .container body.page-type-contact-page .guide-gmap .showcase-content,
+  /* line 242, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .work-content, .showcase .container body.page-type-contact-page .guide-gmap .work-content,
   body.page-type-contact-page .guide-gmap .work .container .work-content,
   .work .container body.page-type-contact-page .guide-gmap .work-content {
     margin-left: 0 !important;
@@ -3190,12 +3104,8 @@ body.page-type-contact-page .guide-gmap .work .container .work-content,
   }
 }
 @media (max-width: 767px) {
-  /* line 211, ../scss/pagetypes/_contactpage.scss */
-  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
-  body.page-type-contact-page .guide-gmap .showcase .container .work-content,
-  .showcase .container body.page-type-contact-page .guide-gmap .work-content,
-  body.page-type-contact-page .guide-gmap .work .container .showcase-content,
-  .work .container body.page-type-contact-page .guide-gmap .showcase-content,
+  /* line 242, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .work-content, .showcase .container body.page-type-contact-page .guide-gmap .work-content,
   body.page-type-contact-page .guide-gmap .work .container .work-content,
   .work .container body.page-type-contact-page .guide-gmap .work-content {
     margin-left: 0;
@@ -3204,12 +3114,8 @@ body.page-type-contact-page .guide-gmap .work .container .work-content,
   }
 }
 @media (min-width: 0) and (max-width: 639px) {
-  /* line 211, ../scss/pagetypes/_contactpage.scss */
-  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
-  body.page-type-contact-page .guide-gmap .showcase .container .work-content,
-  .showcase .container body.page-type-contact-page .guide-gmap .work-content,
-  body.page-type-contact-page .guide-gmap .work .container .showcase-content,
-  .work .container body.page-type-contact-page .guide-gmap .showcase-content,
+  /* line 242, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .work-content, .showcase .container body.page-type-contact-page .guide-gmap .work-content,
   body.page-type-contact-page .guide-gmap .work .container .work-content,
   .work .container body.page-type-contact-page .guide-gmap .work-content {
     margin-left: 0;
@@ -3218,23 +3124,15 @@ body.page-type-contact-page .guide-gmap .work .container .work-content,
   }
 }
 @media (max-width: 1024px) {
-  /* line 211, ../scss/pagetypes/_contactpage.scss */
-  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
-  body.page-type-contact-page .guide-gmap .showcase .container .work-content,
-  .showcase .container body.page-type-contact-page .guide-gmap .work-content,
-  body.page-type-contact-page .guide-gmap .work .container .showcase-content,
-  .work .container body.page-type-contact-page .guide-gmap .showcase-content,
+  /* line 242, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .work-content, .showcase .container body.page-type-contact-page .guide-gmap .work-content,
   body.page-type-contact-page .guide-gmap .work .container .work-content,
   .work .container body.page-type-contact-page .guide-gmap .work-content {
     max-width: 38.375rem;
   }
 }
-/* line 239, ../scss/pagetypes/_contactpage.scss */
-body.page-type-contact-page .guide-gmap .content iframe, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content iframe, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content iframe,
-body.page-type-contact-page .guide-gmap .showcase .container .work-content iframe,
-.showcase .container body.page-type-contact-page .guide-gmap .work-content iframe,
-body.page-type-contact-page .guide-gmap .work .container .showcase-content iframe,
-.work .container body.page-type-contact-page .guide-gmap .showcase-content iframe,
+/* line 270, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page .guide-gmap .content iframe, body.page-type-contact-page .guide-gmap .showcase .container .work-content iframe, .showcase .container body.page-type-contact-page .guide-gmap .work-content iframe,
 body.page-type-contact-page .guide-gmap .work .container .work-content iframe,
 .work .container body.page-type-contact-page .guide-gmap .work-content iframe {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -3243,27 +3141,17 @@ body.page-type-contact-page .guide-gmap .work .container .work-content iframe,
   height: 30rem;
 }
 @media (max-width: 767px) {
-  /* line 251, ../scss/pagetypes/_contactpage.scss */
-  body.page-type-contact-page #content-area .title, body.page-type-contact-page #content-area .showcase .container .showcase-title, .showcase .container body.page-type-contact-page #content-area .showcase-title,
-  body.page-type-contact-page #content-area .showcase .container .work-title,
-  .showcase .container body.page-type-contact-page #content-area .work-title,
-  body.page-type-contact-page #content-area .work .container .showcase-title,
-  .work .container body.page-type-contact-page #content-area .showcase-title,
-  body.page-type-contact-page #content-area .work .container .work-title,
-  .work .container body.page-type-contact-page #content-area .work-title,
+  /* line 282, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page #content-area .title,
   body.page-type-contact-page #content-area .content,
-  body.page-type-contact-page #content-area .showcase .container .showcase-content,
-  .showcase .container body.page-type-contact-page #content-area .showcase-content,
   body.page-type-contact-page #content-area .showcase .container .work-content,
   .showcase .container body.page-type-contact-page #content-area .work-content,
-  body.page-type-contact-page #content-area .work .container .showcase-content,
-  .work .container body.page-type-contact-page #content-area .showcase-content,
   body.page-type-contact-page #content-area .work .container .work-content,
   .work .container body.page-type-contact-page #content-area .work-content {
     max-width: none !important;
     width: 100% !important;
   }
-  /* line 258, ../scss/pagetypes/_contactpage.scss */
+  /* line 289, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm .g-recaptcha,
   body.page-type-contact-page #Form_contactForm .action,
   body.page-type-contact-page #Form_contactForm fieldset .field {
@@ -3271,63 +3159,37 @@ body.page-type-contact-page .guide-gmap .work .container .work-content iframe,
     margin-right: 0 !important;
     max-width: none !important;
   }
-  /* line 266, ../scss/pagetypes/_contactpage.scss */
+  /* line 297, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page .guide-gmap {
     padding-left: 0.9375rem !important;
     padding-right: 0.9375rem !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 275, ../scss/pagetypes/_contactpage.scss */
-  body.page-type-contact-page .guide-gmap .title, body.page-type-contact-page .guide-gmap .showcase .container .showcase-title, .showcase .container body.page-type-contact-page .guide-gmap .showcase-title,
-  body.page-type-contact-page .guide-gmap .showcase .container .work-title,
-  .showcase .container body.page-type-contact-page .guide-gmap .work-title,
-  body.page-type-contact-page .guide-gmap .work .container .showcase-title,
-  .work .container body.page-type-contact-page .guide-gmap .showcase-title,
-  body.page-type-contact-page .guide-gmap .work .container .work-title,
-  .work .container body.page-type-contact-page .guide-gmap .work-title,
-  body.page-type-contact-page #content-area .title,
-  body.page-type-contact-page #content-area .showcase .container .showcase-title,
-  .showcase .container body.page-type-contact-page #content-area .showcase-title,
-  body.page-type-contact-page #content-area .showcase .container .work-title,
-  .showcase .container body.page-type-contact-page #content-area .work-title,
-  body.page-type-contact-page #content-area .work .container .showcase-title,
-  .work .container body.page-type-contact-page #content-area .showcase-title,
-  body.page-type-contact-page #content-area .work .container .work-title,
-  .work .container body.page-type-contact-page #content-area .work-title {
+  /* line 306, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .title,
+  body.page-type-contact-page #content-area .title {
     max-width: 320px !important;
   }
-  /* line 279, ../scss/pagetypes/_contactpage.scss */
-  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
-  body.page-type-contact-page .guide-gmap .showcase .container .work-content,
-  .showcase .container body.page-type-contact-page .guide-gmap .work-content,
-  body.page-type-contact-page .guide-gmap .work .container .showcase-content,
-  .work .container body.page-type-contact-page .guide-gmap .showcase-content,
+  /* line 310, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .work-content, .showcase .container body.page-type-contact-page .guide-gmap .work-content,
   body.page-type-contact-page .guide-gmap .work .container .work-content,
   .work .container body.page-type-contact-page .guide-gmap .work-content,
   body.page-type-contact-page #content-area .content,
-  body.page-type-contact-page #content-area .showcase .container .showcase-content,
-  .showcase .container body.page-type-contact-page #content-area .showcase-content,
   body.page-type-contact-page #content-area .showcase .container .work-content,
   .showcase .container body.page-type-contact-page #content-area .work-content,
-  body.page-type-contact-page #content-area .work .container .showcase-content,
-  .work .container body.page-type-contact-page #content-area .showcase-content,
   body.page-type-contact-page #content-area .work .container .work-content,
   .work .container body.page-type-contact-page #content-area .work-content {
     max-width: calc(100% - 350px) !important;
     padding: 0 !important;
   }
-  /* line 286, ../scss/pagetypes/_contactpage.scss */
-  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .showcase-content, .showcase .container body.page-type-contact-page .guide-gmap .showcase-content,
-  body.page-type-contact-page .guide-gmap .showcase .container .work-content,
-  .showcase .container body.page-type-contact-page .guide-gmap .work-content,
-  body.page-type-contact-page .guide-gmap .work .container .showcase-content,
-  .work .container body.page-type-contact-page .guide-gmap .showcase-content,
+  /* line 317, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .work-content, .showcase .container body.page-type-contact-page .guide-gmap .work-content,
   body.page-type-contact-page .guide-gmap .work .container .work-content,
   .work .container body.page-type-contact-page .guide-gmap .work-content {
     max-width: calc(100% - 365px) !important;
   }
-  /* line 291, ../scss/pagetypes/_contactpage.scss */
+  /* line 322, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm .g-recaptcha,
   body.page-type-contact-page #Form_contactForm .action,
   body.page-type-contact-page #Form_contactForm fieldset .field {
@@ -3336,7 +3198,7 @@ body.page-type-contact-page .guide-gmap .work .container .work-content iframe,
     max-width: none !important;
   }
 }
-/* line 300, ../scss/pagetypes/_contactpage.scss */
+/* line 331, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .director {
   display: block;
   flex-basis: 0;
@@ -3344,43 +3206,124 @@ body.page-type-contact-page .director {
   flex-shrink: 1;
   padding: 0 0.9375rem;
 }
-/* line 306, ../scss/pagetypes/_contactpage.scss */
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 331, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .director {
+    padding: 0;
+  }
+}
+/* line 340, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .directors {
   display: -webkit-flex;
   display: flex;
+  margin-bottom: 5.625rem;
 }
-/* line 310, ../scss/pagetypes/_contactpage.scss */
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 340, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .directors {
+    display: block;
+  }
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 348, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .director__portrait {
+    width: 40%;
+  }
+}
+/* line 354, ../scss/pagetypes/_contactpage.scss */
 body.page-type-contact-page .director__details {
   padding-left: 1.25rem;
 }
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 354, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .director__details {
+    width: 60%;
+  }
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 361, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .director .is-flex {
+    margin-bottom: 1.25rem;
+  }
+}
+/* line 370, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page .locations-title {
+  color: #ef483d;
+  margin: 0 0 1.5rem;
+  padding: 0 0.9375rem;
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 370, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .locations-title {
+    padding: 0;
+  }
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 369, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .locations {
+    display: block;
+  }
+}
+/* line 384, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page .location__title {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 368, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .location {
+    padding: 0;
+    margin-bottom: 2.5rem;
+  }
+}
+/* line 395, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page .contact-us-form {
+  margin-top: 5.625rem;
+  padding: 2.1875rem 0.9375rem 3.75rem;
+  background-color: #ef483d;
+  color: white;
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 395, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .contact-us-form {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+}
+/* line 405, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page .contact-us-form .container {
+  padding: 0 0.9375rem;
+}
+@media (min-width: 0) and (max-width: 639px) {
+  /* line 405, ../scss/pagetypes/_contactpage.scss */
+  body.page-type-contact-page .contact-us-form .container {
+    padding: 0;
+  }
+}
+/* line 412, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page .contact-us-form__title {
+  margin-top: 0;
+}
+/* line 416, ../scss/pagetypes/_contactpage.scss */
+body.page-type-contact-page .contact-us-form__content {
+  margin-bottom: 2.5rem;
+}
 
 /* line 5, ../scss/pagetypes/tnc.scss */
-body.page-terms-and-conditions #content-area .content ol, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ol,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ol,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ol,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ol,
+body.page-terms-and-conditions #content-area .content ol, body.page-terms-and-conditions #content-area .showcase .container .work-content ol, .showcase .container body.page-terms-and-conditions #content-area .work-content ol,
 body.page-terms-and-conditions #content-area .work .container .work-content ol,
 .work .container body.page-terms-and-conditions #content-area .work-content ol {
   counter-reset: item;
 }
 /* line 6, ../scss/pagetypes/tnc.scss */
-body.page-terms-and-conditions #content-area .content li, body.page-terms-and-conditions #content-area .showcase .container .showcase-content li, .showcase .container body.page-terms-and-conditions #content-area .showcase-content li,
-body.page-terms-and-conditions #content-area .showcase .container .work-content li,
-.showcase .container body.page-terms-and-conditions #content-area .work-content li,
-body.page-terms-and-conditions #content-area .work .container .showcase-content li,
-.work .container body.page-terms-and-conditions #content-area .showcase-content li,
+body.page-terms-and-conditions #content-area .content li, body.page-terms-and-conditions #content-area .showcase .container .work-content li, .showcase .container body.page-terms-and-conditions #content-area .work-content li,
 body.page-terms-and-conditions #content-area .work .container .work-content li,
 .work .container body.page-terms-and-conditions #content-area .work-content li {
   display: block;
   margin-bottom: 0.5em;
 }
 /* line 7, ../scss/pagetypes/tnc.scss */
-body.page-terms-and-conditions #content-area .content li:before, body.page-terms-and-conditions #content-area .showcase .container .showcase-content li:before, .showcase .container body.page-terms-and-conditions #content-area .showcase-content li:before,
-body.page-terms-and-conditions #content-area .showcase .container .work-content li:before,
-.showcase .container body.page-terms-and-conditions #content-area .work-content li:before,
-body.page-terms-and-conditions #content-area .work .container .showcase-content li:before,
-.work .container body.page-terms-and-conditions #content-area .showcase-content li:before,
+body.page-terms-and-conditions #content-area .content li:before, body.page-terms-and-conditions #content-area .showcase .container .work-content li:before, .showcase .container body.page-terms-and-conditions #content-area .work-content li:before,
 body.page-terms-and-conditions #content-area .work .container .work-content li:before,
 .work .container body.page-terms-and-conditions #content-area .work-content li:before {
   font-weight: bold;
@@ -3389,17 +3332,9 @@ body.page-terms-and-conditions #content-area .work .container .work-content li:b
   counter-increment: item;
 }
 /* line 8, ../scss/pagetypes/tnc.scss */
-body.page-terms-and-conditions #content-area .content ol, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ol,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ol,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ol,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ol,
+body.page-terms-and-conditions #content-area .content ol, body.page-terms-and-conditions #content-area .showcase .container .work-content ol, .showcase .container body.page-terms-and-conditions #content-area .work-content ol,
 body.page-terms-and-conditions #content-area .work .container .work-content ol,
-.work .container body.page-terms-and-conditions #content-area .work-content ol, body.page-terms-and-conditions #content-area .content ul, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ul,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ul,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ul,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ul,
+.work .container body.page-terms-and-conditions #content-area .work-content ol, body.page-terms-and-conditions #content-area .content ul, body.page-terms-and-conditions #content-area .showcase .container .work-content ul, .showcase .container body.page-terms-and-conditions #content-area .work-content ul,
 body.page-terms-and-conditions #content-area .work .container .work-content ul,
 .work .container body.page-terms-and-conditions #content-area .work-content ul {
   margin-top: 0.5em;
@@ -3408,208 +3343,112 @@ body.page-terms-and-conditions #content-area .work .container .work-content ul,
   padding-right: 0;
 }
 /* line 10, ../scss/pagetypes/tnc.scss */
-body.page-terms-and-conditions #content-area .content ol h2 strong, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol h2 strong, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol h2 strong,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ol h2 strong,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ol h2 strong,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ol h2 strong,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ol h2 strong,
+body.page-terms-and-conditions #content-area .content ol h2 strong, body.page-terms-and-conditions #content-area .showcase .container .work-content ol h2 strong, .showcase .container body.page-terms-and-conditions #content-area .work-content ol h2 strong,
 body.page-terms-and-conditions #content-area .work .container .work-content ol h2 strong,
 .work .container body.page-terms-and-conditions #content-area .work-content ol h2 strong,
 body.page-terms-and-conditions #content-area .content ol h2,
-body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol h2,
-.showcase .container body.page-terms-and-conditions #content-area .showcase-content ol h2,
 body.page-terms-and-conditions #content-area .showcase .container .work-content ol h2,
 .showcase .container body.page-terms-and-conditions #content-area .work-content ol h2,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ol h2,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ol h2,
 body.page-terms-and-conditions #content-area .work .container .work-content ol h2,
-.work .container body.page-terms-and-conditions #content-area .work-content ol h2, body.page-terms-and-conditions #content-area .content ul h2 strong, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul h2 strong, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul h2 strong,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ul h2 strong,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ul h2 strong,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ul h2 strong,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ul h2 strong,
+.work .container body.page-terms-and-conditions #content-area .work-content ol h2, body.page-terms-and-conditions #content-area .content ul h2 strong, body.page-terms-and-conditions #content-area .showcase .container .work-content ul h2 strong, .showcase .container body.page-terms-and-conditions #content-area .work-content ul h2 strong,
 body.page-terms-and-conditions #content-area .work .container .work-content ul h2 strong,
 .work .container body.page-terms-and-conditions #content-area .work-content ul h2 strong,
 body.page-terms-and-conditions #content-area .content ul h2,
-body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul h2,
-.showcase .container body.page-terms-and-conditions #content-area .showcase-content ul h2,
 body.page-terms-and-conditions #content-area .showcase .container .work-content ul h2,
 .showcase .container body.page-terms-and-conditions #content-area .work-content ul h2,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ul h2,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ul h2,
 body.page-terms-and-conditions #content-area .work .container .work-content ul h2,
 .work .container body.page-terms-and-conditions #content-area .work-content ul h2 {
   font-size: 1.25rem;
 }
 /* line 17, ../scss/pagetypes/tnc.scss */
-body.page-terms-and-conditions #content-area .content ol ol, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol ol, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol ol,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ol ol,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ol ol,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ol ol,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ol ol,
+body.page-terms-and-conditions #content-area .content ol ol, body.page-terms-and-conditions #content-area .showcase .container .work-content ol ol, .showcase .container body.page-terms-and-conditions #content-area .work-content ol ol,
 body.page-terms-and-conditions #content-area .work .container .work-content ol ol,
-.work .container body.page-terms-and-conditions #content-area .work-content ol ol, body.page-terms-and-conditions #content-area .content ol ul, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol ul, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol ul,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ol ul,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ol ul,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ol ul,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ol ul,
+.work .container body.page-terms-and-conditions #content-area .work-content ol ol, body.page-terms-and-conditions #content-area .content ol ul, body.page-terms-and-conditions #content-area .showcase .container .work-content ol ul, .showcase .container body.page-terms-and-conditions #content-area .work-content ol ul,
 body.page-terms-and-conditions #content-area .work .container .work-content ol ul,
-.work .container body.page-terms-and-conditions #content-area .work-content ol ul, body.page-terms-and-conditions #content-area .content ul ol, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul ol, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul ol,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ul ol,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ul ol,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ul ol,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ul ol,
+.work .container body.page-terms-and-conditions #content-area .work-content ol ul, body.page-terms-and-conditions #content-area .content ul ol, body.page-terms-and-conditions #content-area .showcase .container .work-content ul ol, .showcase .container body.page-terms-and-conditions #content-area .work-content ul ol,
 body.page-terms-and-conditions #content-area .work .container .work-content ul ol,
-.work .container body.page-terms-and-conditions #content-area .work-content ul ol, body.page-terms-and-conditions #content-area .content ul ul, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul ul, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul ul,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ul ul,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ul ul,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ul ul,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ul ul,
+.work .container body.page-terms-and-conditions #content-area .work-content ul ol, body.page-terms-and-conditions #content-area .content ul ul, body.page-terms-and-conditions #content-area .showcase .container .work-content ul ul, .showcase .container body.page-terms-and-conditions #content-area .work-content ul ul,
 body.page-terms-and-conditions #content-area .work .container .work-content ul ul,
 .work .container body.page-terms-and-conditions #content-area .work-content ul ul {
   padding-left: 1em;
 }
 /* line 19, ../scss/pagetypes/tnc.scss */
-body.page-terms-and-conditions #content-area .content ol ol *, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol ol *, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol ol *,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ol ol *,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ol ol *,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ol ol *,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ol ol *,
+body.page-terms-and-conditions #content-area .content ol ol *, body.page-terms-and-conditions #content-area .showcase .container .work-content ol ol *, .showcase .container body.page-terms-and-conditions #content-area .work-content ol ol *,
 body.page-terms-and-conditions #content-area .work .container .work-content ol ol *,
-.work .container body.page-terms-and-conditions #content-area .work-content ol ol *, body.page-terms-and-conditions #content-area .content ol ul *, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol ul *, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol ul *,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ol ul *,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ol ul *,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ol ul *,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ol ul *,
+.work .container body.page-terms-and-conditions #content-area .work-content ol ol *, body.page-terms-and-conditions #content-area .content ol ul *, body.page-terms-and-conditions #content-area .showcase .container .work-content ol ul *, .showcase .container body.page-terms-and-conditions #content-area .work-content ol ul *,
 body.page-terms-and-conditions #content-area .work .container .work-content ol ul *,
-.work .container body.page-terms-and-conditions #content-area .work-content ol ul *, body.page-terms-and-conditions #content-area .content ul ol *, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul ol *, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul ol *,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ul ol *,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ul ol *,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ul ol *,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ul ol *,
+.work .container body.page-terms-and-conditions #content-area .work-content ol ul *, body.page-terms-and-conditions #content-area .content ul ol *, body.page-terms-and-conditions #content-area .showcase .container .work-content ul ol *, .showcase .container body.page-terms-and-conditions #content-area .work-content ul ol *,
 body.page-terms-and-conditions #content-area .work .container .work-content ul ol *,
-.work .container body.page-terms-and-conditions #content-area .work-content ul ol *, body.page-terms-and-conditions #content-area .content ul ul *, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul ul *, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul ul *,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ul ul *,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ul ul *,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ul ul *,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ul ul *,
+.work .container body.page-terms-and-conditions #content-area .work-content ul ol *, body.page-terms-and-conditions #content-area .content ul ul *, body.page-terms-and-conditions #content-area .showcase .container .work-content ul ul *, .showcase .container body.page-terms-and-conditions #content-area .work-content ul ul *,
 body.page-terms-and-conditions #content-area .work .container .work-content ul ul *,
 .work .container body.page-terms-and-conditions #content-area .work-content ul ul * {
   font-size: 0.875rem;
 }
 /* line 25, ../scss/pagetypes/tnc.scss */
-body.page-terms-and-conditions #content-area .content ol li h2, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol li h2, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol li h2,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h2,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ol li h2,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ol li h2,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ol li h2,
+body.page-terms-and-conditions #content-area .content ol li h2, body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h2, .showcase .container body.page-terms-and-conditions #content-area .work-content ol li h2,
 body.page-terms-and-conditions #content-area .work .container .work-content ol li h2,
-.work .container body.page-terms-and-conditions #content-area .work-content ol li h2, body.page-terms-and-conditions #content-area .content ol li h3, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol li h3, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol li h3,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h3,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ol li h3,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ol li h3,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ol li h3,
+.work .container body.page-terms-and-conditions #content-area .work-content ol li h2, body.page-terms-and-conditions #content-area .content ol li h3, body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h3, .showcase .container body.page-terms-and-conditions #content-area .work-content ol li h3,
 body.page-terms-and-conditions #content-area .work .container .work-content ol li h3,
-.work .container body.page-terms-and-conditions #content-area .work-content ol li h3, body.page-terms-and-conditions #content-area .content ol li h4, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol li h4, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol li h4,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h4,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ol li h4,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ol li h4,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ol li h4,
+.work .container body.page-terms-and-conditions #content-area .work-content ol li h3, body.page-terms-and-conditions #content-area .content ol li h4, body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h4, .showcase .container body.page-terms-and-conditions #content-area .work-content ol li h4,
 body.page-terms-and-conditions #content-area .work .container .work-content ol li h4,
-.work .container body.page-terms-and-conditions #content-area .work-content ol li h4, body.page-terms-and-conditions #content-area .content ol li h5, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol li h5, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol li h5,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h5,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ol li h5,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ol li h5,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ol li h5,
+.work .container body.page-terms-and-conditions #content-area .work-content ol li h4, body.page-terms-and-conditions #content-area .content ol li h5, body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h5, .showcase .container body.page-terms-and-conditions #content-area .work-content ol li h5,
 body.page-terms-and-conditions #content-area .work .container .work-content ol li h5,
-.work .container body.page-terms-and-conditions #content-area .work-content ol li h5, body.page-terms-and-conditions #content-area .content ol li h6, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ol li h6, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ol li h6,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h6,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ol li h6,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ol li h6,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ol li h6,
+.work .container body.page-terms-and-conditions #content-area .work-content ol li h5, body.page-terms-and-conditions #content-area .content ol li h6, body.page-terms-and-conditions #content-area .showcase .container .work-content ol li h6, .showcase .container body.page-terms-and-conditions #content-area .work-content ol li h6,
 body.page-terms-and-conditions #content-area .work .container .work-content ol li h6,
-.work .container body.page-terms-and-conditions #content-area .work-content ol li h6, body.page-terms-and-conditions #content-area .content ul li h2, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul li h2, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul li h2,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h2,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ul li h2,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ul li h2,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ul li h2,
+.work .container body.page-terms-and-conditions #content-area .work-content ol li h6, body.page-terms-and-conditions #content-area .content ul li h2, body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h2, .showcase .container body.page-terms-and-conditions #content-area .work-content ul li h2,
 body.page-terms-and-conditions #content-area .work .container .work-content ul li h2,
-.work .container body.page-terms-and-conditions #content-area .work-content ul li h2, body.page-terms-and-conditions #content-area .content ul li h3, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul li h3, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul li h3,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h3,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ul li h3,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ul li h3,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ul li h3,
+.work .container body.page-terms-and-conditions #content-area .work-content ul li h2, body.page-terms-and-conditions #content-area .content ul li h3, body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h3, .showcase .container body.page-terms-and-conditions #content-area .work-content ul li h3,
 body.page-terms-and-conditions #content-area .work .container .work-content ul li h3,
-.work .container body.page-terms-and-conditions #content-area .work-content ul li h3, body.page-terms-and-conditions #content-area .content ul li h4, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul li h4, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul li h4,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h4,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ul li h4,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ul li h4,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ul li h4,
+.work .container body.page-terms-and-conditions #content-area .work-content ul li h3, body.page-terms-and-conditions #content-area .content ul li h4, body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h4, .showcase .container body.page-terms-and-conditions #content-area .work-content ul li h4,
 body.page-terms-and-conditions #content-area .work .container .work-content ul li h4,
-.work .container body.page-terms-and-conditions #content-area .work-content ul li h4, body.page-terms-and-conditions #content-area .content ul li h5, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul li h5, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul li h5,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h5,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ul li h5,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ul li h5,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ul li h5,
+.work .container body.page-terms-and-conditions #content-area .work-content ul li h4, body.page-terms-and-conditions #content-area .content ul li h5, body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h5, .showcase .container body.page-terms-and-conditions #content-area .work-content ul li h5,
 body.page-terms-and-conditions #content-area .work .container .work-content ul li h5,
-.work .container body.page-terms-and-conditions #content-area .work-content ul li h5, body.page-terms-and-conditions #content-area .content ul li h6, body.page-terms-and-conditions #content-area .showcase .container .showcase-content ul li h6, .showcase .container body.page-terms-and-conditions #content-area .showcase-content ul li h6,
-body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h6,
-.showcase .container body.page-terms-and-conditions #content-area .work-content ul li h6,
-body.page-terms-and-conditions #content-area .work .container .showcase-content ul li h6,
-.work .container body.page-terms-and-conditions #content-area .showcase-content ul li h6,
+.work .container body.page-terms-and-conditions #content-area .work-content ul li h5, body.page-terms-and-conditions #content-area .content ul li h6, body.page-terms-and-conditions #content-area .showcase .container .work-content ul li h6, .showcase .container body.page-terms-and-conditions #content-area .work-content ul li h6,
 body.page-terms-and-conditions #content-area .work .container .work-content ul li h6,
 .work .container body.page-terms-and-conditions #content-area .work-content ul li h6 {
   display: inline-block;
 }
 
-/* line 100, ../scss/styles.scss */
+/* line 103, ../scss/styles.scss */
 #content-area {
-  padding: 5.25rem 0.9375rem;
+  padding-bottom: 0.9375rem;
   position: relative;
 }
+/* line 105, ../scss/styles.scss */
+#content-area .container {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 104, ../scss/styles.scss */
-  #content-area .content, #content-area .showcase .container .showcase-content, .showcase .container #content-area .showcase-content,
-  #content-area .showcase .container .work-content,
-  .showcase .container #content-area .work-content,
-  #content-area .work .container .showcase-content,
-  .work .container #content-area .showcase-content,
+  /* line 111, ../scss/styles.scss */
+  #content-area .content, #content-area .showcase .container .work-content, .showcase .container #content-area .work-content,
   #content-area .work .container .work-content,
   .work .container #content-area .work-content {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
-@media (min-width: 0) and (max-width: 639px) {
-  /* line 100, ../scss/styles.scss */
-  #content-area {
-    padding: 1.25rem 0.9375rem;
-  }
-}
 
-/* line 115, ../scss/styles.scss */
+/* line 122, ../scss/styles.scss */
 #page-title {
   font-size: 1.5rem;
   color: white;
   padding: 0.625rem 0.9375rem;
+  margin-bottom: 1.875rem;
 }
-/* line 119, ../scss/styles.scss */
+/* line 127, ../scss/styles.scss */
 #page-title-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   background-color: #ef483d;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 128, ../scss/styles.scss */
+  /* line 132, ../scss/styles.scss */
   #main {
     padding-bottom: 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 128, ../scss/styles.scss */
+  /* line 132, ../scss/styles.scss */
   #main {
     padding-bottom: 0;
   }

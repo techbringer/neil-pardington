@@ -4,6 +4,10 @@
             display: none;
         }
 
+        .page-type-contact-page & {
+            margin-top: 0;
+        }
+
         margin-top: rem(60);
         background-color: black;
         padding: rem(35) 0 rem(55);

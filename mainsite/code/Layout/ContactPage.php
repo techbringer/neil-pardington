@@ -99,7 +99,7 @@ class ContactPage_Controller extends Page_Controller {
             $recaptcha = new LiteralField('Recapture', '<div class="g-recaptcha" data-sitekey="6LdPOSUTAAAAAOky1g7xLpGGwktxgo9jeQaJZVyJ"></div>'),
             new FormAction(
                 'doSubmit',
-                'Send message'
+                'Submit'
             )
         );
 

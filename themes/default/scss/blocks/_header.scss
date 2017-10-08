@@ -19,6 +19,11 @@
             left: 0;
             @include transform(scale(0.375));
         }
+
+        @include breakpoint($container_portrait) {
+            left: 0;
+            @include transform(scale(0.375));
+        }
     }
 
     #btn-call-menu {
@@ -64,6 +69,10 @@
         max-width: calc(100% - 340px);
         .scrolled & {
             max-width: calc(100% - 180px);
+        }
+
+        @include breakpoint($container_portrait) {
+            max-width: calc(100% - 150px);
         }
     }
 
