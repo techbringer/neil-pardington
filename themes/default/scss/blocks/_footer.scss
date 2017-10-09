@@ -1,30 +1,30 @@
 #footer {
-	
-	padding: rem(15) 0 0;
-	@include breakpoint($container_portrait) {
-		padding-bottom: rem(10);
-	}
-	background-color: $b2-red;
-	color: #fff;
-	font-size: rem(14);
-	a {
-		color: #fff;
-	}
-	
-	.container {
-		.row {
-			@include breakpoint($container_ipadToDesktop) {
-				padding-left: rem(15);
-				padding-right: rem(15);
-			}
-			
-			.grid {
-				margin-bottom: rem(15);
-				@include breakpoint($container_portrait) {
-					margin-bottom: rem(5);
-				}
-			}
-			
-		}
-	}
+
+    padding: rem(15) 0 0;
+    @include breakpoint($container_portrait) {
+        padding-bottom: rem(10);
+    }
+    background-color: $b2-red;
+    color: #fff;
+    font-size: rem(14);
+    a {
+        color: #fff;
+    }
+
+    .container {
+        .row {
+            @include breakpoint($container_ipadToDesktop) {
+                padding-left: rem(15);
+                padding-right: rem(15);
+            }
+
+            .grid {
+                margin-bottom: rem(15);
+                @include breakpoint($container_portrait) {
+                    margin-bottom: rem(5);
+                }
+            }
+
+        }
+    }
 }

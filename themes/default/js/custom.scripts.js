@@ -231,10 +231,35 @@ jQuery(document).ready(function($) {
     {
         if ($(this).prop('checked')) {
             $('#btn-call-menu').addClass('is-active');
+            $('html').addClass('locked');
         } else {
             $('#btn-call-menu').removeClass('is-active');
+            $('html').removeClass('locked');
         }
     }).change();
+
+    /* *
+     * mobile menu reaction
+     * */
+    // if (isMobile) {
+    //     $('.main-nav .level-root > li').each(function(i, el)
+    //     {
+    //         $(this).find('a:not(".current"):eq(0)').click(function(e)
+    //         {
+    //             if (!$(this).parent().hasClass('may-click')) {
+    //                 e.preventDefault();
+    //                 $('.main-nav li.current').addClass('collapsed');
+    //                 $('.main-nav li.may-click').removeClass('may-click');
+    //                 $(this).parent().addClass('may-click');
+    //             }
+    //
+    //             if ($(this).parent().hasClass('collapsed')) {
+    //                 $(this).parent().removeClass('collapsed');
+    //             }
+    //         });
+    //     });
+    // }
+
 
 
     /**

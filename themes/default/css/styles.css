@@ -1711,10 +1711,11 @@ textarea {
 .parallax.normal {
   height: 400px;
 }
+
 @media (min-width: 0) and (max-width: 639px) {
-  /* line 1, ../scss/blocks/_parallax.scss */
-  .jarallax,
-  .parallax {
+  /* line 21, ../scss/blocks/_parallax.scss */
+  body:not(.page-type-home-page) .jarallax,
+  body:not(.page-type-home-page) .parallax {
     height: 50vh !important;
   }
 }
@@ -1879,22 +1880,52 @@ textarea {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
 }
-/* line 19, ../scss/blocks/elements/_navigation.scss */
-#header-new .main-nav .nav ul.level-root > li:hover ul {
+/* line 23, ../scss/blocks/elements/_navigation.scss */
+#header-new .main-nav .nav ul.level-root > li.current ul, #header-new .main-nav .nav ul.level-root > li.active ul, #header-new .main-nav .nav ul.level-root > li:hover ul, #header-new .main-nav .nav ul.level-root > li:active ul, #header-new .main-nav .nav ul.level-root > li:focus ul {
   visibility: visible;
   opacity: 1;
 }
-/* line 29, ../scss/blocks/elements/_navigation.scss */
+@media (max-width: 767px) {
+  /* line 30, ../scss/blocks/elements/_navigation.scss */
+  #header-new .main-nav .nav ul.level-root > li.collapsed ul {
+    height: 0 !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 40, ../scss/blocks/elements/_navigation.scss */
+  #header-new .main-nav .nav ul.level-root > li.current ul, #header-new .main-nav .nav ul.level-root > li.active ul, #header-new .main-nav .nav ul.level-root > li.may-click ul {
+    position: static;
+    visibility: visible;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  /* line 8, ../scss/blocks/elements/_navigation.scss */
+  #header-new .main-nav .nav ul.level-root {
+    position: static;
+    display: block;
+    max-width: none;
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - 60px);
+  }
+}
+/* line 65, ../scss/blocks/elements/_navigation.scss */
 #header-new .main-nav .nav ul li {
   position: relative;
   list-style: none;
 }
-/* line 34, ../scss/blocks/elements/_navigation.scss */
+/* line 70, ../scss/blocks/elements/_navigation.scss */
 #header-new .main-nav .nav ul li:hover a.leading {
   background-color: #AE352F;
   text-decoration: none;
 }
-/* line 40, ../scss/blocks/elements/_navigation.scss */
+/* line 76, ../scss/blocks/elements/_navigation.scss */
 #header-new .main-nav .nav ul li a {
   font-size: 1.25rem;
   color: white;
@@ -1906,18 +1937,18 @@ textarea {
   transition: all 0.3s;
   outline: none;
 }
-/* line 47, ../scss/blocks/elements/_navigation.scss */
+/* line 83, ../scss/blocks/elements/_navigation.scss */
 #header-new .main-nav .nav ul li a.leading {
   line-height: 1;
   font-size: 1.5rem;
   padding: 0.625rem 4.375rem 0.875rem 1.5625rem;
 }
-/* line 51, ../scss/blocks/elements/_navigation.scss */
+/* line 87, ../scss/blocks/elements/_navigation.scss */
 #header-new .main-nav .nav ul li a.leading:hover, #header-new .main-nav .nav ul li a.leading:focus, #header-new .main-nav .nav ul li a.leading:active, #header-new .main-nav .nav ul li a.leading.current {
   background-color: #AE352F;
   text-decoration: none;
 }
-/* line 60, ../scss/blocks/elements/_navigation.scss */
+/* line 96, ../scss/blocks/elements/_navigation.scss */
 #header-new .main-nav .nav ul li ul {
   background-color: black;
   width: 100%;
@@ -1925,40 +1956,59 @@ textarea {
   visibility: hidden;
   opacity: 0;
 }
-/* line 66, ../scss/blocks/elements/_navigation.scss */
+@media (max-width: 767px) {
+  /* line 96, ../scss/blocks/elements/_navigation.scss */
+  #header-new .main-nav .nav ul li ul {
+    position: static;
+    visibility: visible;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+/* line 109, ../scss/blocks/elements/_navigation.scss */
 #header-new .main-nav .nav ul li ul li {
   padding: 0 1.5625rem;
 }
-/* line 68, ../scss/blocks/elements/_navigation.scss */
+/* line 111, ../scss/blocks/elements/_navigation.scss */
 #header-new .main-nav .nav ul li ul li a {
   padding: 0.75rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   white-space: normal;
   word-break: break-word;
 }
-/* line 73, ../scss/blocks/elements/_navigation.scss */
+/* line 116, ../scss/blocks/elements/_navigation.scss */
 #header-new .main-nav .nav ul li ul li a.current, #header-new .main-nav .nav ul li ul li a.active, #header-new .main-nav .nav ul li ul li a:hover, #header-new .main-nav .nav ul li ul li a:active, #header-new .main-nav .nav ul li ul li a:focus {
   color: #ef483d;
   text-decoration: none;
 }
-/* line 84, ../scss/blocks/elements/_navigation.scss */
+/* line 127, ../scss/blocks/elements/_navigation.scss */
 #header-new .main-nav .nav ul li ul li:last-child a {
   border: none;
 }
-/* line 94, ../scss/blocks/elements/_navigation.scss */
+/* line 137, ../scss/blocks/elements/_navigation.scss */
 #header-new .main-nav .socials {
   display: none;
 }
-/* line 99, ../scss/blocks/elements/_navigation.scss */
+/* line 142, ../scss/blocks/elements/_navigation.scss */
 #header-new #trigger-menu:checked + .main-nav {
   pointer-events: auto;
 }
-/* line 104, ../scss/blocks/elements/_navigation.scss */
+/* line 147, ../scss/blocks/elements/_navigation.scss */
 #header-new #trigger-menu:checked + .main-nav .nav ul.level-root {
   -moz-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
+}
+@media (max-width: 767px) {
+  /* line 147, ../scss/blocks/elements/_navigation.scss */
+  #header-new #trigger-menu:checked + .main-nav .nav ul.level-root {
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
 }
 
 /* line 1, ../scss/blocks/_footer.scss */
@@ -2463,7 +2513,7 @@ html {
   -webkit-tap-highlight-color: rgba(201, 224, 253, 0.8);
 }
 /* line 60, ../scss/styles.scss */
-html.lt-ie9, html.lt-ie9 body, html.locked, html.locked body {
+html.lt-ie9, html.lt-ie9 body, html.locked {
   height: 100%;
   overflow: hidden;
 }
@@ -2471,7 +2521,7 @@ html.lt-ie9, html.lt-ie9 body, html.locked, html.locked body {
 /**
  * Pages.
  * */
-/* line 73, ../scss/styles.scss */
+/* line 72, ../scss/styles.scss */
 body {
   padding-top: 3.75rem;
 }
@@ -3409,18 +3459,18 @@ body.page-terms-and-conditions #content-area .work .container .work-content ul l
   display: inline-block;
 }
 
-/* line 103, ../scss/styles.scss */
+/* line 102, ../scss/styles.scss */
 #content-area {
   padding-bottom: 0.9375rem;
   position: relative;
 }
-/* line 105, ../scss/styles.scss */
+/* line 104, ../scss/styles.scss */
 #content-area .container {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 111, ../scss/styles.scss */
+  /* line 110, ../scss/styles.scss */
   #content-area .content, #content-area .showcase .container .work-content, .showcase .container #content-area .work-content,
   #content-area .work .container .work-content,
   .work .container #content-area .work-content {
@@ -3429,26 +3479,26 @@ body.page-terms-and-conditions #content-area .work .container .work-content ul l
   }
 }
 
-/* line 122, ../scss/styles.scss */
+/* line 121, ../scss/styles.scss */
 #page-title {
   font-size: 1.5rem;
   color: white;
   padding: 0.625rem 0.9375rem;
   margin-bottom: 1.875rem;
 }
-/* line 127, ../scss/styles.scss */
+/* line 126, ../scss/styles.scss */
 #page-title-wrapper {
   background-color: #ef483d;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 132, ../scss/styles.scss */
+  /* line 131, ../scss/styles.scss */
   #main {
     padding-bottom: 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 132, ../scss/styles.scss */
+  /* line 131, ../scss/styles.scss */
   #main {
     padding-bottom: 0;
   }

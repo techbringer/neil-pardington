@@ -15,12 +15,48 @@
                     @include transform(translateX(0%));
 
                     & > li {
-                        &:hover {
+                        &.current,
+                        &.active,
+                        &:hover,
+                        &:active,
+                        &:focus {
                             ul {
                                 visibility: visible;
                                 opacity: 1;
                             }
                         }
+
+                        &.collapsed {
+                            ul {
+                                @include breakpoint($container_portrait) {
+                                    height: 0 !important;
+                                }
+                            }
+                        }
+
+                        &.current,
+                        &.active,
+                        &.may-click {
+                            ul {
+                                @include breakpoint($container_portrait) {
+                                    position: static;
+                                    visibility: visible;
+                                    height: auto;
+                                }
+                            }
+                        }
+
+                    }
+
+                    @include breakpoint($container_portrait) {
+                        position: static;
+                        display: block;
+                        max-width: none;
+                        @include transform(translateX(100%));
+                        overflow: hidden;
+                        overflow-y: auto;
+                        -webkit-overflow-scrolling: touch;
+                        max-height: calc(100vh - 60px);
                     }
                 }
             }
@@ -63,6 +99,13 @@
                     position: absolute;
                     visibility: hidden;
                     opacity: 0;
+                    @include breakpoint($container_portrait) {
+                        position: static;
+                        visibility: visible;
+                        height: 0;
+                        overflow: hidden;
+                        opacity: 0;
+                    }
                     li {
                         padding: 0 rem(25);
                         a {
@@ -103,6 +146,9 @@
             &.level {
                 &-root {
                     @include transform(translateX(-100%));
+                    @include breakpoint($container_portrait) {
+                        @include transform(translateX(0%));
+                    }
                 }
             }
         }

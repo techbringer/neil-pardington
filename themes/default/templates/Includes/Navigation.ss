@@ -2,7 +2,7 @@
     <nav class="nav">
         <ul class="level-root">
         <% loop Menu(1) %>
-            <li>
+            <li<% if LinkOrCurrent == current || $LinkOrSection == section %> class="current"<% end_if %>>
                 <a href="$Link" class="leading <% if LinkOrCurrent = current || $LinkOrSection = section %> current<% end_if %>">$MenuTitle.XML</a>
                 <% if $ClassName.LowerCase == 'categorypage' %>
                 <ul class="children level-2">
