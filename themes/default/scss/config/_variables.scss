@@ -28,11 +28,9 @@ $grid-padding: 10px;
  * Responsive breakpoints
  * */
 $container_landscape: max-width 1024px;
-$container_portrait: max-width 767px;
+$container_portrait: max-width 768px;
 $container: max-width 959px;
 $max-width-single-column: 640;
 $container_ipadToDesktop: 768px 1023px;
 $container_largerPhones: 640px 767px;
 $container_small: 0 639px;
-
-

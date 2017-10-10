@@ -1109,7 +1109,7 @@
     margin-bottom: 1em;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 63, ../scss/config/_modifiers.scss */
   .title {
     margin-bottom: 0.5em;
@@ -1185,7 +1185,7 @@
 .work .container .work-content p {
   font-size: 1.25rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 119, ../scss/config/_modifiers.scss */
   .content li, .showcase .container .work-content li,
   .work .container .work-content li,
@@ -1202,7 +1202,7 @@
   word-wrap: break-word;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 133, ../scss/config/_modifiers.scss */
   .title,
   .content,
@@ -1712,7 +1712,7 @@ textarea {
   height: 400px;
 }
 
-@media (min-width: 0) and (max-width: 639px) {
+@media (max-width: 768px) {
   /* line 21, ../scss/blocks/_parallax.scss */
   body:not(.page-type-home-page) .jarallax,
   body:not(.page-type-home-page) .parallax {
@@ -1776,7 +1776,7 @@ textarea {
   -webkit-transform: scale(0.375);
   transform: scale(0.375);
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 10, ../scss/blocks/_header.scss */
   #header-new #logo {
     left: 0;
@@ -1843,7 +1843,7 @@ textarea {
 .scrolled #header-new #weird-title {
   max-width: calc(100% - 180px);
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 56, ../scss/blocks/_header.scss */
   #header-new #weird-title {
     max-width: calc(100% - 150px);
@@ -1885,13 +1885,13 @@ textarea {
   visibility: visible;
   opacity: 1;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 30, ../scss/blocks/elements/_navigation.scss */
   #header-new .main-nav .nav ul.level-root > li.collapsed ul {
     height: 0 !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 40, ../scss/blocks/elements/_navigation.scss */
   #header-new .main-nav .nav ul.level-root > li.current ul, #header-new .main-nav .nav ul.level-root > li.active ul, #header-new .main-nav .nav ul.level-root > li.may-click ul {
     position: static;
@@ -1899,7 +1899,7 @@ textarea {
     height: auto;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 8, ../scss/blocks/elements/_navigation.scss */
   #header-new .main-nav .nav ul.level-root {
     position: static;
@@ -1956,7 +1956,7 @@ textarea {
   visibility: hidden;
   opacity: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 96, ../scss/blocks/elements/_navigation.scss */
   #header-new .main-nav .nav ul li ul {
     position: static;
@@ -2001,7 +2001,7 @@ textarea {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 147, ../scss/blocks/elements/_navigation.scss */
   #header-new #trigger-menu:checked + .main-nav .nav ul.level-root {
     -moz-transform: translateX(0%);
@@ -2018,7 +2018,7 @@ textarea {
   color: #fff;
   font-size: 0.875rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 1, ../scss/blocks/_footer.scss */
   #footer {
     padding-bottom: 0.625rem;
@@ -2039,7 +2039,7 @@ textarea {
 #footer .container .row .grid {
   margin-bottom: 0.9375rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 21, ../scss/blocks/_footer.scss */
   #footer .container .row .grid {
     margin-bottom: 0.3125rem;
@@ -2242,7 +2242,7 @@ textarea {
   display: block;
   font-size: 2rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 15, ../scss/blocks/_searchform.scss */
   #search-wrapper .container #btn-close {
     float: left;
@@ -2277,7 +2277,7 @@ textarea {
   -webkit-user-select: none;
   user-select: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 39, ../scss/blocks/_searchform.scss */
   #GeneralSearchForm_GeneralSearchForm label {
     font-size: 2rem;
@@ -2303,7 +2303,7 @@ textarea {
   height: 120px;
   font-weight: 100;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 52, ../scss/blocks/_searchform.scss */
   #GeneralSearchForm_GeneralSearchForm label:before {
     height: 50px;
@@ -2321,7 +2321,7 @@ textarea {
   outline: none;
   background: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 68, ../scss/blocks/_searchform.scss */
   #GeneralSearchForm_GeneralSearchForm .text {
     font-size: 2rem;
@@ -2557,7 +2557,7 @@ body.page-home #basetwo {
   height: 118px;
   width: 617px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 16, ../scss/pagetypes/_homepage.scss */
   body.page-home #basetwo {
     -moz-transform-origin: 100% 50%;
@@ -2582,7 +2582,7 @@ body.page-home #design {
   height: 151px;
   width: 460px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 27, ../scss/pagetypes/_homepage.scss */
   body.page-home #design {
     -moz-transform-origin: 0 50%;
@@ -2599,7 +2599,7 @@ body.page-home #design {
   text-indent: -9999px;
   position: absolute;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 38, ../scss/pagetypes/_homepage.scss */
   body.page-home #basetwo,
   body.page-home #design {
@@ -2668,7 +2668,7 @@ body.page-SearchResultController #main,
 body.page-type-blogs-page #main {
   padding-top: 70px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 1, ../scss/pagetypes/_blogpage.scss */
   body.page-Security #main,
   body.page-SearchResultController #main,
@@ -2685,7 +2685,7 @@ body.page-type-blogs-page #page-title {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 8, ../scss/pagetypes/_blogpage.scss */
   body.page-Security #page-title,
   body.page-SearchResultController #page-title,
@@ -2924,7 +2924,7 @@ body.page-type-contact-page #Form_contactForm fieldset .field {
     max-width: 21.125rem;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 57, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm fieldset .field {
     max-width: 21.125rem;
@@ -3019,7 +3019,7 @@ body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha {
     max-width: 18.125rem;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 141, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm .Actions .g-recaptcha {
     margin-left: 0;
@@ -3054,7 +3054,7 @@ body.page-type-contact-page #Form_contactForm .Actions .action {
   font-size: 1.25rem;
   margin: 0.8125rem 0 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 165, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page #Form_contactForm .Actions .action {
     margin-left: 0;
@@ -3081,7 +3081,7 @@ body.page-type-contact-page .guide-gmap {
   padding-top: 1.25rem;
   border-top: 0.25rem solid #ef483d;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 194, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page .guide-gmap {
     padding-top: 0;
@@ -3119,7 +3119,7 @@ body.page-type-contact-page .guide-gmap .title {
 body.page-type-contact-page .guide-gmap .title p {
   margin-top: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 221, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page .guide-gmap .title {
     margin-left: 0;
@@ -3153,7 +3153,7 @@ body.page-type-contact-page .guide-gmap .work .container .work-content,
     margin-bottom: 1em;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 242, ../scss/pagetypes/_contactpage.scss */
   body.page-type-contact-page .guide-gmap .content, body.page-type-contact-page .guide-gmap .showcase .container .work-content, .showcase .container body.page-type-contact-page .guide-gmap .work-content,
   body.page-type-contact-page .guide-gmap .work .container .work-content,
@@ -3497,7 +3497,7 @@ body.page-terms-and-conditions #content-area .work .container .work-content ul l
     padding-bottom: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 131, ../scss/styles.scss */
   #main {
     padding-bottom: 0;

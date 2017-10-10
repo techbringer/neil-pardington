@@ -20,7 +20,7 @@ body {
     &:not(.page-type-home-page) {
         .jarallax,
         .parallax {
-            @include breakpoint($container_small) {
+            @include breakpoint($container_portrait) {
                 height: 50vh !important;
             }
         }
